@@ -1,171 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+:root {
 
-*{
+    /* PALETA */
+    --cor-primaria: #01378F;
+    --cor-primaria-hover: #003BD7;
+    --cor-primaria-clara: #A4D1FB;
+
+    /* CORES */
+    --cor-fundo: #F5F7F5;
+    --cor-texto: #1A2E1A;
+
+    /* FONTES */
+
+    --fonte: "Inter", sans-serif;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.375rem;
+    --fs-xl: 1.75rem;
+    --fs-2xl: 2.25rem;
+
+    /* ESPAÇAMENTOS */
+    --sp-1: 0.25rem;
+    --sp-2: 0.5rem;
+    --sp-3: 0.75rem;
+    --sp-4: 1rem;
+    --sp-5: 1.25rem;
+    --sp-6: 1.5rem;
+    --sp-8: 2rem;
+    --sp-10: 2.5rem;
+    --sp-12: 3rem;
+
+    /* BORDAS */
+    --raio-sm: 4px;
+    --raio-md: 8px;
+    --raio-lg: 12px;
+    --raio-pill: 999px;
+
+    /* TRANSIÇÕES */
+    --transicao: 0.3s ease;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
-
-    background:
-    radial-gradient(circle at top left,
-    rgba(108,43,255,0.10),
-    transparent 30%),
-
-    radial-gradient(circle at bottom right,
-    rgba(198,255,63,0.12),
-    transparent 30%),
-
-    #02093a;
-
-    color: #111827;
-
-    overflow-x: hidden;
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte);
+    font-size: var(--fs-base);
+    line-height: 1.4;
 }
 
-:root{
-    --azul: #3b64d6;
-    --branco: #ffffff;
-    --dark: #000000;
-}
-
-section{
-    padding: 120px 8%;
+a {
+    text-decoration: none;
 }
 
 /* HEADER */
 
-.header{
-    position: fixed;
-
-    width: 100%;
-
+.cabecalho {
+    position: sticky;
     top: 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 25px 8%;
-
     z-index: 1000;
-
-    backdrop-filter: blur(10px);
+    padding: 0.9rem 2rem;
+    background: rgba(1, 55, 143, 0.92);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-.logo{
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #ffffff;
-}
+/* NAV */
 
-nav{
+.cabecalho-nav {
+    max-width: 1250px;
+    margin: 0 auto;
     display: flex;
-    gap: 30px;
-}
-
-nav a{
-    text-decoration: none;
-    color: #ffffff;
-    transition: 0.3s;
-}
-
-nav a:hover{
-    color: var(--azul);
-}
-
-.btn-outline{
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background: transparent;
-    padding: 12px 22px;
-    border-radius: 999px;
-    cursor: pointer;
-}
-.btn-outline:hover{
-    background-color: var(--azul);
-    transition: 0.3s;
-}
-
-/* HERO */
-
-.hero{
-    min-height: 100vh;
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    gap: 80px;
 }
 
-.hero-text{
-    flex: 1;
-    color: #ffffff;
-}
-
-.hero-text h1{
-    font-size: 5rem;
-    line-height: 1;
-    font-weight: 900;
-}
-
-.hero-text span{
-    background: linear-gradient(90deg,var(--azul),#5c85ff);
-    color: white;
-    padding: 0 20px;
-    border-radius: 12px;
-}
-
-.hero-text p{
-    margin-top: 30px;
-    max-width: 500px;
-    color: #ffffff;
-    line-height: 1.8;
-}
-
-.hero-buttons{
-    margin-top: 35px;
+.nav-esquerda {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 12px;
 }
 
-.hero-buttons a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
+.nav-centro {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
 }
 
-.btn-primary{
-    background: linear-gradient(90deg,var(--azul),#5c85ff);
-    color: white;
-    border: none;
-    padding: 16px 30px;
-    border-radius: 999px;
+.nav-direita {
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo-nav {
+    height: 34px;
+    width: auto;
+    object-fit: contain;
     cursor: pointer;
-    box-shadow: 0 10px 30px rgba(108,43,255,0.35);
+    transition: var(--transicao);
 }
 
-/* HERO IMAGE */
+.logo-nav:hover {
+    transform: scale(1.05);
+}
 
-.hero-image{
-    flex: 1;
+.span-nav {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* LINKS NAV */
+
+.cabecalho_nav_a,
+.dropdown-btn {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    font-size: 0.96rem;
+    font-weight: 450;
+    transition: var(--transicao);
 }
 
-.glow{
+.cabecalho_nav_a::after,
+.dropdown-btn::after {
+    content: "";
     position: absolute;
-    width: 400px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    filter: blur(100px);
+    left: 0;
+    bottom: -7px;
+    width: 0%;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--cor-primaria-clara);
+    transition: var(--transicao);
 }
 
-footer{
-    color: var(--branco);
+.cabecalho_nav_a:hover::after,
+.dropdown-btn:hover::after,
+.ativo::after {
+    width: 100%;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: -12px;
+    z-index: 999;
+    min-width: 230px;
+    padding: 0.6rem;
+    background: var(--cor-fundo);
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    overflow: visible;
+}
+
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    color: var(--cor-texto);
+    transition: var(--transicao);
+}
+
+.dropdown-content a:hover {
+    background: #EEF5FF;
+    color: var(--cor-primaria);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* BOTÃO */
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.35rem;
+    border: none;
+    border-radius: 999px;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg,
+            var(--cor-primaria-hover),
+            #2D6BFF,
+            #69B7FF);
+
+    box-shadow: 0 6px 20px rgba(1, 55, 143, 0.25);
+    transition: var(--transicao);
+}
+
+.btn-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(1, 55, 143, 0.35);
+}
+
+/* MAIN */
+
+.main {
+    padding: 4% 6%;
+}
+
+strong {
+    color: var(--cor-primaria);
+}
+
+/* FOOTER */
+
+footer {
+
+    padding: 2rem;
+    text-align: center;
 }
