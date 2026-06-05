@@ -3,17 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado de Trabalho</title>
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/mercado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav> It's ADS
-            <a href="curso.html"> Cursos </a>
-            <a href="disciplinas.html"> Disciplinas</a>
-            <a href="mercado.html"> Mercado de Trabalho </a>
-            <a href="projetos.html"> Projetos </a>
-            <a href="contato.html"> Contato </a>
+
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="curso.html">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="curso.html">Como Cursar</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="1-semestre.html">1º Semestre</a></li>
+                        <li><a href="2-semestre.html">2º Semestre</a></li>
+                        <li><a href="3-semestre.html">3º Semestre</a></li>
+                        <li><a href="4-semestre.html">4º Semestre</a></li>
+                        <li><a href="5-semestre.html">5º Semestre</a></li>
+                        <li><a href="colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="mercado.html">Mercado de Trabalho</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
+
         </nav>
     </header>
+    <section class="mt-hero">
+        <div class="mt-hero__conteudo">
+            <span class="mt-hero__tag">MERCADO DE TRABALHO</span>
+            <h1 class="mt-hero__titulo">O futuro é feito <br /> de tecnologia</h1>
+            <p class="mt-hero__descricao">
+                O profissional de Análise e Desenvolvimento de Sistemas
+                é cada vez mais essencial em um mundo digital, com
+                inúmeras oportunidades e alta demanda no mercado.
+            </p>
+        </div>
+
+        <div class="mt-hero__imagem">
+            <img src="" alt=""Logo de ADS />
+        </div>
+    </section>
+
+    <!-- SEÇÃO:-->
+     
+    <section class="mt-demanda">
+        <div class="mt-secao__cabecalho">
+            <span class="mt-secao__sobretitulo">POR QUE O MERCADO BUSCA PROFISSIONAIS DE ADS?</span>
+            <h2 class="mt-secao__titulo">Alta demanda e diversas oportunidades</h2>
+        </div>
+
+        <div class="mt-cards">
+            <article class="mt-card">
+                <div class="mt-card__icone"><span class="material-icons">bar_chart</span></div>
+                <h3 class="mt-card__titulo">Mercado em crescimento</h3>
+                <p class="mt-card__texto">
+                    A tecnologia está presente em todos os setores e a demanda
+                    por profissionais qualificados não para de crescer.
+                </p>
+            </article>
+
+            <article class="mt-card">
+                <div class="mt-card__icone"><span class="material-icons">work</span></div>
+                <h3 class="mt-card__titulo">Diversas áreas de atuação</h3>
+                <p class="mt-card__texto">
+                    Atue em desenvolvimento de sistemas, análise de dados,
+                    suporte, gestão de projetos, cybersegurança e muito mais.
+                </p>
+            </article>
+
+            <article class="mt-card">
+                <div class="mt-card__icone"><span class="material-icons">attach_money</span></div>
+                <h3 class="mt-card__titulo">Excelentes salários</h3>
+                <p class="mt-card__texto">
+                    Profissionais de ADS estão entre os melhores remunerados
+                    do mercado de tecnologia.
+                </p>
+            </article>
+
+            <article class="mt-card">
+                <div class="mt-card__icone"><span class="material-icons">school</span></div>
+                <h3 class="mt-card__titulo">Carreira sólida</h3>
+                <p class="mt-card__texto">
+                    São muitas oportunidades de crescimento, especialização
+                    e atuação em empresas de qualquer porte.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!--SEÇÃO: ÁREAS DE ATUAÇÃO-->
+    <section class="mt-areas">
+        <div class="mt-secao__cabecalho">
+            <span class="mt-secao__sobretitulo">ONDE VOCÊ PODE ATUAR</span>
+            <h2 class="mt-secao__titulo">Principais áreas de atuação</h2>
+        </div>
+
+        <ul class="mt-areas__lista">
+            <li class="mt-area">
+                <span class="material-icons mt-area__check">check_circle</span>
+                <div>
+                    <h4>Desenvolvimento de Sistemas</h4>
+                    <p>Criação de aplicações web, mobile e desktop.</p>
+                </div>
+            </li>
+            <li class="mt-area">
+                <span class="material-icons mt-area__check">check_circle</span>
+                <div>
+                    <h4>Banco de Dados</h4>
+                    <p>Modelagem, administração e otimização de dados.</p>
+                </div>
+            </li>
+            <li class="mt-area">
+                <span class="material-icons mt-area__check">check_circle</span>
+                <div>
+                    <h4>Suporte e Infraestrutura</h4>
+                    <p>Suporte técnico, redes e infraestrutura de TI.</p>
+                </div>
+            </li>
+            <li class="mt-area">
+                <span class="material-icons mt-area__check">check_circle</span>
+                <div>
+                    <h4>Análise de Sistemas</h4>
+                    <p>Levantamento de requisitos e soluções tecnológicas.</p>
+                </div>
+            </li>
+            <li class="mt-area">
+                <span class="material-icons mt-area__check">check_circle</span>
+                <div>
+                    <h4>Testes e Qualidade de Software</h4>
+                    <p>Garantia de qualidade e desempenho de sistemas.</p>
+                </div>
+            </li>
+            <li class="mt-area">
+                <span class="material-icons mt-area__check">check_circle</span>
+                <div>
+                    <h4>Gestão de Projetos de TI</h4>
+                    <p>Planejamento, execução e acompanhamento de projetos.</p>
+                </div>
+            </li>
+        </ul>
+
+        <!-- CTA final -->
+        <div class="mt-cta">
+            <div class="mt-cta__texto">
+                <span class="material-icons mt-cta__icone">rocket_launch</span>
+                <div>
+                    <h3>Seu futuro começa agora</h3>
+                    <p>
+                        O curso de Análise e Desenvolvimento de Sistemas é o primeiro passo
+                        para uma carreira promissora e cheia de possibilidades.
+                    </p>
+                </div>
+            </div>
+            <a href="curso.html" class="mt-cta__botao">Quero saber mais</a>
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>superponto@ifce-ads:~</p>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h3>IT'S ADS</h3>
+
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+
+                <ul>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(XX) XXXX-XXXX</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+
+
+                <div class="social">
+                    <a href="#"><span class="material-icons">mail</span></a>
+                    <a href="#"><span class="material-icons">call</span></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ADS IFCE Boa Viagem</p>
+        </div>
+
+    </footer>
+
 </body>
 </html>

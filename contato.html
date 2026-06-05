@@ -1,19 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato - IFCE ADS</title>
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    
+    <!-- NAVBAR -->
     <header>
-        <nav> It's ADS
-            <a href="curso.html"> Cursos </a>
-            <a href="disciplinas.html"> Disciplinas</a>
-            <a href="mercado.html"> Mercado de Trabalho </a>
-            <a href="projetos.html"> Projetos </a>
-            <a href="contato.html"> Contato </a>
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="curso.html">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="curso.html">Como Cursar</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="1-semestre.html">1º Semestre</a></li>
+                        <li><a href="2-semestre.html">2º Semestre</a></li>
+                        <li><a href="3-semestre.html">3º Semestre</a></li>
+                        <li><a href="4-semestre.html">4º Semestre</a></li>
+                        <li><a href="5-semestre.html">5º Semestre</a></li>
+                        <li><a href="colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="mercado.html">Mercado de Trabalho</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
+
         </nav>
     </header>
+    <main>
+         <section class="ct-hero">
+        <div class="ct-hero__conteudo">
+            <span class="ct-hero__tag">CONTATO</span>
+            <h1 class="ct-hero__titulo">Fale com a gente</h1>
+            <p class="ct-hero__descricao">
+                Estamos aqui para tirar suas dúvidas, fornecer informações ou
+                falar sobre o curso de Análise e Desenvolvimento de Sistemas.
+            </p>
+        </div>
+    </section>
+
+    <!--CONTEÚDO PRINCIPAL-->
+    <section class="ct-conteudo">
+        <div class="ct-conteudo__container">
+
+            <!-- Coluna esquerda: formulário -->
+            <div class="ct-formulario">
+                <h2 class="ct-formulario__titulo">Fale Conosco</h2>
+                <p class="ct-formulario__texto">
+                    Preencha o formulário abaixo e entraremos em contato
+                    o mais breve possível.
+                </p>
+
+                <form class="ct-form" action="#" method="post">
+                    <div class="ct-form__linha">
+                        <div class="ct-form__campo">
+                            <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
+                        </div>
+                        <div class="ct-form__campo">
+                            <input type="email" id="email" name="email" placeholder="E-mail" required />
+                        </div>
+                    </div>
+
+                    <div class="ct-form__campo">
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required />
+                    </div>
+
+                    <div class="ct-form__campo">
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="ct-form__botao">
+                        <span class="material-icons">send</span>
+                        Enviar mensagem
+                    </button>
+                </form>
+            </div>
+
+            <!-- Coluna direita: outros canais -->
+            <aside class="ct-canais">
+                <h2 class="ct-canais__titulo">Informações de Contato</h2>
+
+                <div class="ct-canal">
+                    <div class="ct-canal__icone">
+                        <span class="material-icons">place</span>
+                    </div>
+                    <div class="ct-canal__info">
+                        <strong>Endereço</strong>
+                        <p>Rodovia Pres. Juscelino Kubitschek (BR 020), km 209, s/n - Anafuê - Boa ViagemCEP:63870-000</p>
+                    </div>
+                </div>
+
+                <div class="ct-canal">
+                    <div class="ct-canal__icone">
+                        <span class="material-icons">call</span>
+                    </div>
+                    <div class="ct-canal__info">
+                        <strong>Telefone</strong>
+                        <p>(85) 3401-2302</p>
+                    </div>
+                </div>
+
+                <div class="ct-canal">
+                    <div class="ct-canal__icone">
+                        <span class="material-icons">mail</span>
+                    </div>
+                    <div class="ct-canal__info">
+                        <strong>E-mail</strong>
+                        <p>wally@ifce.edu.br</p>
+                    </div>
+                </div>
+
+                <div class="ct-canal">
+                    <div class="ct-canal__icone">
+                        <span class="material-icons">schedule</span>
+                    </div>
+                    <div class="ct-canal__info">
+                        <strong>Horário de Atendimento</strong>
+                        <p>Segunda a Sexta: 09h às 17h</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    </main>
+     <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>superponto@ifce-ads:~</p>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h3>IT'S ADS</h3>
+
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+
+                <ul>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(XX) XXXX-XXXX</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+
+
+                <div class="social">
+                    <a href="#"><span class="material-icons">mail</span></a>
+                    <a href="#"><span class="material-icons">call</span></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ADS IFCE Boa Viagem</p>
+        </div>
+
+    </footer>
+
+
 </body>
 </html>
