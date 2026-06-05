@@ -1,0 +1,343 @@
+/* ================= MAIN CONTAINER ================= */
+.container-curso {
+    max-width: 1000px;
+    margin: var(--sp-8) auto;
+    background: var(--cor-superficie);
+    padding: var(--sp-8);
+    border-radius: var(--raio-lg);
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+}
+
+/* ================= HEADERS & TYPOGRAPHY ================= */
+.cabecalho-curso {
+    margin-bottom: var(--sp-8);
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: var(--sp-6);
+}
+
+.titulo-pagina {
+    font-family: var(--fonte);
+    font-size: clamp(2rem, 5vw, var(--fs-2xl));
+    font-weight: 700;
+    color: var(--cor-texto);
+    letter-spacing: -0.02em;
+    margin-top: var(--sp-3);
+    margin-bottom: var(--sp-2);
+}
+
+.subtitulo-pagina {
+    font-size: var(--fs-md);
+    color: var(--cor-texto-secundario);
+    max-width: 800px;
+}
+
+.h2 {
+    font-family: var(--fonte);
+    font-size: var(--fs-xl);
+    color: var(--cor-texto);
+    margin-top: var(--sp-8);
+    margin-bottom: var(--sp-4);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.h3 {
+    font-family: var(--fonte);
+    font-size: var(--fs-lg);
+    color: var(--cor-texto);
+    margin-top: var(--sp-6);
+    margin-bottom: var(--sp-3);
+    font-weight: 600;
+}
+
+.p {
+    font-size: var(--fs-base);
+    margin-bottom: var(--sp-4);
+    color: var(--cor-texto-secundario);
+}
+
+/* Badges */
+.info-turno-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    background-color: var(--cor-primaria-clara);
+    color: var(--cor-primaria);
+    padding: var(--sp-1) var(--sp-4);
+    border-radius: var(--raio-pill);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.info-turno-badge i {
+    font-size: var(--fs-md);
+}
+
+/* ================= SECTIONS & GRIDS ================= */
+.secao-curso-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+    margin-bottom: var(--sp-6);
+}
+
+@media (min-width: 768px) {
+    .secao-curso-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+}
+
+/* Caixa de Destaque / Callout Box */
+.texto-destaque {
+    background-color: var(--cor-primaria-clara);
+    border-left: 4px solid var(--cor-primaria);
+    padding: var(--sp-4);
+    border-radius: 0 var(--raio-md) var(--raio-md) 0;
+    color: var(--cor-texto);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    margin-top: var(--sp-4);
+}
+
+.texto-destaque i {
+    color: var(--cor-primaria);
+    font-size: var(--fs-lg);
+}
+
+/* ================= CONTAINER DA IMAGEM ================= */
+.imagem {
+    position: relative;
+    width: 100%;
+    border-radius: var(--raio-lg); /* Mantém os cantos arredondados padrão do layout */
+    overflow: hidden; /* Garante que a imagem não morda os cantos arredondados */
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    background-color: var(--cor-fundo);
+    margin-bottom: var(--sp-6);
+    transition: transform var(--transicao), box-shadow var(--transicao);
+}
+
+/* Efeito sutil ao passar o mouse por cima do contêiner */
+.imagem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* ================= IMAGEM ================= */
+.imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 250px; /* Evita que a imagem fique muito achatada em telas pequenas */
+    max-height: 450px; /* Evita que ela ocupe a tela inteira em monitores grandes */
+    object-fit: cover; /* Recorta a imagem proporcionalmente preenchendo o espaço sem distorcer */
+    object-position: center; /* Foca o corte exatamente no centro da foto */
+    transition: transform var(--transicao);
+}
+
+/* Efeito de zoom bem suave na foto quando o usuário passa o mouse */
+.imagem:hover img {
+    transform: scale(1.02);
+}
+
+/* ================= TABELAS ESTILIZADAS ================= */
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: var(--sp-6);
+    border-radius: var(--raio-md);
+    border: 1px solid var(--cor-borda);
+}
+
+.tabela-estilizada {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: var(--fs-sm);
+}
+
+.tabela-estilizada th {
+    font-family: var(--fonte);
+    background-color: var(--cor-primaria);
+    color: #ffff;
+    padding: var(--sp-4);
+    font-weight: 600;
+    border-bottom: 2px solid var(--cor-borda);
+}
+
+.tabela-estilizada td {
+    padding: var(--sp-4);
+    border-bottom: 1px solid var(--cor-borda);
+    color: var(--cor-texto-secundario);
+    
+}
+
+.tabela-estilizada tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-estilizada tr:hover td {
+    color: var(--cor-texto);
+    background-color: #f8faf9;
+    transition: var(--transicao);
+}
+
+.badge-peso {
+    color: var(--cor-primaria-hover);
+    background: var(--cor-primaria-clara);
+    padding: 2px 8px;
+    border-radius: var(--raio-sm);
+    font-weight: 700;
+}
+
+/* ================= LISTAS CUSTOMIZADAS ================= */
+.lista-estilizada {
+    list-style: none;
+    margin-bottom: var(--sp-6);
+}
+
+.lista-estilizada li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    padding: var(--sp-3) 0;
+    border-bottom: 1px dashed var(--cor-borda);
+}
+
+.lista-estilizada li:last-child {
+    border-bottom: none;
+}
+
+.icone-lista {
+    color: var(--cor-primaria);
+    font-size: var(--fs-lg);
+}
+
+/* ================= CARDS REAPROVEITADOS ================= */
+.grid-diretrizes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+}
+
+@media (min-width: 600px) {
+    .grid-diretrizes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card-diretriz {
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-lg);
+    padding: var(--sp-5);
+    transition: transform var(--transicao), box-shadow var(--transicao), border-color var(--transicao);
+}
+
+.card-diretriz:hover {
+    transform: translateY(-4px);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 10px 15px -3px rgba(15, 123, 108, 0.05);
+}
+
+.card-diretriz-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-3);
+}
+
+.card-diretriz-icone {
+    background-color: var(--cor-primaria-clara);
+    color: var(--cor-primaria);
+    width: 42px;
+    height: 42px;
+    border-radius: var(--raio-pill);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-diretriz-icone span {
+    font-size: var(--fs-lg);
+}
+
+.card-diretriz h3 {
+    margin: 0;
+    font-family: var(--fonte);
+    font-size: var(--fs-md);
+    color: var(--cor-texto);
+}
+
+/* Ajuste sutil para o card de aviso */
+.card-diretriz p {
+    margin-bottom: 0;
+    font-size: var(--fs-sm);
+}
+
+
+/* ================= SELETORES DE ABAS (TABS) ================= */
+.abas-ingresso-container {
+    display: flex;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-6);
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 1px;
+}
+
+.btn-aba {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--fonte);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+    padding: var(--sp-3) var(--sp-5);
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    border-radius: var(--raio-md) var(--raio-md) 0 0;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all var(--transicao);
+}
+
+.btn-aba i {
+    font-size: var(--fs-lg);
+}
+
+.btn-aba:hover {
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
+}
+
+.btn-aba.active {
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    background-color: var(--cor-primaria-clara);
+}
+
+/* Mecanismo de exibição das abas */
+.conteudo-aba {
+    display: none;
+    animation: fadeInTab 0.4s ease;
+}
+
+.conteudo-aba.active {
+    display: block;
+}
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
