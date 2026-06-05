@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <header>
+    <header id="header">
         <nav class="cabecalho">
 
             <div class="marca">
@@ -22,10 +23,10 @@
             </div>
 
             <div class="menu">
-                <a href="home.html">Home</a>
+                <a href="#">Home</a>
 
                 <div class="dropdown">
-                    <a href="curso.html">Sobre o Curso</a>
+                    <a href="#">Sobre o Curso</a>
 
                     <ul class="dropdown-content">
                         <li><a href="curso.html">Como Cursar</a></li>
@@ -72,18 +73,7 @@
             <div class="hero-imagem">
 
                 <div class="codigo-bg">
-                    <pre><br>
-                        function init() {
-
-                            const data = {
-                                user: 'ADS',
-                                passion: 'tecnologia'
-                            };
-
-                            return data;
-                        }
-                        initData();
-                    </pre>
+                    <pre><code id="typing-code"></code></pre>
                 </div>
 
                 <img src="images/image 1.png" alt="Logo ADS">
@@ -105,10 +95,10 @@
             </div>
 
             <div class="conteudo-curiosidade">
-                <div class="tag-curiosidade">
-                    Você sabia?
-                </div>
                 <div class="texto-curiosidade">
+                    <div class="tag-curiosidade">
+                        Você sabia?
+                    </div>
                     <h2 class="titulo-curiosidade">
                         O Camaleão e o ADS
                     </h2>
@@ -128,21 +118,30 @@
                     <div class="chips-curiosidade">
 
                         <span class="chip">
-                            <i class=""></i>
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
                             Nordeste
                         </span>
 
                         <span class="chip">
-                            <i class=""></i>
+                            <span class="material-symbols-outlined">
+                                code_xml
+                            </span>
                             Tecnologia
                         </span>
 
                         <span class="chip">
-                            <i class=""></i>
+                            <span class="material-symbols-outlined">
+                                corporate_fare
+                            </span>
                             IFCE
                         </span>
 
                     </div>
+                </div>
+                <div class="imagem-curiosidade">
+                    <img src="images/image-camaleao1.png" alt="Camaleão ADS">
                 </div>
             </div>
         </section>
@@ -162,8 +161,9 @@
                     tecnológicas para o mercado de trabalho.
                 </p>
             </div>
-
             <div class="grid-conheca">
+
+                <!-- CARD VESPERTINO -->
                 <div class="card-conheca">
 
                     <div class="curiosidade-top">
@@ -172,26 +172,27 @@
                             <span></span>
                             <span></span>
                         </div>
+
                         <p>it's-ads@ifce-bv:~</p>
                     </div>
 
                     <div class="card-corpo">
                         <span class="material-icons icone-card">wb_sunny</span>
-                        <h3 class="titulo-card">ADS - VESPERTINO</h3>
 
+                        <h3 class="titulo-card">
+                            ADS - VESPERTINO
+                        </h3>
                         <p>
                             13h às 17h • 5 semestres • 35 vagas por semestre
                         </p>
 
-                        <a href="curso.html" class="btn-conheca">
-                            Conhecer o Curso
-                        </a>
+                        <a href="curso.html" class="btn-conheca">Conhecer o Curso</a>
                     </div>
-
                 </div>
 
+                <!-- CARD NOTURNO -->
                 <div class="card-conheca">
-
+                    <img src="images/camaleão.png" alt="Camaleão" class="camaleao-hover">
                     <div class="curiosidade-top">
                         <div class="bolinhas">
                             <span></span>
@@ -201,24 +202,20 @@
                         <p>it's-ads@ifce-bv:~</p>
                     </div>
 
-                    <div class="card-corpo">
+                    <div class="card-corpo-noite">
                         <span class="material-icons icone-card">nights_stay</span>
-                        <h3 class="titulo-card">ADS - NOTURNO</h3>
-
+                        <h3 class="titulo-card">
+                            ADS - NOTURNO
+                        </h3>
                         <p>
                             18h30 às 22h • 5 semestres • 35 vagas por semestre
                         </p>
-
-                        <a href="curso.html" class="btn-conheca">
-                            Conhecer o Curso
-                        </a>
+                        <a href="curso.html" class="btn-conheca">Conhecer o Curso</a>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
+
         <!-- PROJETOS -->
         <section id="projetos">
 
@@ -232,27 +229,20 @@
                         Projetos em Destaque
                     </h2>
                 </div>
-                <a href="#" class="btn-projetos">
-                    Ver todos os projetos
-                </a>
+                <a href="projetos.html" class="btn-projetos">Ver todos os projetos</a>
             </div>
 
             <div class="grid-projetos">
                 <div class="card-projeto-principal">
-
                     <div class="tag-curiosidade"><span class="material-icons">workspace_premium</span>
                         Destaque
                     </div>
                     <h3>Leite do Futuro</h3>
-
                     <p>
                         Sistema inteligente para monitoramento
                         da produção leiteira.
                     </p>
-
-                    <a href="#" class="btn-card-projetos">
-                        Saiba mais
-                    </a>
+                    <a href="projetos.html" class="btn-card-projetos">Saiba mais</a>
                 </div>
 
                 <div class="coluna-secundaria">
@@ -267,25 +257,19 @@
                             acadêmico.
                         </p>
 
-                        <a href="#" class="btn-card-projetos-securio">
-                            Saiba mais
-                        </a>
+                        <a href="projetos.html" class="btn-card-projetos-securio">Saiba mais</a>
                     </div>
 
                     <div class="card-projetos-secundario">
                         <div class="tag-curiosidade"> <span class="material-icons">web</span>
                             Dashboard
                         </div>
-
                         <h3>Sistema LUNETRAS</h3>
                         <p>
                             Análise de desempenho da escrita
                             dos alunos.
                         </p>
-
-                        <a href="#" class="btn-card-projetos-securio">
-                            Saiba mais
-                        </a>
+                        <a href="projetos.html" class="btn-card-projetos-securio">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -294,10 +278,7 @@
         <!-- MERCADO -->
         <section id="mercado">
             <div class="mercado-conteudo">
-
-                <!-- Texto -->
                 <div class="mercado-texto">
-
                     <div class="tag-curiosidade">
                         PARA ONDE IR DEPOIS DO CURSO?
                     </div>
@@ -313,53 +294,56 @@
                         software, além de empreender na área de tecnologia.
                     </p>
 
-                    <a href="#" class="btn-mercado">
-                        Acessar mercado
-                    </a>
+                    <a href="mercado.html" class="btn-mercado">Acessar mercado</a>
 
                 </div>
 
                 <!-- Card -->
                 <div class="profissoes">
-
                     <div class="profissao">
-                        <span class="material-icons icone-profissao">code</span>
-                        <h3>Desenvolvedor de Software</h3>
+                        <span class="material-symbols-outlined" id="icon">database_search</span>
+                        <div class="info-profissao">
+                            <h4>Analista de Banco de Dados</h4>
+                            <p>Modelagem, organização e gestão de informações.</p>
+                        </div>
                     </div>
 
                     <div class="profissao">
-                        <span class="material-icons icone-profissao">storage</span>
-                        <h3>Administrador de Banco de Dados</h3>
+                        <span class="material-symbols-outlined" id="icon">mobile_code</span>
+                        <div class="info-profissao">
+                            <h4>Desenvolvedor de Software</h4>
+                            <p>Criação de sistemas, aplicativos e soluções digitais.</p>
+                        </div>
                     </div>
 
                     <div class="profissao">
-                        <span class="material-icons icone-profissao">security</span>
-                        <h3>Analista de Segurança da Informação</h3>
+                        <span class="material-symbols-outlined" id="icon">code</span>
+                        <div class="info-profissao">
+                            <h4>Desenvolvimento Web</h4>
+                            <p>Construção de sites, APIs e plataformas online.</p>
+                        </div>
                     </div>
 
                     <div class="profissao">
-                        <span class="material-icons icone-profissao">devices</span>
-                        <h3>Engenheiro de Software</h3>
+                        <span class="material-symbols-outlined" id="icon">security</span>
+                        <div class="info-profissao">
+                            <h4>Segurança da Informação</h4>
+                            <p>Proteção de sistemas e dados contra ameaças.</p>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
+
         <!-- DEPOIMENTOS -->
-
         <section id="depoimentos">
-
             <div class="tag-curiosidade">
                 DEPOIMENTOS
             </div>
-
             <h2 class="titulo-depoimentos">
                 O que dizem sobre o ADS
             </h2>
-
             <div class="grid-depoimentos">
-
                 <div class="card-depoimento">
                     <div class="curiosidade-top">
                         <div class="bolinhas">
@@ -367,14 +351,11 @@
                         </div>
                         <p>maria@ads:~</p>
                     </div>
-
                     <p class="texto-depoimento">
                         "O curso me proporcionou conhecimentos práticos e abriu portas para minha carreira."
                     </p>
-
                     <div class="autor">
                         <span class="material-icons">person</span>
-
                         <div>
                             <h4>Maria Silva</h4>
                             <small>Egresso • CEO Google </small>
@@ -389,14 +370,11 @@
                         </div>
                         <p>joao@ads:~</p>
                     </div>
-
                     <p class="texto-depoimento">
                         "A integração entre teoria e prática fez toda a diferença."
                     </p>
-
                     <div class="autor">
                         <span class="material-icons">person</span>
-
                         <div>
                             <h4>João Santos</h4>
                             <small>Egresso • Dev Fullstack</small>
@@ -411,14 +389,11 @@
                         </div>
                         <p>ana@ads:~</p>
                     </div>
-
                     <p class="texto-depoimento">
                         "O ADS me preparou para os desafios reais do mercado."
                     </p>
-
                     <div class="autor">
                         <span class="material-icons">person</span>
-
                         <div>
                             <h4>Ana Costa</h4>
                             <small>Aluna • 5º semestre</small>
@@ -428,27 +403,21 @@
 
                 <div class="card-comente">
                     <span class="material-icons">forum</span>
-
                     <h4>Você também faz parte do ADS?</h4>
-
                     <p>
                         Compartilhe sua experiência com quem está pensando em ingressar.
                     </p>
                 </div>
-
             </div>
-
         </section>
+
         <!-- FAQ -->
         <section id="faq">
             <div class="container-faq">
-
-
                 <div class="faq-cabecalho">
                     <div class="tag-curiosidade">
                         TIRE SUAS DÚVIDAS
                     </div>
-
                     <h2 class="titulo-faq">
                         Perguntas Frequentes
                     </h2>
@@ -456,7 +425,6 @@
 
                 <div class="faq-layout">
                     <div class="faq-menu">
-
                         <button class="faq-btn ativo">
                             Duração do curso
                             <span class="material-icons">chevron_right</span>
@@ -481,10 +449,8 @@
                             Possui Estágio?
                             <span class="material-icons">chevron_right</span>
                         </button>
-
                     </div>
                     <div class="faq-resposta">
-
                         <div class="curiosidade-top">
                             <div class="bolinhas">
                                 <span></span>
@@ -493,19 +459,14 @@
                             </div>
                             <p>it's-ads@ifce-bv:~</p>
                         </div>
-
                         <div class="faq-conteudo">
-
                             <h3>Qual é a duração do curso?</h3>
-
                             <p>
                                 O curso de ADS possui duração mínima de
                                 <strong>2.5 anos</strong>, distribuídos em
                                 <strong>5 semestres</strong>.
                             </p>
-
                             <div class="faq-infos">
-
                                 <div class="info-card">
                                     <span class="material-icons">calendar_month</span>
                                     <div>
@@ -534,12 +495,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- NOTÍCIAS -->
         <section id="noticias">
-
             <div class="container-noticias">
                 <div class="cabecalho-noticias">
                     <div>
@@ -553,113 +512,129 @@
                             <div class="tag-destaque">
                                 <span class="material-icons">circle</span>Destaque
                             </div>
-                            <small>20/06/2025</small>
+                            <small>17/06/2026</small>
                         </div>
 
                         <div class="conteudo-card">
-
-                            <span class="categoria-noticia">EVENTO</span>
-
-                            <h3>Semana Acadêmica de TI — IFCE Boa Viagem 2025</h3>
-
-                            <p>Palestras, workshops e hackathon reunindo alunos,
-                                professores e profissionais do mercado.
+                            <span class="categoria-noticia">EDITAL</span>
+                            <h3>IFCE - Internacional</h3>
+                            <p>Intercâmbios acadêmicos internacionais que ampliam a formação,
+                                promovem novas experiências culturais e fortalecem a preparação dos
+                                estudantes para o mercado global.
                             </p>
+                            <a href="https://portal.ifce.edu.br/institucional/relacoes-internacionais/ifce-internacional/editais/">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card-noticia">
+                        <div class="topo-card-secundario">
+                            <span>EVENTO</span>
+                            <small>XX/26</small>
+                        </div>
+                        <div class="conteudo-card">
+                            <h3>Let's Go IFCE</h3>
+                            <p>Fique por dentro dos prazos, garanta sua inscrição e venha fazer parte
+                                do Let's IFCE. Uma experiência de esporte, integração e superação para
+                                toda a comunidade acadêmica.
+                            </p>
+
                             <a href="#">Saiba mais</a>
                         </div>
                     </div>
 
                     <div class="card-noticia">
                         <div class="topo-card-secundario">
-                            <span>PROCESSO SELETIVO</span>
-                            <small>Julho/25</small>
-                        </div>
-                        <div class="conteudo-card">
-
-                            <h3>Inscrições abertas para o SISU 2025.2</h3>
-
-                            <p>Confira as notas de corte e datas do processo seletivo.</p>
-
-                            <a href="#">Saiba mais</a>
-                        </div>
-                    </div>
-
-                    <div class="card-noticia">
-                        <div class="topo-card-secundario">
-                            <span>ACADÊMICO</span>
-                            <small>Agosto/25</small>
+                            <span>EXTENSÃO</span>
+                            <small>Agosto/26</small>
                         </div>
 
                         <div class="conteudo-card">
-                            <h3>Apresentação dos TCCs do semestre 2025.1</h3>
-                            <p>Alunos do último semestre apresentam seus trabalhos.</p>
+                            <h3>Projeto de Extensão - S1 ADS</h3>
+                            <p>Participe do projeto de extensão do 1º semestre de ADS
+                                e faça parte dessa iniciativa que conecta tecnologia,
+                                aprendizado e comunidade.
+                            </p>
                             <a href="#">Saiba mais</a>
                         </div>
                     </div>
                 </div>
         </section>
+
+
         <!-- EQUIPE -->
-
         <section id="equipe">
-
-            <h2>Equipe Desenvolvedora</h2>
-
-            <div>
-
-                <article>
-                    <img src="membro1.jpg" alt="">
+            <h2 class="titulo-equipe">Nossa Equipe</h2>
+            <div class="container-equipe-cards">
+                <div class="card-equipe">
+                    <span class="material-icons icone-card">person</span> <br>
                     <h3>Aline Garcia</h3>
-                    <p>Desenvolvedor</p>
-                </article>
+                    <p class="cargo">1º Semestre</p>
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
 
-                <article>
-                    <img src="membro2.jpg" alt="">
+                <div class="card-equipe">
+                    <span class="material-icons icone-card">person</span> <br>
                     <h3>Antônio Ranilson</h3>
-                    <p>Designer</p>
-                </article>
+                    <p class="cargo">1º Semestre</p>
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
 
-                <article>
-                    <img src="membro3.jpg" alt="">
+                <div class="card-equipe">
+                    <span class="material-icons icone-card">person</span> <br>
                     <h3>Bruno Davi</h3>
-                    <p>Front-End</p>
-                </article>
+                    <p class="cargo">1º Semestre</p>
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
 
-                <article>
-                    <img src="membro4.jpg" alt="">
+                <div class="card-equipe">
+                    <span class="material-icons icone-card">person</span> <br>
                     <h3>Escobarly Amaral</h3>
-                    <p>Documentação</p>
-                </article>
+                    <p class="cargo">1º Semestre</p>
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
 
-                article>
-                <img src="membro4.jpg" alt="">
-                <h3>Paula Natali</h3>
-                <p>Documentação</p>
-                </article>
-
+                <div class="card-equipe">
+                    <span class="material-icons icone-card">person</span> <br>
+                    <h3>Paula Natali</h3>
+                    <p class="cargo">1º Semestre</p>
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-
         </section>
-
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-
         <div class="footer-top">
             <div class="dots">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <p>superponto@ifce-ads:~</p>
+            <p>it's-ads@ifce-bv:~</p>
         </div>
 
         <div class="footer-content">
-
             <div class="footer-brand">
-                <h3>IT'S ADS</h3>
-
+                <div class="marca">
+                    <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                    <h3>IT'S ADS</h3>
+                </div>
                 <p>
                     Portal do curso de Análise e Desenvolvimento de Sistemas
                     do IFCE Campus Boa Viagem.
@@ -675,12 +650,11 @@
 
             <div>
                 <h4>Curso</h4>
-
                 <ul>
-                    <li><a href="curso.html">Sobre o ADS</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#">Sobre o ADS</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Mercado de Trabalho</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
 
@@ -694,22 +668,77 @@
 
             <div>
                 <h4>Redes</h4>
-
-
                 <div class="social">
                     <a href="#"><span class="material-icons">mail</span></a>
                     <a href="#"><span class="material-icons">call</span></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
         </div>
 
         <div class="footer-bottom">
             <p>© 2026 ADS IFCE Boa Viagem</p>
         </div>
-
     </footer>
+
+    <script>
+        const codeText = `#include <stdio.h>
+
+    nt main() {
+    char nome[] = "ADS";
+    char futuro[] = "Tecnologia";
+    char area[] = "Desenvolvimento";
+
+    printf("Nome: %s\n", nome);
+    printf("Futuro: %s\n", futuro);
+    printf("Area: %s\n", area);
+    printf("Construindo o futuro\n");
+
+    return 0;
+}`;
+
+        const typingElement = document.getElementById("typing-code");
+        let index = 0;
+        let deleting = false;
+        function animateCode() {
+            if (!deleting) {
+                typingElement.textContent =
+                    codeText.substring(0, index);
+                index++;
+
+                if (index > codeText.length) {
+                    deleting = true;
+                    setTimeout(animateCode, 2500);
+                    return;
+                }
+            } else {
+                typingElement.textContent =
+                    codeText.substring(0, index);
+                index--;
+
+                if (index < 0) {
+                    deleting = false;
+                    index = 0;
+                }
+            }
+            setTimeout(
+                animateCode,
+                deleting ? 15 : 35
+            );
+        }
+
+        animateCode();
+
+
+        const header = document.getElementById("header");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
 
 </body>
 
