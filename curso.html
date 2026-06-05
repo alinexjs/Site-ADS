@@ -1,19 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/curso.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script>
+        function alternarAba(tipoIngresso) {
+            // Remove o estado ativo de todos os botões seletores
+            document.querySelectorAll('.btn-aba').forEach(botao => {
+                botao.classList.remove('active');
+            });
+
+            // Oculta todos os blocos de conteúdo de abas
+            document.querySelectorAll('.conteudo-aba').forEach(conteudo => {
+                conteudo.classList.remove('active');
+            });
+
+            // Ativa o botão clicado com base no evento
+            event.currentTarget.classList.add('active');
+
+            // Exibe o respectivo contêiner correspondente
+            document.getElementById('aba-' + tipoIngresso).classList.add('active');
+        }
+    </script>
+
 </head>
+
 <body>
+    <!-- NAVBAR -->
     <header>
-        <nav> It's ADS
-            <a href="curso.html"> Cursos </a>
-            <a href="disciplinas.html"> Disciplinas</a>
-            <a href="mercado.html"> Mercado de Trabalho </a>
-            <a href="projetos.html"> Projetos </a>
-            <a href="contato.html"> Contato </a>
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="curso.html">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="curso.html">Como Cursar</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="1-semestre.html">1º Semestre</a></li>
+                        <li><a href="2-semestre.html">2º Semestre</a></li>
+                        <li><a href="3-semestre.html">3º Semestre</a></li>
+                        <li><a href="4-semestre.html">4º Semestre</a></li>
+                        <li><a href="5-semestre.html">5º Semestre</a></li>
+                        <li><a href="colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="mercado.html">Mercado de Trabalho</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
         </nav>
     </header>
+
+    <!-- CONTEUDO PRINCPAL -->
+    <main class="container-curso">
+
+        <div class="cabecalho-curso">
+            <div>
+                <span class="info-turno-badge">
+                    <i class="material-icons">school</i> Superior de Tecnologia
+                </span>
+                <h1 class="titulo-pagina h2">Análise e Desenvolvimento de Sistemas (ADS)</h1>
+                <p class="subtitulo-pagina p">
+                    Descubra como ingressar no curso superior de ADS no IFCE Campus Boa Viagem. Veja abaixo o guia
+                    completo focado no ingresso via ENEM / SiSU, além de estruturas prontas para documentação,
+                    cronogramas e mídias.
+                </p>
+            </div>
+        </div>
+
+        <div class="secao-curso-grid">
+            <div class="conteudo-texto">
+                <h2 class="h2">Sobre o Curso</h2>
+                <p class="p">O curso de Tecnologia em Análise e Desenvolvimento de Sistemas do Instituto Federal do
+                    Ceará (IFCE), campus Boa Viagem, visa formar profissionais capazes de analisar, projetar,
+                    documentar, especificar, testar, implantar e manter sistemas computacionais de informação.</p>
+
+                <p class="texto-destaque p">
+                    <i class="material-icons">info</i> <strong>Nota Importante:</strong> O ingresso principal ocorre de
+                    forma semestral através do Sistema de Seleção Unificada (SiSU), que permite utilizar a nota de uma
+                    das três últimas edições do ENEM.
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="images/ifce.png" alt="Foto da fachada do IFCE campus Boa Viagem">
+            </div>
+        </div>
+
+        <div class="abas-ingresso-container">
+            <button class="btn-aba active" onclick="alternarAba('enem')">
+                <i class="material-icons">stars</i> Ingresso via ENEM / SiSU
+            </button>
+            <button class="btn-aba" onclick="alternarAba('transferencia')">
+                <i class="material-icons">sync_alt</i> Ingresso por Transferência
+            </button>
+        </div>
+
+        <div id="aba-enem" class="conteudo-aba active">
+            <div class="secao-detalhes">
+                <h2 class="h2"><i class="material-icons"
+                        style="vertical-align: middle; margin-right: 8px; color: var(--cor-primaria);">stars</i>Como
+                    funciona o Ingresso via ENEM</h2>
+                <p class="p">O ingresso acontece em duas etapas: primeiro você realiza o exame, que avalia seus
+                    conhecimentos em quatro áreas e uma redação, gerando uma pontuação; depois, em posse dessa nota,
+                    você se inscreve na plataforma digital do SISU para disputar
+                    vagas em universidades públicas de todo o país, sabendo que, por lei, 50% dessas vagas são
+                    reservadas para cotas raciais e sociais.</p>
+
+                <h3 class="h3">Tabela de Pesos de ADS</h3>
+                <div class="tabela-container">
+                    <table class="tabela-estilizada">
+                        <thead>
+                            <tr>
+                                <th>PROVA DO ENEM</th>
+                                <th>PESO</th>
+                                <th>NOTA MÍNIMA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Matemática e suas Tecnologias</strong></td>
+                                <td><span class="badge-peso">3</span></td>
+                                <td>1,00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Redação</strong></td>
+                                <td><span class="badge-peso">2</span></td>
+                                <td>1,00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Linguagens, Códigos e suas Tecnologias</strong></td>
+                                <td><span class="badge-peso">2</span></td>
+                                <td>1,00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ciências da Natureza e suas Tecnologias</strong></td>
+                                <td><span class="badge-peso">2</span></td>
+                                <td>1,00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ciências Humanas e suas Tecnologias</strong></td>
+                                <td><span class="badge-peso">1</span></td>
+                                <td>1,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="p">Os pesos são usados para calcular sua nota e cada universidade estabelece pesos específicos para cada área de conhecimento, isso faz com
+                    que sua nota seja diferente dependendo do curso ou da universidade escolhidos.</p>
+
+            </div>
+
+            <div class="secao-documentos">
+                <h2 class="h2">Documentação Necessária para Matrícula</h2>
+                <p class="p">Caso seja aprovado na chamada regular ou na lista de espera, você precisará apresentar os
+                    seguintes documentos (originais e cópias):</p>
+
+                <ul class="lista-estilizada">
+                    <li>
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div><strong>Documentos de Identificação:</strong> RG, CPF e Certidão de Nascimento ou
+                            Casamento.</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div><strong>Histórico Escolar:</strong> Certificado de conclusão do Ensino Médio e histórico
+                            escolar completo.</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div><strong>Quitação Eleitoral e Militar:</strong> Comprovante de votação na última eleição e
+                            certificado de reservista (para maiores de 18 anos).</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div><strong>Comprovante de Residência:</strong> Conta de água, luz ou wi-fi.</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div><strong>Foto 3x4:</strong> 2 fotos 3x4 (recentes).</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div><strong>Ficha de Inscrição:</strong> Preecher a ficha de inscrição disponibilizada no campus.</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div><strong>Documentação de Cotas (se aplicável):</strong> Comprovantes de renda,
+                            autodeclaração étnico-racial ou laudo médico conforme o edital.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid-diretrizes" style="margin-top: var(--sp-4);">
+                <div class="card-diretriz">
+                    <div class="card-diretriz-cabecalho">
+                        <div class="card-diretriz-icone"><span class="material-icons">event</span></div>
+                        <h3>Acompanhe as informações</h3>
+                    </div>
+                    <p class="p">Fique atento ao cronograma oficial do SiSU.<br>Siga o Instagram do campus @ifceboaviagemoficial, sempre postam informações importantes.</p>
+                </div>
+
+                <div class="card-diretriz">
+                    <div class="card-diretriz-cabecalho" style="border-left-color: #ef4444;">
+                        <div class="card-diretriz-icone" style="background: #fef2f2; color: #ef4444;"><span
+                                class="material-icons">warning</span></div>
+                        <h3>Lista de Espera</h3>
+                    </div>
+                    <p class="p">Se não passar na chamada regular, lembre-se de manifestar interesse na lista de espera
+                        diretamente no site do SiSU.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="aba-transferencia" class="conteudo-aba">
+            <div class="secao-detalhes">
+                <h2 class="h2"><i class="material-icons"
+                        style="vertical-align: middle; margin-right: 8px; color: var(--cor-primaria);">sync_alt</i>Como
+                    funciona a Transferência Externa e Interna</h2>
+                <p class="p">O IFCE permite o ingresso de estudantes vindos de outras instituições de ensino superior
+                    (Transferência Externa) ou de outros cursos do próprio campus/instituto (Transferência Interna),
+                    condicionado à existência de vagas ociosas registradas em edital específico.</p>
+
+                <p class="texto-destaque p">
+                    <i class="material-icons">swap_horiz</i>
+                    <span><strong>Reaproveitamento de Disciplinas:</strong> Matérias já cursadas com aprovação na sua
+                        instituição de origem podem ser validadas para evitar que você as curse novamente. A grade
+                        curricular completa do curso e o mapeamento dos módulos equivalentes podem ser detalhadamente
+                        analisados diretamente na nossa <strong>página de disciplinas</strong>.</span>
+                </p>
+            </div>
+
+            <div class="secao-documentos">
+                <h2 class="h2">Documentação Necessária para Solicitação de Transferência</h2>
+                <p class="p">O processo de análise de transferência exige documentação pedagógica específica além dos
+                    documentos pessoais básicos:</p>
+
+                <ul class="lista-estilizada">
+                    <li>
+                        <i class="material-icons icone-lista">assignment</i>
+                        <div><strong>Histórico Acadêmico Oficial:</strong> Emitido pela instituição de origem contendo
+                            notas, cargas horárias e situação de vínculo acadêmico.</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">description</i>
+                        <div><strong>Planos de Ensino / Ementas:</strong> Conteúdo programático carimbado e assinado das
+                            disciplinas concluídas para fins de análise de reaproveitamento.</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">gavel</i>
+                        <div><strong>Comprovante de Regularidade no ENADE:</strong> Ou declaração de critérios de
+                            dispensa emitida pela instituição de origem.</div>
+                    </li>
+                    <li>
+                        <i class="material-icons icone-lista">verified</i>
+                        <div><strong>Declaração de Autorização/Reconhecimento do Curso:</strong> Comprovação de que o
+                            curso de origem é devidamente regulamentado pelo MEC.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid-diretrizes" style="margin-top: var(--sp-4);">
+                <div class="card-diretriz">
+                    <div class="card-diretriz-cabecalho">
+                        <div class="card-diretriz-icone"><span class="material-icons">find_in_page</span></div>
+                        <h3>Análise de Ementas</h3>
+                    </div>
+                    <p class="p">A coordenação avalia a compatibilidade de carga horária e conteúdo (mínimo de 75% de
+                        similaridade) para deferir o aproveitamento.</p>
+                </div>
+
+                <div class="card-diretriz">
+                    <div class="card-diretriz-cabecalho">
+                        <div class="card-diretriz-icone"><span class="material-icons">menu_book</span></div>
+                        <h3 class="h3">Consulte as Grades</h3>
+                    </div>
+                    <p class="">Compare as ementas da sua instituição atual com a nossa estrutura disponível no menu ou
+                        na página dedicada de disciplinas do curso.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>superponto@ifce-ads:~</p>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h3>IT'S ADS</h3>
+
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+
+                <ul>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(XX) XXXX-XXXX</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+
+
+                <div class="social">
+                    <a href="#"><span class="material-icons">mail</span></a>
+                    <a href="#"><span class="material-icons">call</span></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ADS IFCE Boa Viagem</p>
+        </div>
+
+    </footer>
 </body>
+
 </html>
