@@ -1,0 +1,378 @@
+/* Wrapper Principal */
+.container-semestre {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(var(--sp-6), 4vw, var(--sp-12)) var(--sp-6);
+}
+
+/* Título e Subtítulo da Página */
+.cabecalho-semestre {
+    margin-bottom: var(--sp-8);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: var(--sp-4);
+}
+
+.titulo-pagina {
+    font-family: var(--fonte);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--cor-primaria);
+    margin-bottom: var(--sp-2);
+}
+
+.subtitulo-pagina {
+    color: var(--cor-texto-secundario);
+    font-size: clamp(1rem, 2vw, var(--fs-md));
+    max-width: 600px;
+}
+
+/* Abas de Navegação Rápida */
+.abas-semestres {
+    display: flex;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-8);
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: var(--sp-2);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.abas-semestres::-webkit-scrollbar {
+    display: none;
+}
+
+.aba-link {
+    text-decoration: none;
+    color: var(--cor-texto-secundario);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+    padding: var(--sp-2) var(--sp-4);
+    border-radius: var(--raio-md);
+    transition: var(--trasicao);
+    white-space: nowrap;
+}
+
+.aba-link:hover {
+    color: var(--cor-primaria);
+    background-color: var(--cor-primaria-clara);
+}
+
+.aba-link.ativo {
+    color: var(--cor-superficie);
+    background-color: var(--cor-primaria);
+}
+
+/* Alternador de Turno (Noturno / Matutino-Vespertino) */
+.controle-turno {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    background: var(--cor-superficie);
+    padding: var(--sp-2) var(--sp-4);
+    border-radius: var(--raio-pill);
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.label-turno {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+}
+
+.switch-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--cor-primaria-clara);
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider-switch:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--cor-primaria);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider-switch {
+    background-color: #e2f0d9;
+}
+
+input:checked+.slider-switch:before {
+    transform: translateX(30px);
+    background-color: #2e7d32;
+}
+
+/* Informações do Turno Ativo */
+.info-turno-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    background: var(--cor-primaria-clara);
+    color: var(--cor-primaria-hover);
+    padding: var(--sp-1) var(--sp-3);
+    border-radius: var(--raio-pill);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    margin-bottom: var(--sp-4);
+}
+
+/* Container de Tabelas */
+.tabela-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-lg);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    margin-bottom: var(--sp-8);
+}
+
+.tabela-disciplinas {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 800px;
+}
+
+.tabela-disciplinas th,
+.tabela-disciplinas td {
+    padding: var(--sp-3) var(--sp-3);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.tabela-disciplinas th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-superficie);
+    font-family: var(--fonte);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tabela-disciplinas tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-disciplinas tbody tr {
+    transition: var(--trasicao);
+}
+
+.tabela-disciplinas tbody tr:hover {
+    background-color: #f8faf9;
+}
+
+/* Código da Disciplina */
+.codigo-tag {
+    font-family: monospace;
+    font-weight: bold;
+    color: var(--cor-primaria-hover);
+    background: var(--cor-primaria-clara);
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--raio-sm);
+    font-size: 0.9em;
+}
+
+/* Tags de pré-requisitos */
+.prereq-nenhum {
+    /* color: var(--cor-texto-secundario);
+    font-style: italic; */
+}
+
+.prereq-link {
+    font-weight: 600;
+    color: #b7791f;
+    background: #fef3c7;
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--raio-sm);
+    font-size: 0.9em;
+    border: 1px solid #fde68a;
+    transition: var(--trasicao);
+}
+
+.prereq-link:hover {
+    background: #fde68a;
+}
+
+/* Destaques de Extensão e PPS */
+.badge-extensao {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--raio-pill);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.badge-pps {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    background: #faf5ff;
+    color: #6b21a8;
+    border: 1px solid #e9d5ff;
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--raio-pill);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+/* Alerta de Semestre */
+.alerta-semestre {
+    background: #fef3c7;
+    border-left: 5px solid #d97706;
+    color: #92400e;
+    padding: var(--sp-4) var(--sp-6);
+    border-radius: var(--raio-md);
+    margin-bottom: var(--sp-8);
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    box-shadow: 0 4px 10px rgba(217, 119, 6, 0.05);
+}
+
+.alerta-semestre i {
+    font-size: var(--fs-xl);
+}
+
+.alerta-semestre p {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: var(--fs-sm);
+}
+
+/* Grid de Informações Gerais */
+.grid-diretrizes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-6);
+    margin-top: var(--sp-12);
+}
+
+@media (max-width: 900px) {
+    .grid-diretrizes {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-diretriz {
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-lg);
+    padding: var(--sp-6);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03);
+    transition: var(--trasicao);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+}
+
+.card-diretriz:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(15, 123, 108, 0.08);
+    border-color: var(--cor-primaria-clara);
+}
+
+.card-diretriz-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+}
+
+.card-diretriz-icone {
+    background: var(--cor-primaria-clara);
+    color: var(--cor-primaria);
+    width: 48px;
+    height: 48px;
+    border-radius: var(--raio-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-diretriz-icone span {
+    font-size: 1.5rem;
+}
+
+.card-diretriz h3 {
+    font-family: var(--fonte);
+    color: var(--cor-primaria-hover);
+    font-size: var(--fs-md);
+    margin: 0;
+}
+
+.card-diretriz p {
+    color: var(--cor-texto-secundario);
+    font-size: var(--fs-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Rodapé das tabelas para Estatísticas do Semestre */
+.estatisticas-barra {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--sp-6);
+    background: #f8faf9;
+    padding: var(--sp-3) var(--sp-6);
+    border-top: 1px solid var(--cor-borda);
+    border-radius: 0 0 var(--raio-lg) var(--raio-lg);
+    font-size: var(--fs-sm);
+    color: var(--cor-texto-secundario);
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.estatistica-item strong {
+    color: var(--cor-texto);
+}
+
+/* .controle-turno.desabilitado .slider-switch {
+    cursor: not-allowed;
+    background-color: #d1d5db !important;
+}
+
+.controle-turno.desabilitado .slider-switch:before {
+    background-color: #9ca3af !important;
+}
+
+.controle-turno.desabilitado .label-turno {
+    cursor: not-allowed;
+} */
+
+/* Ocultação de Coluna EAD */
+.col-ead.oculto {
+    display: none !important;
+}

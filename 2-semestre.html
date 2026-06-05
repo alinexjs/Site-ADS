@@ -1,11 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2º Semestre - ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/semestres.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="curso.html">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="curso.html">Como Cursar</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="1-semestre.html">1º Semestre</a></li>
+                        <li><a href="2-semestre.html">2º Semestre</a></li>
+                        <li><a href="3-semestre.html">3º Semestre</a></li>
+                        <li><a href="4-semestre.html">4º Semestre</a></li>
+                        <li><a href="5-semestre.html">5º Semestre</a></li>
+                        <li><a href="colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="mercado.html">Mercado de Trabalho</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-semestre">
+
+        <!-- Abas de Navegação Rápida -->
+        <div class="abas-semestres">
+            <a href="1-semestre.html" class="aba-link">1º Semestre</a>
+            <a href="2-semestre.html" class="aba-link ativo">2º Semestre</a>
+            <a href="3-semestre.html" class="aba-link">3º Semestre</a>
+            <a href="4-semestre.html" class="aba-link">4º Semestre</a>
+            <a href="5-semestre.html" class="aba-link">5º Semestre</a>
+        </div>
+
+        <!-- Cabeçalho do Semestre -->
+        <div class="cabecalho-semestre">
+            <div>
+                <span class="turno-atual-value info-turno-badge">
+                    <i class="material-icons">nights_stay</i> Noturno
+                </span>
+                <h1 class="titulo-pagina">2º Semestre</h1>
+                <p class="subtitulo-pagina">
+                    Aprofundamento em algoritmos, estrutura de dados, modelagem de banco de dados e sistemas
+                    operacionais, aliando conceitos técnicos com gestão empreendedora e ética.
+                </p>
+            </div>
+
+            <div class="controle-turno">
+                <span class="label-turno">Matutino/Vespertino</span>
+                <label class="switch-container">
+                    <input type="checkbox" id="switch-turno">
+                    <span class="slider-switch"></span>
+                </label>
+                <span class="label-turno">Noturno</span>
+            </div>
+        </div>
+
+        <!-- Tabela de Disciplinas -->
+        <div class="tabela-wrapper">
+            <table class="tabela-disciplinas">
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">Código</th>
+                        <th>Disciplina</th>
+                        <th style="text-align: center; width: 60px;">Créd.</th>
+                        <th style="text-align: center; width: 80px;">Teoria</th>
+                        <th style="text-align: center; width: 80px;">Prática</th>
+                        <th style="text-align: center; width: 100px;">Extensão</th>
+                        <th style="text-align: center; width: 80px;" class="col-ead">EAD</th>
+                        <th style="text-align: center; width: 80px;">Total</th>
+                        <th>Pré-requisito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="codigo-tag">PEED</span></td>
+                        <td>Programação Estruturada e Estrutura de Dados</td>
+                        <td style="text-align: center;">4</td>
+                        <td style="text-align: center;">40h</td>
+                        <td style="text-align: center;">40h</td>
+                        <td style="text-align: center;"><span class="prereq-nenhum">0h</span></td>
+                        <td style="text-align: center;" class="col-ead">16h</td>
+                        <td style="text-align: center; font-weight: bold;">80h</td>
+                        <td><a href="1-semestre.html" class="prereq-link"
+                                title="Lógica e Linguagem de Programação">LLPR</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="codigo-tag">EMP</span></td>
+                        <td>Empreendedorismo</td>
+                        <td style="text-align: center;">2</td>
+                        <td style="text-align: center;">24h</td>
+                        <td style="text-align: center;">10h</td>
+                        <td style="text-align: center;"><span class="badge-extensao"><i class="material-icons"
+                                    style="font-size:14px; top:1px;">groups</i> 6h</span></td>
+                        <td style="text-align: center;" class="col-ead">8h</td>
+                        <td style="text-align: center; font-weight: bold;">40h</td>
+                        <td><span class="prereq-nenhum">-</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="codigo-tag">PES</span></td>
+                        <td>Probabilidade e Estatística</td>
+                        <td style="text-align: center;">4</td>
+                        <td style="text-align: center;">60h</td>
+                        <td style="text-align: center;">20h</td>
+                        <td style="text-align: center;"><span class="prereq-nenhum">0h</span></td>
+                        <td style="text-align: center;" class="col-ead">16h</td>
+                        <td style="text-align: center; font-weight: bold;">80h</td>
+                        <td><a href="1-semestre.html" class="prereq-link" title="Fundamentos de Matemática">FMAT</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="codigo-tag">SOP</span></td>
+                        <td>Sistemas Operacionais</td>
+                        <td style="text-align: center;">4</td>
+                        <td style="text-align: center;">60h</td>
+                        <td style="text-align: center;">20h</td>
+                        <td style="text-align: center;"><span class="prereq-nenhum">0h</span></td>
+                        <td style="text-align: center;" class="col-ead">16h</td>
+                        <td style="text-align: center; font-weight: bold;">80h</td>
+                        <td><a href="1-semestre.html" class="prereq-link" title="Introdução ao Curso de ADS">ICA</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="codigo-tag">RGCE</span></td>
+                        <td>Relações de Gênero, Classe e Etnia</td>
+                        <td style="text-align: center;">2</td>
+                        <td style="text-align: center;">30h</td>
+                        <td style="text-align: center;">0h</td>
+                        <td style="text-align: center;"><span class="badge-extensao"><i class="material-icons"
+                                    style="font-size:14px; top:1px;">groups</i> 10h</span></td>
+                        <td style="text-align: center;" class="col-ead">8h</td>
+                        <td style="text-align: center; font-weight: bold;">40h</td>
+                        <td><span class="prereq-nenhum">-</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="codigo-tag">BDA</span></td>
+                        <td>Banco de Dados</td>
+                        <td style="text-align: center;">4</td>
+                        <td style="text-align: center;">40h</td>
+                        <td style="text-align: center;">40h</td>
+                        <td style="text-align: center;"><span class="prereq-nenhum">0h</span></td>
+                        <td style="text-align: center;" class="col-ead">16h</td>
+                        <td style="text-align: center; font-weight: bold;">80h</td>
+                        <td><span class="prereq-nenhum">-</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="estatisticas-barra">
+                <div class="estatistica-item">Créditos: <strong>20</strong></div>
+                <div class="estatistica-item">Teoria: <strong>254h</strong></div>
+                <div class="estatistica-item">Prática: <strong>130h</strong></div>
+                <div class="estatistica-item">Extensão: <strong>16h</strong></div>
+                <div class="estatistica-item col-ead">EAD: <strong>80h</strong></div>
+                <div class="estatistica-item">Total: <strong>400h</strong></div>
+            </div>
+        </div>
+
+        <!-- Seções Gerais / Diretrizes Academicas -->
+        <div class="grid-diretrizes">
+
+            <!-- Card 1: Avaliação -->
+            <div class="card-diretriz">
+                <div class="card-diretriz-cabecalho">
+                    <div class="card-diretriz-icone">
+                        <span class="material-icons">fact_check</span>
+                    </div>
+                    <h3>Sistema de Avaliação</h3>
+                </div>
+                <p>
+                    O rendimento acadêmico é composto pelas avaliações <strong>N<sub>1</sub> (peso 2)</strong> e
+                    <strong>N<sub>2</sub> (peso
+                        3)</strong>. A Média Parcial (MP) é obtida pela fórmula:<br>
+                    <code
+                        style="display: block; margin: var(--sp-2) 0; font-weight: bold; color: var(--cor-primaria-hover); font-size: 1.1em; text-align: center;">MP = (N<sub>1</sub> × 2 + N<sub>2</sub> × 3) / 5</code>
+                    Será aprovado diretamente o aluno que alcançar <strong>MP &ge; 7.0</strong> e possuir frequência
+                    mínima obrigatória de <strong>75%</strong> nas aulas.
+                </p>
+            </div>
+
+            <!-- Card 2: AACC -->
+            <div class="card-diretriz">
+                <div class="card-diretriz-cabecalho">
+                    <div class="card-diretriz-icone">
+                        <span class="material-icons">workspace_premium</span>
+                    </div>
+                    <h3>Atividades Complementares (AACC)</h3>
+                </div>
+                <p>
+                    Para colar grau e receber o diploma de tecnólogo, o estudante deve acumular o mínimo de <strong>100
+                        horas</strong> registradas em Atividades Complementares. São válidos certificados de cursos
+                    online, participação em palestras, visitas técnicas, engajamento em projetos acadêmicos e publicação
+                    de artigos.
+                </p>
+            </div>
+
+            <!-- Card 3: Curricularização da Extensão -->
+            <div class="card-diretriz">
+                <div class="card-diretriz-cabecalho">
+                    <div class="card-diretriz-icone">
+                        <span class="material-icons">groups</span>
+                    </div>
+                    <h3>Curricularização da Extensão</h3>
+                </div>
+                <p>
+                    A extensão universitária é inserida diretamente na carga horária de várias disciplinas normais e em
+                    projetos integradores. Os alunos devem desenvolver atividades práticas focadas na resolução de
+                    problemas reais para a comunidade externa de Boa Viagem.
+                </p>
+            </div>
+
+            <!-- Card 4: Disciplinas Optativas -->
+            <div class="card-diretriz">
+                <div class="card-diretriz-cabecalho">
+                    <div class="card-diretriz-icone">
+                        <span class="material-icons">list_alt</span>
+                    </div>
+                    <h3>Disciplinas Optativas</h3>
+                </div>
+                <p>
+                    A matriz curricular do curso de ADS exige a integralização de <strong>120 horas</strong> para
+                    conclusão do curso. Você escolhe quais disciplinas fazer de acordo com
+                    seus objetivos profissionais.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>superponto@ifce-ads:~</p>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h3>IT'S ADS</h3>
+
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+
+                <ul>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(XX) XXXX-XXXX</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+
+
+                <div class="social">
+                    <a href="#"><span class="material-icons">mail</span></a>
+                    <a href="#"><span class="material-icons">call</span></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ADS IFCE Boa Viagem</p>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="style/semestres.js" defer></script>
 </body>
+
 </html>
