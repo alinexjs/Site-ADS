@@ -1,19 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/projetos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
+
 <body>
-    <header>
-        <nav> It's ADS
-            <a href="curso.html"> Cursos </a>
-            <a href="disciplinas.html"> Disciplinas</a>
-            <a href="mercado.html"> Mercado de Trabalho </a>
-            <a href="projetos.html"> Projetos </a>
-            <a href="contato.html"> Contato </a>
+    <!-- NAVBAR -->
+    <header id="header">
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="#">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="curso.html">Como Cursar</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="1-semestre.html">1º Semestre</a></li>
+                        <li><a href="2-semestre.html">2º Semestre</a></li>
+                        <li><a href="3-semestre.html">3º Semestre</a></li>
+                        <li><a href="4-semestre.html">4º Semestre</a></li>
+                        <li><a href="5-semestre.html">5º Semestre</a></li>
+                        <li><a href="colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="mercado.html">Mercado de Trabalho</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
         </nav>
     </header>
+
+    <!-- CONTEUDO PRINCPAL -->
+    <main class="container-projetos">
+
+        <div class="cabecalho-projetos">
+            <h1 class="titulo-pagina">Nossos Projetos em Destaque</h1>
+            <p class="subtitulo-pagina">
+                Explore as soluções inovadoras criadas pelos nossos alunos de ADS!
+            </p>
+        </div>
+
+        <div class="grid-projetos">
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600" alt="Projeto em C">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Calculadora de Varejo em C</h3>
+                    <p class="p">Algoritmo para cálculo de vendas e descontos dinâmicos em produtos de prateleira.
+                    </p>
+                    <button class="btn-ler-mais" data-titulo="Calculadora de Varejo em C"
+                        data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800"
+                        data-descricao="Este projeto foi desenvolvido em linguagem C pura, utilizando ponteiros e structs para gerenciar um inventário de loja em tempo real. O sistema lê os valores dos produtos, aplica descontos com base em regras de negócios configuráveis e gera um relatório final de faturamento.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=600" alt="">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Simulador de Equivalência Lógica</h3>
+                    <p class="p">Interface interativa para validar proposições lógicas e tabelas verdade em tempo
+                        real.</p>
+                    <button class="btn-ler-mais" data-titulo="Simulador de Equivalência Lógica"
+                        data-img=""
+                        data-descricao="Criado como trabalho final, esta aplicação recebe entradas textuais de proposições (como p ∧ q → r) e desenha a tabela verdade dinamicamente. Ele também testa leis de De Morgan e identifica tautologias ou contradições de forma automatizada usando uma árvore sintática.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="images/estacao.png" alt="">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Estação Meteorológica</h3>
+                    <p class="p">Estação de baixo custo para monitoramento climático em tempo real. Ideal para pesquisas
+                        e agricultura, cobrindo desde o esquemático até a montagem final.</p>
+                    <button class="btn-ler-mais" data-titulo="Estação Meteorológica"
+                        data-img="images/estacao.png"
+                        data-descricao="Estação de baixo custo para monitoramento climático em tempo real desenvolvida como uma alternativa acessível e eficiente, esta estação permite o acompanhamento preciso de variáveis ambientais (como temperatura, umidade e pressão) em tempo real. O projeto é ideal tanto para o meio acadêmico, em pesquisas de campo, quanto para a agricultura de precisão. A solução oferece um guia completo, que abrange desde o desenvolvimento do esquemático eletrônico e seleção de sensores, até a montagem estrutural e configuração do software, garantindo robustez e facilidade de manutenção para diversos cenários de uso.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600" alt="">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Estufas Automatizadas</h3>
+                    <p class="p">Controle de qualidade de água e ambiente para tanques e estufas. Gerencia válvulas e
+                        irrigação via relés com horários programados e monitoramento via Telegram.</p>
+                    <button class="btn-ler-mais" data-titulo="Estufas Automatizadas"
+                        data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800"
+                        data-descricao="Ferramenta essencial de arquitetura de computadores. O código converte de forma recursiva qualquer número para bases que vão da binária à hexadecimal, demonstrando na tela o processo matemático passo a passo e o equivalente em bits necessários.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bfce8?q=80&w=600" alt="">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Hidro-Webnia</h3>
+                    <p class="p">Solução hidropônica com monitoramento contínuo de nutrientes e pH via sensores. Foco em
+                        aumentar a rentabilidade e supervisão precisa do cultivo.</p>
+                    <button class="btn-ler-mais" data-titulo="Hidro-Webnia"
+                        data-img="https://images.unsplash.com/photo-1526379095098-d400fd0bfce8?q=80&w=800"
+                        data-descricao="">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600"
+                        alt="Projeto Armazenamento">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Dashboard de Armazenamento</h3>
+                    <p class="p">Ferramenta para cálculo e conversão de capacidades de disco (Bytes para GB/TB).</p>
+                    <button class="btn-ler-mais" data-titulo="Dashboard de Armazenamento"
+                        data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800"
+                        data-descricao="Este dashboard foi criado para simular o uso de recursos de um servidor real. Ele converte grandes quantidades de bits e bytes e retorna para o utilizador de forma visual qual o espaço livre e consumido nos moldes de GB e TB utilizando gráficos gerados por CSS.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600"
+                        alt="Projeto Web">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Portal Académico Responsivo</h3>
+                    <p class="p">Página web completa desenhada com HTML, CSS puro e variáveis de controle de temas.
+                    </p>
+                    <button class="btn-ler-mais" data-titulo="Portal Académico Responsivo"
+                        data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800"
+                        data-descricao="Projeto desenvolvido nas disciplinas de Front-End. O layout não utiliza frameworks externos, baseando-se completamente em Grid e Flexbox nativos, além de um sistema de variáveis no Root que permite a alteração de todo o esquema de cores instantaneamente.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=600"
+                        alt="Projeto Mobile">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">App de Mobilidade Urbana</h3>
+                    <p class="p">Protótipo focado na visualização de rotas de transporte escolar rurais.</p>
+                    <button class="btn-ler-mais" data-titulo="App de Mobilidade Urbana"
+                        data-img="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800"
+                        data-descricao="Voltado para solucionar problemas logísticos da região. O protótipo desenha a rota ideal para os autocarros escolares, interligando alunos de regiões afastadas aos campi universitários, calculando tempo médio e paragens obrigatórias.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1607799279861-4dddf9610b69?q=80&w=600"
+                        alt="Projeto Maker">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="h3">Estufa IoT Automatizada</h3>
+                    <p class="p">Projeto combinando hardware e back-end para monitorização de humidade do solo.</p>
+                    <button class="btn-ler-mais" data-titulo="Estufa IoT Automatizada"
+                        data-img="https://images.unsplash.com/photo-1607799279861-4dddf9610b69?q=80&w=800"
+                        data-descricao="A união de código e mundo real. Usando microcontroladores e sensores analógicos, a estufa mede a temperatura e a humidade da terra e aciona bombas de água automaticamente, enviando dados por Wi-Fi para um painel web que guarda o histórico em base de dados.">
+                        Ler mais
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cta-projetos text-center">
+            <h2 class="h2">É aluno e o seu projeto não está aqui?</h2>
+            <p class="p" style="max-width: 600px; margin: 0 auto var(--sp-6) auto;">Seu projeto pode inspirar outros
+                desenvolvedores. Publique sua criação, contribua com a comunidade do IFCE e dê visibilidade real ao seu
+                trabalho!</p>
+            <a href="#" class="btn-enviar-projeto">
+                <i class="material-icons">send</i> Envie aqui o seu projeto
+            </a>
+        </div>
+
+    </main>
+
+    <div id="modal-projeto" class="modal-overlay">
+        <div class="modal-conteudo">
+            <button class="btn-fechar" onclick="fecharModal()"><i class="material-icons">close</i></button>
+            <img id="modal-img" src="" alt="Imagem Ampliada do Projeto" class="modal-img-capa">
+            <div class="modal-body">
+                <h3 id="modal-titulo" class="h3">Título</h3>
+                <p id="modal-descricao" class="p">Descrição longa do projeto...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal-projeto');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitulo = document.getElementById('modal-titulo');
+        const modalDescricao = document.getElementById('modal-descricao');
+
+        document.querySelectorAll('.btn-ler-mais').forEach(btn => {
+            btn.addEventListener('click', () => {
+                modalTitulo.textContent = btn.dataset.titulo;
+                modalDescricao.textContent = btn.dataset.descricao;
+                modalImg.src = btn.dataset.img;
+
+                modal.classList.add('ativo');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function fecharModal() {
+            modal.classList.remove('ativo');
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                fecharModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('ativo')) {
+                fecharModal();
+            }
+        });
+    </script>
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>superponto@ifce-ads:~</p>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h3>IT'S ADS</h3>
+
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+
+                <ul>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(XX) XXXX-XXXX</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+
+
+                <div class="social">
+                    <a href="#"><span class="material-icons">mail</span></a>
+                    <a href="#"><span class="material-icons">call</span></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ADS IFCE Boa Viagem</p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
