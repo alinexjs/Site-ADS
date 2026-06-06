@@ -318,7 +318,7 @@ body {
     .container-projetos {
         margin: var(--sp-4) auto;
         padding: var(--sp-4);
-        border-radius: 0; /* Remove a borda lateral colada no celular */
+        border-radius: 0; 
     }
 }
 
@@ -463,6 +463,38 @@ body {
     box-shadow: 0 8px 15px rgba(15, 123, 108, 0.3);
 }
 
+
+/* ================= BOTÃO CONHECER PROJETO (POPUP) ================= */
+.btn-conhecer-projeto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--sp-2);
+    background-color: var(--cor-primaria);
+    color: var(--cor-superficie);
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    text-decoration: none;
+    padding: var(--sp-2) var(--sp-6);
+    border-radius: var(--raio-pill);
+    border: none;
+    cursor: pointer;
+    transition: all var(--trasicao);
+    box-shadow: 0 4px 10px rgba(15, 123, 108, 0.15);
+    margin-top: var(--sp-5);
+}
+
+.btn-conhecer-projeto:hover {
+    background-color: var(--cor-primaria-hover);
+    color: var(--cor-superficie);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(15, 123, 108, 0.25);
+}
+
+.btn-conhecer-projeto:active {
+    transform: scale(0.98);
+}
 
 /* ================= MODAL ================= */
 .modal-overlay {
