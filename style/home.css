@@ -276,6 +276,53 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* Card */
+.acesso-rapido {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: min(850px, 85%);
+    background:transparent;
+    border-radius: 20px;
+
+    padding: 1rem;
+    z-index: 10;
+}
+
+.acesso-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.35rem;
+}
+.acesso-grid a i{
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.acesso-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 12px;
+    padding: .7rem;
+    text-align: center;
+    font-size: .85rem;
+    transition: var(--trasicao);
+}
+
+.acesso-grid a:hover {
+    transform: translateY(-3px);
+    border-color: var(--cor-primaria-clara);
+    color: var(--cor-primaria-clara);
+}
 .codigo-bg {
     position: absolute;
     right: -50px;
@@ -705,13 +752,15 @@ body {
     transition: var(--trasicao);
 }
 .card-projeto-principal {
-    background-color: var(--cor-primaria-hover);
+     background:
+        linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url("../images/leite-do-futuro.png");
+    background-size: cover;
+    background-position: center;
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-lg);
     padding: var(--sp-6);
     transition: var(--trasicao);
-    color: var(--cor-superficie);
-    font-size: clamp(1.25rem, 3vw, var(--fs-lg));
     display: flex;
     flex-direction: column;
     gap: var(--sp-2);
@@ -726,7 +775,7 @@ body {
     padding: clamp(var(--sp-2), 1vw, var(--sp-3)) clamp(var(--sp-3), 2vw, var(--sp-5));
     border-radius: var(--raio-pill);
     background-color: var(--cor-superficie);
-    margin-top: 200px;
+    margin-top: 21rem;
     transition: var(--trasicao);
 }
 .btn-card-projetos:hover{
@@ -751,6 +800,7 @@ body {
     border-radius: var(--raio-pill);
     border: 2px solid var(--cor-primaria);
     transition: var(--trasicao);
+    margin-top: 15px;
 }
 .btn-card-projetos-securio:hover{
     color: var(--cor-primaria-clara);
@@ -771,11 +821,23 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 4rem;
+    position: relative;
 }
 
 .mercado-texto {
     flex: 1;
     max-width: 550px;
+    z-index: 2;
+}
+.img-mercado{
+    position: absolute;
+    left: 10px;
+    top: 102%;
+    transform: translateY(-50%);
+    width: 550px;
+    opacity: .08; 
+    z-index: 1;
+    pointer-events: none;
 }
 .titulo-mercado {
     font-family: var(--fonte);
@@ -1209,6 +1271,17 @@ body {
 }
 
 /* RESPONSIVO */
+@media(max-width: 768px) {
+    .acesso-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .acesso-rapido {
+        bottom: -100px;
+    }
+    #hero {
+        padding-bottom: 180px;
+    }
+}
 @media (max-width: 768px){
     #equipe{
         padding: 60px 20px;

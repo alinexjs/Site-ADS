@@ -77,13 +77,23 @@
                 </div>
 
                 <img src="images/image 1.png" alt="Logo ADS">
-
             </div>
+            <div class="acesso-rapido">
+                <div class="acesso-grid">
+                    <a
+                        href="https://portal.ifce.edu.br/documents/4876/PPC_-_Analise_e_Desenvolvimento_de_Sistemas_-_Boa_Viagem.pdf"><span
+                            class="material-symbols-outlined">docs</span>PPC</a>
+                    <a href="https://www.bvirtual.com.br/"><span
+                            class="material-symbols-outlined">newsstand</span>Biblioteca</a>
+                    <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao"><span
+                            class="material-symbols-outlined">computer</span>Portal do Aluno</a>
+                    <a href="#"><span class="material-symbols-outlined">calendar_month</span>Calendário</a>
+                    <a href="https://portal.ifce.edu.br/documents/4880/Matriz_curricular_ADS_tarde.pdf"><span
+                            class="material-symbols-outlined">download</span>Matriz Curricular</a>
+                </div>
         </section>
 
-
         <!-- CURIOSIDADE -->
-
         <section class="curiosidade">
             <div class="curiosidade-top">
                 <div class="bolinhas">
@@ -116,28 +126,15 @@
                     </p>
 
                     <div class="chips-curiosidade">
-
                         <span class="chip">
-                            <span class="material-symbols-outlined">
-                                location_on
-                            </span>
-                            Nordeste
+                            <span class="material-symbols-outlined">location_on</span>Nordeste
                         </span>
-
                         <span class="chip">
-                            <span class="material-symbols-outlined">
-                                code_xml
-                            </span>
-                            Tecnologia
+                            <span class="material-symbols-outlined">code_xml</span>Tecnologia
                         </span>
-
                         <span class="chip">
-                            <span class="material-symbols-outlined">
-                                corporate_fare
-                            </span>
-                            IFCE
+                            <span class="material-symbols-outlined">corporate_fare</span>IFCE
                         </span>
-
                     </div>
                 </div>
                 <div class="imagem-curiosidade">
@@ -218,7 +215,6 @@
 
         <!-- PROJETOS -->
         <section id="projetos">
-
             <div class="cabecalho-projetos">
                 <div>
                     <div class="tag-curiosidade">
@@ -237,12 +233,8 @@
                     <div class="tag-curiosidade"><span class="material-icons">workspace_premium</span>
                         Destaque
                     </div>
-                    <h3>Leite do Futuro</h3>
-                    <p>
-                        Sistema inteligente para monitoramento
-                        da produção leiteira.
-                    </p>
-                    <a href="projetos.html" class="btn-card-projetos">Saiba mais</a>
+                    <a href="https://www.instagram.com/leitedofuturo_oficial/" class="btn-card-projetos"
+                        class="btn-card-projetos">Saiba mais</a>
                 </div>
 
                 <div class="coluna-secundaria">
@@ -250,14 +242,12 @@
                         <div class="tag-curiosidade"> <span class="material-icons">language</span>
                             Web
                         </div>
-                        <h3>Bee Web</h3>
-
+                        <h3>Plaraforma CIDITS</h3>
                         <p>
-                            Plataforma para gerenciamento
-                            acadêmico.
+                            Centro de Inovação e Difusão de Tecnologias para o Semiárido – CIDTS
                         </p>
 
-                        <a href="projetos.html" class="btn-card-projetos-securio">Saiba mais</a>
+                        <a href="https://www.plataformacidts.com/" class="btn-card-projetos-securio">Saiba mais</a>
                     </div>
 
                     <div class="card-projetos-secundario">
@@ -278,6 +268,7 @@
         <!-- MERCADO -->
         <section id="mercado">
             <div class="mercado-conteudo">
+                <img src="images/camaleão02.png" alt="Camaleão deitado" class="img-mercado">
                 <div class="mercado-texto">
                     <div class="tag-curiosidade">
                         PARA ONDE IR DEPOIS DO CURSO?
@@ -295,7 +286,6 @@
                     </p>
 
                     <a href="mercado.html" class="btn-mercado">Acessar mercado</a>
-
                 </div>
 
                 <!-- Card -->
@@ -463,7 +453,7 @@
                             <h3>Qual é a duração do curso?</h3>
                             <p>
                                 O curso de ADS possui duração mínima de
-                                <strong>2.5 anos</strong>, distribuídos em
+                                <strong>2,5 anos</strong>, distribuídos em
                                 <strong>5 semestres</strong>.
                             </p>
                             <div class="faq-infos">
@@ -471,7 +461,7 @@
                                     <span class="material-icons">calendar_month</span>
                                     <div>
                                         <small>Duração</small>
-                                        <strong>2.5 anos</strong>
+                                        <strong>2,5 anos</strong>
                                     </div>
                                 </div>
 
@@ -522,7 +512,8 @@
                                 promovem novas experiências culturais e fortalecem a preparação dos
                                 estudantes para o mercado global.
                             </p>
-                            <a href="https://portal.ifce.edu.br/institucional/relacoes-internacionais/ifce-internacional/editais/">Saiba mais</a>
+                            <a href="https://portal.ifce.edu.br/institucional/relacoes-internacionais/ifce-internacional/editais/"
+                                target="_blank" rel="noopener noreferrer">Saiba mais</a>
                         </div>
                     </div>
 
@@ -682,9 +673,10 @@
     </footer>
 
     <script>
+        // Texto que será digitado na animação
         const codeText = `#include <stdio.h>
 
-    nt main() {
+int main() {
     char nome[] = "ADS";
     char futuro[] = "Tecnologia";
     char area[] = "Desenvolvimento";
@@ -696,50 +688,67 @@
 
     return 0;
 }`;
-
         const typingElement = document.getElementById("typing-code");
+        // Controla a posição atual da animação
         let index = 0;
+        // Define se o texto está sendo apagado ou digitado
         let deleting = false;
+
+        // Função principal da animação
         function animateCode() {
             if (!deleting) {
                 typingElement.textContent =
                     codeText.substring(0, index);
+
+                // Avança uma posição
                 index++;
 
                 if (index > codeText.length) {
+                    // Inicia o modo apagar
                     deleting = true;
                     setTimeout(animateCode, 2500);
                     return;
                 }
+
             } else {
+                // Mostra o texto até o índice atual
                 typingElement.textContent =
                     codeText.substring(0, index);
+
+                // Remove um caractere por vez
                 index--;
 
+                // Quando apagar tudo
                 if (index < 0) {
                     deleting = false;
+                    // Reinicia o índice
                     index = 0;
                 }
             }
+            // Define a velocidade da animação
             setTimeout(
                 animateCode,
                 deleting ? 15 : 35
             );
         }
 
+        // Inicio da animação
         animateCode();
-
-
         const header = document.getElementById("header");
+
+        // Escuta o evento de rolagem da página
         window.addEventListener("scroll", () => {
+
             if (window.scrollY > 50) {
+                // Adiciona a classe "scrolled"
                 header.classList.add("scrolled");
+
             } else {
+                // Remove a classe "scrolled"
                 header.classList.remove("scrolled");
             }
         });
     </script>
-
 </body>
 
 </html>

@@ -100,12 +100,15 @@
 }
 
 .mt-secao__sobretitulo {
-    display: block;
+    display: inline-flex;
     color: var(--cor-primaria);
     font-size: clamp(.75rem, 1vw, var(--fs-sm));
     font-weight: 700;
     letter-spacing: .12em;
     margin-bottom: var(--sp-3);
+    background-color: var(--cor-primaria-clara);
+    border-radius: var(--raio-pill);
+    padding: var(--sp-2) var(--sp-4);
 }
 
 .mt-secao__titulo {
