@@ -101,7 +101,7 @@
 
 .mt-secao__sobretitulo {
     display: inline-flex;
-    color: var(--cor-primaria);
+    color: var(--cor-texto);
     font-size: clamp(.75rem, 1vw, var(--fs-sm));
     font-weight: 700;
     letter-spacing: .12em;
@@ -114,7 +114,7 @@
 .mt-secao__titulo {
     font-family: var(--fonte);
     font-size: clamp(1.75rem, 3.5vw, var(--fs-2xl));
-    color: var(--cor-texto);
+    color: var(--cor-primaria);
     font-weight: 700;
 }
 
