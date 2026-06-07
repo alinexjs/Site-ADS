@@ -22,8 +22,12 @@
                 <span>IT'S ADS</span>
             </div>
 
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
             <div class="menu">
-                <a href="#">Home</a>
+                <a href="home.html">Home</a>
 
                 <div class="dropdown">
                     <a href="#">Sobre o Curso</a>
@@ -415,27 +419,27 @@
 
                 <div class="faq-layout">
                     <div class="faq-menu">
-                        <button class="faq-btn ativo">
+                        <button class="faq-btn ativo" data-index="0">
                             Duração do curso
                             <span class="material-icons">chevron_right</span>
                         </button>
 
-                        <button class="faq-btn">
+                        <button class="faq-btn" data-index="1">
                             Como ingressar
                             <span class="material-icons">chevron_right</span>
                         </button>
 
-                        <button class="faq-btn">
+                        <button class="faq-btn" data-index="2">
                             O curso é gratuito?
                             <span class="material-icons">chevron_right</span>
                         </button>
 
-                        <button class="faq-btn">
+                        <button class="faq-btn" data-index="3">
                             Mercado de trabalho
                             <span class="material-icons">chevron_right</span>
                         </button>
 
-                        <button class="faq-btn">
+                        <button class="faq-btn" data-index="4">
                             Possui Estágio?
                             <span class="material-icons">chevron_right</span>
                         </button>
@@ -452,35 +456,10 @@
                         <div class="faq-conteudo">
                             <h3>Qual é a duração do curso?</h3>
                             <p>
-                                O curso de ADS possui duração mínima de
-                                <strong>2,5 anos</strong>, distribuídos em
-                                <strong>5 semestres</strong>.
+                                O curso de Tecnologia em Análise e Desenvolvimento de Sistemas possui duração mínima de
+                                2,5 anos, organizados em 5 semestres letivos, combinando formação teórica e prática
+                                voltada para o mercado de tecnologia.
                             </p>
-                            <div class="faq-infos">
-                                <div class="info-card">
-                                    <span class="material-icons">calendar_month</span>
-                                    <div>
-                                        <small>Duração</small>
-                                        <strong>2,5 anos</strong>
-                                    </div>
-                                </div>
-
-                                <div class="info-card">
-                                    <span class="material-icons">school</span>
-                                    <div>
-                                        <small>Semestres</small>
-                                        <strong>5 semestres</strong>
-                                    </div>
-                                </div>
-
-                                <div class="info-card">
-                                    <span class="material-icons">schedule</span>
-                                    <div>
-                                        <small>Turnos</small>
-                                        <strong>Tarde e Noite</strong>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -642,10 +621,10 @@
             <div>
                 <h4>Curso</h4>
                 <ul>
-                    <li><a href="#">Sobre o ADS</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Mercado de Trabalho</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
 
@@ -654,15 +633,15 @@
 
                 <p>IFCE - Campus Boa Viagem</p>
                 <p>cca.boaviagem@ifce.edu.br</p>
-                <p>(XX) XXXX-XXXX</p>
+                <p>(85) 3401-2236</p>
             </div>
 
             <div>
                 <h4>Redes</h4>
                 <div class="social">
-                    <a href="#"><span class="material-icons">mail</span></a>
-                    <a href="#"><span class="material-icons">call</span></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="cca.boaviagem@ifce.edu.br"><span class="material-icons">mail</span></a>
+                    <a href="contato.html"><span class="material-icons">call</span></a>
+                    <a href="https://www.instagram.com/ifceboaviagemoficial/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -747,6 +726,69 @@ int main() {
                 // Remove a classe "scrolled"
                 header.classList.remove("scrolled");
             }
+        });
+        //botão hamburguer em telas menores
+        const botaoMenu = document.querySelector('.menu-mobile');
+        const menu = document.querySelector('.menu');
+
+        console.log(botaoMenu);
+        console.log(menu);
+
+        botaoMenu.addEventListener('click', () => {
+            menu.classList.toggle('ativo');
+        });
+
+        //respostas do FAQ
+
+        const botoes = document.querySelectorAll(".faq-btn");
+        const titulo = document.querySelector(".faq-conteudo h3"); //adiciona texto no h3
+        const texto = document.querySelector(".faq-conteudo p"); //adiciona texto no p
+        const faqConteudo = document.querySelector(".faq-conteudo"); //adiciona ambos no conteudo do card
+
+        function animarFaq() {
+            faqConteudo.classList.remove("animar");
+            void faqConteudo.offsetWidth;   //reinicia a animação
+            faqConteudo.classList.add("animar");
+        }
+
+        botoes[0].addEventListener("click", () => {
+            document.querySelector(".faq-btn.ativo").classList.remove("ativo");
+            botoes[0].classList.add("ativo");
+
+            titulo.textContent = "Qual é a duração do curso?";
+            texto.textContent = "O curso de Tecnologia em Análise e Desenvolvimento de Sistemas possui duração mínima de 2,5 anos, organizados em 5 semestres letivos, combinando formação teórica e prática voltada para o mercado de tecnologia."
+        });
+
+        botoes[1].addEventListener("click", () => {
+            document.querySelector(".faq-btn.ativo").classList.remove("ativo"); //remove o estilo ativo do antigo botao
+            botoes[1].classList.add("ativo");//adiciona no botao clicado
+
+            titulo.textContent = "Como ingressar?";
+            texto.textContent = "O ingresso ocorre principalmente por meio do SISU, utilizando a nota do ENEM. Também existem formas de ingresso por transferência, vagas remanescentes, diplomados e matrícula especial, conforme os editais do IFCE.";
+        });
+
+        botoes[2].addEventListener("click", () => {
+            document.querySelector(".faq-btn.ativo").classList.remove("ativo");
+            botoes[2].classList.add("ativo");
+
+            titulo.textContent = "O curso é gratuito?";
+            texto.textContent = "Sim. O curso é ofertado pelo Instituto Federal do Ceará de forma totalmente gratuita, garantindo acesso ao ensino superior público, gratuito e de qualidade para a formação de profissionais da área de Tecnologia da Informação.";
+        });
+
+        botoes[3].addEventListener("click", () => {
+            document.querySelector(".faq-btn.ativo").classList.remove("ativo");
+            botoes[3].classList.add("ativo");
+
+            titulo.textContent = "Mercado de Trabalho";
+            texto.textContent = "A demanda por profissionais de Tecnologia da Informação cresce constantemente. O tecnólogo em ADS pode atuar em empresas de software, consultorias, órgãos públicos, desenvolvimento web e mobile, suporte técnico, empreendedorismo e projetos de inovação tecnológica.";
+        });
+
+        botoes[4].addEventListener("click", () => {
+            document.querySelector(".faq-btn.ativo").classList.remove("ativo"); 
+            botoes[4].classList.add("ativo"); 
+
+            titulo.textContent = "Possui Estágio?";
+            texto.textContent = "Sim, mas é totalmente opcional. O IFCE incentiva a realização de estágios supervisionados e atividades práticas, aproximando os estudantes do mercado de trabalho e contribuindo para sua formação profissional.";
         });
     </script>
 </body>
