@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1º Semestre - ADS IFCE Boa Viagem</title>
-    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/semestres.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,7 +16,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <header>
+    <header id="header">
         <nav class="cabecalho">
 
             <div class="marca">
@@ -22,11 +24,15 @@
                 <span>IT'S ADS</span>
             </div>
 
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
             <div class="menu">
                 <a href="home.html">Home</a>
 
                 <div class="dropdown">
-                    <a href="curso.html">Sobre o Curso</a>
+                    <a href="#">Sobre o Curso</a>
 
                     <ul class="dropdown-content">
                         <li><a href="curso.html">Como Cursar</a></li>
@@ -273,25 +279,21 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-
         <div class="footer-top">
             <div class="dots">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <p>superponto@ifce-ads:~</p>
+            <p>it's-ads@ifce-bv:~</p>
         </div>
 
         <div class="footer-content">
-
             <div class="footer-brand">
-               <div class="marca">
+                <div class="marca">
                     <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
                     <h3>IT'S ADS</h3>
                 </div>
-
                 <p>
                     Portal do curso de Análise e Desenvolvimento de Sistemas
                     do IFCE Campus Boa Viagem.
@@ -307,7 +309,6 @@
 
             <div>
                 <h4>Curso</h4>
-
                 <ul>
                     <li><a href="curso.html">Sobre o ADS</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
@@ -321,30 +322,27 @@
 
                 <p>IFCE - Campus Boa Viagem</p>
                 <p>cca.boaviagem@ifce.edu.br</p>
-                <p>(XX) XXXX-XXXX</p>
+                <p>(85) 3401-2236</p>
             </div>
 
             <div>
                 <h4>Redes</h4>
-
-
                 <div class="social">
-                    <a href="#"><span class="material-icons">mail</span></a>
-                    <a href="#"><span class="material-icons">call</span></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="cca.boaviagem@ifce.edu.br"><span class="material-icons">mail</span></a>
+                    <a href="contato.html"><span class="material-icons">call</span></a>
+                    <a href="https://www.instagram.com/ifceboaviagemoficial/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
         </div>
 
         <div class="footer-bottom">
             <p>© 2026 ADS IFCE Boa Viagem</p>
         </div>
-
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="style/semestres.js" defer></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/semestres.js" defer></script>
 </body>
 
 </html>

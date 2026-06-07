@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado de Trabalho</title>
-    <link rel="stylesheet" href="style/home.css">
+    <title>Mercado de Trabalho - ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/mercado.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <header>
 
+<body>
+    <!-- NAVBAR -->
+    <header id="header">
         <nav class="cabecalho">
 
             <div class="marca">
@@ -19,11 +23,15 @@
                 <span>IT'S ADS</span>
             </div>
 
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
             <div class="menu">
                 <a href="home.html">Home</a>
 
                 <div class="dropdown">
-                    <a href="curso.html">Sobre o Curso</a>
+                    <a href="#">Sobre o Curso</a>
 
                     <ul class="dropdown-content">
                         <li><a href="curso.html">Como Cursar</a></li>
@@ -49,6 +57,7 @@
 
         </nav>
     </header>
+
     <section class="mt-hero">
         <div class="mt-hero__conteudo">
             <span class="mt-hero__tag">MERCADO DE TRABALHO</span>
@@ -61,12 +70,12 @@
         </div>
 
         <div class="mt-hero__imagem">
-            <img src="" alt=""Logo de ADS />
+            <img src="" alt="" Logo de ADS />
         </div>
     </section>
 
     <!-- SEÇÃO:-->
-     
+
     <section class="mt-demanda">
         <div class="mt-secao__cabecalho">
             <span class="mt-secao__sobretitulo">POR QUE O MERCADO BUSCA PROFISSIONAIS DE ADS?</span>
@@ -180,7 +189,7 @@
         </div>
     </section>
 
-   <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-top">
             <div class="dots">
@@ -243,5 +252,8 @@
         </div>
     </footer>
 
+    <!-- SCRIPTS -->
+    <script src="javascript/header.js"></script>
 </body>
+
 </html>

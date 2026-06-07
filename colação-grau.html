@@ -1,11 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Colação de Grau - ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/colacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <!-- NAVBAR -->
+    <header id="header">
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="#">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="curso.html">Como Cursar</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="1-semestre.html">1º Semestre</a></li>
+                        <li><a href="2-semestre.html">2º Semestre</a></li>
+                        <li><a href="3-semestre.html">3º Semestre</a></li>
+                        <li><a href="4-semestre.html">4º Semestre</a></li>
+                        <li><a href="5-semestre.html">5º Semestre</a></li>
+                        <li><a href="colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="mercado.html">Mercado de Trabalho</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-conteudo">
+                <div>
+                    <h1 class="titulo-pagina">Colação de Grau</h1>
+                    <p class="subtitulo-pagina">
+                        A colação de grau encerra a jornada acadêmica e confere o grau de Tecnólogo.
+                        Confira abaixo os requisitos e prazos de conclusão e os procedimentos administrativos
+                        necessários.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-imagem">
+                <img src="images/formatura.jpg" alt="Formatura" title="Formatura da turma">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-colacao">
+        <div class="grid-colacao">
+            <div class="card-colacao">
+                <h2>
+                    <span class="material-icons">fact_check</span>
+                    Requisitos de Conclusão
+                </h2>
+
+                <p style="color: var(--cor-texto-secundario); font-size: var(--fs-sm); margin-bottom: var(--sp-6);">
+                    Critérios obrigatórios que devem ser cumpridos para a obtenção do grau acadêmico:
+                </p>
+
+                <div class="requisitos-estaticos">
+
+                    <div class="requisito-card">
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div class="requisito-info">
+                            <span class="requisito-titulo">Carga Horária Obrigatória</span>
+                            <span class="requisito-desc">Integralização de 1.880 horas-aula de disciplinas obrigatórias
+                                do curso.</span>
+                        </div>
+                    </div>
+
+                    <div class="requisito-card">
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div class="requisito-info">
+                            <span class="requisito-titulo">Disciplinas Optativas</span>
+                            <span class="requisito-desc">Aprovação em no mínimo 120 horas-aula em disciplinas
+                                optativas.</span>
+                        </div>
+                    </div>
+
+                    <div class="requisito-card">
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div class="requisito-info">
+                            <span class="requisito-titulo">Atividades Complementares (AACC)</span>
+                            <span class="requisito-desc">Comprovação e validação de 100 horas em atividades
+                                científico-culturais.</span>
+                        </div>
+                    </div>
+
+                    <div class="requisito-card">
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div class="requisito-info">
+                            <span class="requisito-titulo">Regularidade no ENADE</span>
+                            <span class="requisito-desc">Registro oficial de participação no exame ou dispensa
+                                homologada pelo Controle Acadêmico.</span>
+                        </div>
+                    </div>
+
+                    <div class="requisito-card">
+                        <i class="material-icons icone-lista">check_circle</i>
+                        <div class="requisito-info">
+                            <span class="requisito-titulo">Regularidade de Pasta Documental</span>
+                            <span class="requisito-desc">Pasta com documentação pessoal completa e sem pendências
+                                acumuladas no Controle Acadêmico.</span>
+                        </div>
+                    </div>
+
+                    <div class="alerta-critico">
+                        <span class="material-icons alerta-critico-icone">warning</span>
+                        <div class="alerta-critico-conteudo">
+                            <p><strong>Atenção:</strong> Sem o registro de participação no ENADE, o estudante não pode
+                                concluir o curso, independentemente do cumprimento das demais cargas horárias.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Coluna 2: Prazos de Integralização (Grid/Blocks) -->
+            <div class="card-colacao" style="height: fit-content;">
+                <h2>
+                    <span class="material-icons">schedule</span>
+                    Prazos de Conclusão
+                </h2>
+                <p style="color: var(--cor-texto-secundario); font-size: var(--fs-sm); margin-bottom: var(--sp-6);">
+                    Limites de tempo estipulados para a conclusão e trancamento do curso acadêmico:
+                </p>
+
+                <div class="prazos-grid">
+
+                    <div class="prazo-bloco">
+                        <div class="prazo-bloco-cabecalho">
+                            <span class="material-icons">speed</span>
+                            <span class="prazo-titulo">Tempo Mínimo</span>
+                        </div>
+                        <div class="prazo-valor">2,5 Anos</div>
+                        <p class="prazo-desc">Equivalente a 5 semestres letivos.</p>
+                    </div>
+
+                    <div class="prazo-bloco">
+                        <div class="prazo-bloco-cabecalho">
+                            <span class="material-icons">warning_amber</span>
+                            <span class="prazo-titulo">Tempo Máximo</span>
+                        </div>
+                        <div class="prazo-valor">5 Anos</div>
+                        <p class="prazo-desc">Equivalente a 10 semestres letivos.
+                        </p>
+                    </div>
+
+                    <div class="prazo-bloco">
+                        <div class="prazo-bloco-cabecalho">
+                            <span class="material-icons">auto_stories</span>
+                            <span class="prazo-titulo">Carga Horária Total </span>
+                        </div>
+                        <div class="prazo-valor">2.100h</div>
+                        <p class="prazo-desc">Total necessário para a colação de grau.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Procedimentos Administrativos e Solicitação -->
+        <h2 style="color: var(--cor-primaria);margin-bottom: var(--sp-6);">Procedimentos Administrativos</h2>
+
+        <div class="grade-tramites">
+
+            <div class="card-tramite">
+                <div class="card-tramite-cabecalho">
+                    <div class="card-tramite-icone">
+                        <span class="material-icons">store</span>
+                    </div>
+                    <h3>Como solicitar?</h3>
+                </div>
+                <p>
+                    A Solicitação de Colação de Grau deve ser formalizada junto ao setor de <strong>Controle
+                        Acadêmico</strong> do campus Boa Viagem. Este setor é responsável por:
+                </p>
+                <ul>
+                    <li>Processar a homologação e emissão de certificados e diplomas.</li>
+                    <li>Fazer a triagem e verificar a regularidade da pasta com documentação pessoal do aluno.</li>
+                </ul>
+
+                <div class="dica-destaque">
+                    <i class="material-icons">info</i>
+                    <p>
+                        É recomendável procurar o <a style="color: unset;"
+                            href="https://portal.ifce.edu.br/campus/boaviagem/contatos/">Coordenador de Controle
+                            Acadêmico</a> no
+                        <strong>5º semestre</strong> para evitar imprevistos na hora da colação de grau.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-tramite">
+                <div class="card-tramite-cabecalho">
+                    <div class="card-tramite-icone">
+                        <span class="material-icons">card_membership</span>
+                    </div>
+                    <h3>O Diploma e Histórico Escolar</h3>
+                </div>
+                <p>
+                    Após a aprovação da solicitação de colação de grau e a participação na cerimônia oficial, o
+                    formando
+                    terá direito a:
+                </p>
+                <ul style="margin-bottom: var(--sp-4);">
+                    <li><strong>Diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas:</strong> Válido para
+                        o
+                        exercício da profissão no mercado nacional e habilitação em cursos de pós-graduação
+                        (Especializações, Mestrado e Doutorado).</li>
+                    <li><strong>Histórico Escolar Detalhado:</strong> Documento completo contendo o perfil
+                        profissional
+                        do egresso, as disciplinas obrigatórias e optativas concluídas, médias, frequências obtidas
+                        e,
+                        se houver, o registro oficial das horas de estágio supervisionado.</li>
+                </ul>
+                <p>
+                    <strong>Entrega de Estágios:</strong> Caso tenha realizado estágio não obrigatório e queira o
+                    registro dele no Histórico Escolar, certifique-se de entregar os relatórios finais até <strong>7
+                        dias</strong> antes do final do período letivo.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>it's-ads@ifce-bv:~</p>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="marca">
+                    <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                    <h3>IT'S ADS</h3>
+                </div>
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+                <ul>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(85) 3401-2236</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+                <div class="social">
+                    <a href="cca.boaviagem@ifce.edu.br"><span class="material-icons">mail</span></a>
+                    <a href="contato.html"><span class="material-icons">call</span></a>
+                    <a href="https://www.instagram.com/ifceboaviagemoficial/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ADS IFCE Boa Viagem</p>
+        </div>
+    </footer>
+
+    <script src="javascript/header.js"></script>
 </body>
+
 </html>

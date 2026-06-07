@@ -1,33 +1,12 @@
 /* NAVBAR */
-
-.cabecalho {
-    background-color: var(--cor-primaria);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-inline: clamp(var(--sp-4), 4vw, var(--sp-12));
-    height: clamp(60px, 8vw, 80px);
-
-    position: sticky;
-    top: 0;
-
-    z-index: 1000;
-    box-shadow: 0px 2px 8px rgb(0 0 0 / 15%);
-}
-
 .ct-hero {
     position: relative;
     overflow: hidden;
-    padding: clamp(var(--sp-8, 48px), 6vw, var(--sp-12, 80px))
-             clamp(var(--sp-5, 24px), 6vw, var(--sp-12, 80px));
+    padding: clamp(var(--sp-8, 48px), 6vw, var(--sp-12, 80px)) clamp(var(--sp-5, 24px), 6vw, var(--sp-12, 80px));
 
-    background: linear-gradient(
-        135deg,
-        var(--cor-primaria-hover, #0a5a4f),
-        var(--cor-primaria, #0f7b6c)
-    );
+    background: linear-gradient(135deg,
+            var(--cor-primaria-hover, #0a5a4f),
+            var(--cor-primaria, #0f7b6c));
     color: var(--cor-superficie, #fff);
 }
 
@@ -206,7 +185,7 @@
 
 .ct-canal__info strong {
     display: block;
-    color: var(--cor-primaria);
+    color: var(--cor-texto);
     font-size: 1.05rem;
     margin-bottom: 2px;
 }
@@ -217,4 +196,3 @@
     font-size: 0.95rem;
     line-height: 1.4;
 }
-

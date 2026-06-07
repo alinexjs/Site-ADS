@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - IFCE ADS</title>
-    <link rel="stylesheet" href="style/home.css">
+    <title>Contato - ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/contato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-
     <!-- NAVBAR -->
-    <header>
+    <header id="header">
         <nav class="cabecalho">
 
             <div class="marca">
@@ -22,11 +23,15 @@
                 <span>IT'S ADS</span>
             </div>
 
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
             <div class="menu">
                 <a href="home.html">Home</a>
 
                 <div class="dropdown">
-                    <a href="curso.html">Sobre o Curso</a>
+                    <a href="#">Sobre o Curso</a>
 
                     <ul class="dropdown-content">
                         <li><a href="curso.html">Como Cursar</a></li>
@@ -52,6 +57,7 @@
 
         </nav>
     </header>
+
     <main>
         <section class="ct-hero">
             <div class="ct-hero__conteudo">
@@ -112,7 +118,7 @@
                         <div class="ct-canal__info">
                             <strong>Endereço</strong>
                             <p>Rodovia Pres. Juscelino Kubitschek (BR 020), km 209, s/n - Anafuê - Boa
-                                ViagemCEP:63870-000</p>
+                                Viagem <br> CEP: 63870-000</p>
                         </div>
                     </div>
 
@@ -214,7 +220,8 @@
         </div>
     </footer>
 
-
+    <!-- SCRIPTS -->
+    <script src="javascript/header.js"></script>
 </body>
 
 </html>

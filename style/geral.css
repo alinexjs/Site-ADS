@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+
+    /* Cores principais */
+    --cor-primaria: #0F7B6C;
+    --cor-primaria-hover: #02402E;
+    --cor-primaria-clara: #DDF5F1;
+
+    /* Neutras */
+    --cor-fundo: #FAFAF9;
+    --cor-superficie: #FFFFFF;
+
+    --cor-texto: #191919;
+    --cor-texto-secundario: #6B7280;
+
+    --cor-borda: #E5E7EB;
+
+    /* Fonte */
+    --fonte: "Space Grotesk", sans-serif;
+    --fonte-secundaria: "Inter", sans-serif;
+
+    /* Fontes */
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.375rem;
+    --fs-xl: 1.75rem;
+    --fs-2xl: 2.25rem;
+
+    /* Espaçamentos */
+    --sp-1: 0.25rem;
+    --sp-2: 0.5rem;
+    --sp-3: 0.75rem;
+    --sp-4: 1rem;
+    --sp-5: 1.25rem;
+    --sp-6: 1.5rem;
+    --sp-8: 2rem;
+    --sp-10: 2.5rem;
+    --sp-12: 3rem;
+
+    /* Bordas */
+    --raio-sm: 4px;
+    --raio-md: 8px;
+    --raio-lg: 12px;
+    --raio-pill: 999px;
+
+    /* Efeito */
+    --trasicao: .4s ease;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    position: relative;
+}

@@ -4,32 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADS IFCE Boa Viagem</title>
-    <!-- <link rel="stylesheet" href="style/home.css"> -->
+    <title>Sobre o Curso - ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/curso.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script>
-        function alternarAba(tipoIngresso) {
-            // Remove o estado ativo de todos os botões seletores
-            document.querySelectorAll('.btn-aba').forEach(botao => {
-                botao.classList.remove('active');
-            });
-
-            // Oculta todos os blocos de conteúdo de abas
-            document.querySelectorAll('.conteudo-aba').forEach(conteudo => {
-                conteudo.classList.remove('active');
-            });
-
-            // Ativa o botão clicado com base no evento
-            event.currentTarget.classList.add('active');
-
-            // Exibe o respectivo contêiner correspondente
-            document.getElementById('aba-' + tipoIngresso).classList.add('active');
-        }
-    </script>
-
 </head>
 
 <body>
@@ -41,6 +22,10 @@
                 <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
                 <span>IT'S ADS</span>
             </div>
+
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
 
             <div class="menu">
                 <a href="home.html">Home</a>
@@ -69,6 +54,7 @@
             <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
                 Portal do Aluno
             </a>
+
         </nav>
     </header>
 
@@ -167,7 +153,8 @@
                         </tbody>
                     </table>
                 </div>
-                <p class="p">Os pesos são usados para calcular sua nota e cada universidade estabelece pesos específicos para cada área de conhecimento, isso faz com
+                <p class="p">Os pesos são usados para calcular sua nota e cada universidade estabelece pesos específicos
+                    para cada área de conhecimento, isso faz com
                     que sua nota seja diferente dependendo do curso ou da universidade escolhidos.</p>
 
             </div>
@@ -203,7 +190,8 @@
                     </li>
                     <li>
                         <i class="material-icons icone-lista">check_circle</i>
-                        <div><strong>Ficha de Inscrição:</strong> Preecher a ficha de inscrição disponibilizada no campus.</div>
+                        <div><strong>Ficha de Inscrição:</strong> Preecher a ficha de inscrição disponibilizada no
+                            campus.</div>
                     </li>
                     <li>
                         <i class="material-icons icone-lista">check_circle</i>
@@ -219,7 +207,8 @@
                         <div class="card-diretriz-icone"><span class="material-icons">event</span></div>
                         <h3>Acompanhe as informações</h3>
                     </div>
-                    <p class="p">Fique atento ao cronograma oficial do SiSU.<br>Siga o Instagram do campus @ifceboaviagemoficial, sempre postam informações importantes.</p>
+                    <p class="p">Fique atento ao cronograma oficial do SiSU.<br>Siga o Instagram do campus
+                        @ifceboaviagemoficial, sempre postam informações importantes.</p>
                 </div>
 
                 <div class="card-diretriz">
@@ -306,25 +295,21 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-
         <div class="footer-top">
             <div class="dots">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <p>superponto@ifce-ads:~</p>
+            <p>it's-ads@ifce-bv:~</p>
         </div>
 
         <div class="footer-content">
-
             <div class="footer-brand">
-               <div class="marca">
+                <div class="marca">
                     <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
                     <h3>IT'S ADS</h3>
                 </div>
-
                 <p>
                     Portal do curso de Análise e Desenvolvimento de Sistemas
                     do IFCE Campus Boa Viagem.
@@ -340,7 +325,6 @@
 
             <div>
                 <h4>Curso</h4>
-
                 <ul>
                     <li><a href="curso.html">Sobre o ADS</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
@@ -354,27 +338,27 @@
 
                 <p>IFCE - Campus Boa Viagem</p>
                 <p>cca.boaviagem@ifce.edu.br</p>
-                <p>(XX) XXXX-XXXX</p>
+                <p>(85) 3401-2236</p>
             </div>
 
             <div>
                 <h4>Redes</h4>
-
-
                 <div class="social">
-                    <a href="#"><span class="material-icons">mail</span></a>
-                    <a href="#"><span class="material-icons">call</span></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="cca.boaviagem@ifce.edu.br"><span class="material-icons">mail</span></a>
+                    <a href="contato.html"><span class="material-icons">call</span></a>
+                    <a href="https://www.instagram.com/ifceboaviagemoficial/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
         </div>
 
         <div class="footer-bottom">
             <p>© 2026 ADS IFCE Boa Viagem</p>
         </div>
-
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="javascript/header.js"></script>
+    <script src="javascript/curso.js" defer></script>
 </body>
 
 </html>

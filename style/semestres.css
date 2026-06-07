@@ -300,8 +300,8 @@ input:checked+.slider-switch:before {
 
 .card-diretriz:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(15, 123, 108, 0.08);
-    border-color: var(--cor-primaria-clara);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 10px 15px -3px rgba(15, 123, 108, 0.05);
 }
 
 .card-diretriz-cabecalho {
@@ -327,7 +327,7 @@ input:checked+.slider-switch:before {
 
 .card-diretriz h3 {
     font-family: var(--fonte);
-    color: var(--cor-primaria-hover);
+    color: var(--cor-texto);
     font-size: var(--fs-md);
     margin: 0;
 }

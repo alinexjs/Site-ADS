@@ -1,19 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disciplinas - ADS IFCE Boa Viagem</title>
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/disciplinas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav> It's ADS
-            <a href="curso.html"> Cursos </a>
-            <a href="disciplinas.html"> Disciplinas</a>
-            <a href="mercado.html"> Mercado de Trabalho </a>
-            <a href="projetos.html"> Projetos </a>
-            <a href="contato.html"> Contato </a>
+
+    <!-- NAVBAR -->
+    <header id="header">
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="#">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="curso.html">Como Cursar</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="1-semestre.html">1º Semestre</a></li>
+                        <li><a href="2-semestre.html">2º Semestre</a></li>
+                        <li><a href="3-semestre.html">3º Semestre</a></li>
+                        <li><a href="4-semestre.html">4º Semestre</a></li>
+                        <li><a href="5-semestre.html">5º Semestre</a></li>
+                        <li><a href="colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="mercado.html">Mercado de Trabalho</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
+
         </nav>
     </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="">
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>it's-ads@ifce-bv:~</p>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="marca">
+                    <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                    <h3>IT'S ADS</h3>
+                </div>
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+                <ul>
+                    <li><a href="curso.html">Sobre o ADS</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(85) 3401-2236</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+                <div class="social">
+                    <a href="cca.boaviagem@ifce.edu.br"><span class="material-icons">mail</span></a>
+                    <a href="contato.html"><span class="material-icons">call</span></a>
+                    <a href="https://www.instagram.com/ifceboaviagemoficial/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ADS IFCE Boa Viagem</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="javascript/header.js"></script>
+    <script src="javascript/disciplinas.js"></script>
 </body>
+
 </html>
