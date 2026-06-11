@@ -61,7 +61,427 @@
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <main class="">
+    <main class="container-disciplinas">
+
+        <!-- Cabeçalho da Página -->
+        <div class="cabecalho-semestre">
+            <div>
+                <h1 class="titulo-pagina">Disciplinas</h1>
+                <p class="subtitulo-pagina">
+                    Componentes curriculares do curso de Análise e Desenvolvimento de Sistemas do IFCE Campus Boa
+                    Viagem, organizados por disciplinas obrigatórias e optativas, com páginas próprias para consulta.
+                </p>
+            </div>
+        </div>
+
+        <div class="resumo-disciplinas" id="resumo-disciplinas">
+            <article class="card-resumo-disciplina">
+                <span class="material-icons">school</span>
+                <strong>29</strong>
+                <p>Disciplinas obrigatórias</p>
+            </article>
+
+            <article class="card-resumo-disciplina">
+                <span class="material-icons">library_books</span>
+                <strong>12</strong>
+                <p>Optativas disponíveis</p>
+            </article>
+
+            <article class="card-resumo-disciplina">
+                <span class="material-icons">playlist_add_check</span>
+                <strong>2</strong>
+                <p>Vagas optativas na matriz</p>
+            </article>
+
+            <article class="card-resumo-disciplina">
+                <span class="material-icons">schedule</span>
+                <strong>120h</strong>
+                <p>Carga mínima em optativas</p>
+            </article>
+        </div>
+
+        <div>
+
+            <!-- Seção de Disciplinas Obrigatórias -->
+            <section class="grupo-disciplinas">
+                <div class="cabecalho-grupo-disciplinas">
+                    <div>
+                        <h2>Disciplinas Obrigatórias</h2>
+                    </div>
+                </div>
+
+                <div class="tabela-wrapper">
+                    <table class="tabela-disciplinas tabela-disciplinas-geral">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Disciplina</th>
+                                <th class="col-numero">Créd.</th>
+                                <th class="col-numero">Total</th>
+                                <th>Pré-requisito</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="codigo-tag">ICA</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/ica.html">Introdução ao Curso de
+                                        ADS</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">CLI</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/cli.html">Comunicação e Linguagem</a>
+                                </td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">LLPR</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/llpr.html">Lógica e Linguagem de
+                                        Programação</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">FMAT</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/fmat.html">Fundamentos de
+                                        Matemática</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">ING</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/ing.html">Inglês Instrumental</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">TWEB</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/tweb.html">Tecnologias Web</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">ESA</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/esa.html">Ética Socioambiental</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PEED</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/peed.html">Programação Estruturada e
+                                        Estrutura de Dados</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/llpr.html" class="prereq-link"
+                                        title="Lógica e Linguagem de Programação">LLPR</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">EMP</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/emp.html">Empreendedorismo</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PES</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/pes.html">Probabilidade e
+                                        Estatística</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/fmat.html" class="prereq-link"
+                                        title="Fundamentos de Matemática">FMAT</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">SOP</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/sop.html">Sistemas Operacionais</a>
+                                </td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/ica.html" class="prereq-link"
+                                        title="Introdução ao Curso de ADS">ICA</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">RGCE</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/rgce.html">Relações de Gênero, Classe e
+                                        Etnia</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">BDA</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/bda.html">Banco de Dados</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">POO</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/poo.html">Programação Orientada a
+                                        Objetos</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/peed.html" class="prereq-link"
+                                        title="Programação Estruturada e Estrutura de Dados">PEED</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">ENS</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/ens.html">Engenharia de Software</a>
+                                </td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">IHC</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/ihc.html">Interface
+                                        Humano-Computador</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">RED</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/red.html">Redes de Computadores</a>
+                                </td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">FSI</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/fsi.html">Fundamentos de Segurança da
+                                        Informação</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">ARQS</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/arqs.html">Arquitetura de Sistemas</a>
+                                </td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PRSO</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/prso.html">Projeto Social</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">APS</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/aps.html">Análise e Projeto de
+                                        Sistemas</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/ens.html" class="prereq-link"
+                                        title="Engenharia de Software">ENS</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PDM</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/pdm.html">Programação para Dispositivos
+                                        Móveis</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/poo.html" class="prereq-link"
+                                        title="Programação Orientada a Objetos">POO</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PWEB I</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/pweb-i.html">Programação Web I</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/tweb.html" class="prereq-link" title="Tecnologias Web">TWEB</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">GEP</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/gep.html">Gestão de Projetos</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">CIDA</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/cida.html">Ciência de Dados</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/pes.html" class="prereq-link"
+                                        title="Probabilidade e Estatística">PES</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PIN</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/pin.html">Projeto Integrador</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/pweb-i.html" class="prereq-link" title="Programação Web I">PWEB
+                                        I</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">DEV</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/dev.html">DevOps</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/sop.html" class="prereq-link"
+                                        title="Sistemas Operacionais">SOP</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PWEB II</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/pweb-ii.html">Programação Web II</a>
+                                </td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/pweb-i.html" class="prereq-link" title="Programação Web I">PWEB
+                                        I</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">TQS</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/tqs.html">Teste e Qualidade de
+                                        Software</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/ens.html" class="prereq-link"
+                                        title="Engenharia de Software">ENS</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Seção de Disciplinas Optativas -->
+            <section class="grupo-disciplinas">
+                <div class="cabecalho-grupo-disciplinas">
+                    <div>
+                        <h2>Disciplinas Optativas</h2>
+                    </div>
+                </div>
+
+                <div class="tabela-wrapper">
+                    <table class="tabela-disciplinas tabela-disciplinas-geral">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Disciplina</th>
+                                <th class="col-numero">Créd.</th>
+                                <th class="col-numero">Total</th>
+                                <th>Pré-requisito</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="codigo-tag">EITA</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/eita.html">Educação Especial, Inclusiva
+                                        e Tecnologias Assistivas</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">LIB</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/lib.html">Libras</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">PPR</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/ppr.html">Padrões de Projeto</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><a href="disciplinas/arqs.html" class="prereq-link"
+                                        title="Arquitetura de Sistemas">ARQS</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">BDNR</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/bdnr.html">Banco de Dados Não
+                                        Relacional</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/bda.html" class="prereq-link" title="Banco de Dados">BDA</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">GTI</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/gti.html">Governança de TI</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">IA</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/ia.html">Inteligência Artificial</a>
+                                </td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/cida.html" class="prereq-link"
+                                        title="Ciência de Dados">CIDA</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">MPN</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/mpn.html">Modelagem de Processos de
+                                        Negócio</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><a href="disciplinas/ens.html" class="prereq-link"
+                                        title="Engenharia de Software">ENS</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">SDIS</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/sdis.html">Sistemas Distribuídos</a>
+                                </td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/red.html" class="prereq-link"
+                                        title="Redes de Computadores">RED</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">RPD</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/rpd.html">Reconhecimento de Padrões</a>
+                                </td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/cida.html" class="prereq-link"
+                                        title="Ciência de Dados">CIDA</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">DIG</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/dig.html">Direito Digital</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">EDF</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/edf.html">Educação Física</a></td>
+                                <td class="col-numero">2</td>
+                                <td class="col-numero total-carga">40h</td>
+                                <td><span class="prereq-nenhum">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="codigo-tag">IOT</span></td>
+                                <td class="nome-disciplina"><a href="disciplinas/iot.html">Internet das Coisas</a></td>
+                                <td class="col-numero">4</td>
+                                <td class="col-numero total-carga">80h</td>
+                                <td><a href="disciplinas/llpr.html" class="prereq-link"
+                                        title="Lógica e Linguagem de Programação">LLPR</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -129,7 +549,6 @@
 
     <!-- SCRIPTS -->
     <script src="javascript/header.js"></script>
-    <script src="javascript/disciplinas.js"></script>
 </body>
 
 </html>

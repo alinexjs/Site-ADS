@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco de Dados - ADS IFCE Boa Viagem</title>
+  <link rel="icon" type="image/png" href="../images/logoverdesmall.png" />
+  <link rel="stylesheet" href="../style/geral.css" />
+  <link rel="stylesheet" href="../style/header.css" />
+  <link rel="stylesheet" href="../style/footer.css" />
+  <link rel="stylesheet" href="../style/disciplinas.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <header id="header">
+    <nav class="cabecalho">
+
+      <div class="marca">
+        <img src="../images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+        <span>IT'S ADS</span>
+      </div>
+
+      <button class="menu-mobile">
+        <span class="material-icons">menu</span>
+      </button>
+
+      <div class="menu">
+        <a href="../home.html">Home</a>
+
+        <div class="dropdown">
+          <a href="#">Sobre o Curso</a>
+
+          <ul class="dropdown-content">
+            <li><a href="../curso.html">Como Cursar</a></li>
+            <li><a href="../disciplinas.html">Disciplinas</a></li>
+            <li><a href="../1-semestre.html">1º Semestre</a></li>
+            <li><a href="../2-semestre.html">2º Semestre</a></li>
+            <li><a href="../3-semestre.html">3º Semestre</a></li>
+            <li><a href="../4-semestre.html">4º Semestre</a></li>
+            <li><a href="../5-semestre.html">5º Semestre</a></li>
+            <li><a href="../colação-grau.html">Colação de Grau</a></li>
+          </ul>
+        </div>
+
+        <a href="../mercado.html">Mercado de Trabalho</a>
+        <a href="../projetos.html">Projetos</a>
+        <a href="../contato.html">Contato</a>
+
+      </div>
+
+      <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+        Portal do Aluno
+      </a>
+
+    </nav>
+  </header>
+  <!-- CONTEUDO PRINCIPAL -->
+  <main class="container-disciplinas">
+    <!-- CABECALHO DA DISCIPLINA -->
+    <div class="cabecalho-semestre">
+      <div id="disciplina-cabecalho">
+        <span class="turno-atual-value info-turno-badge"><i class="material-icons">wb_sunny</i> Matutino /
+          Vespertino</span>
+        <h1 class="titulo-pagina">Banco de Dados</h1>
+        <p class="subtitulo-pagina">
+          <strong>BDA</strong> &middot; Obrigatória &middot; 2º Semestre
+        </p>
+      </div>
+      <div class="controle-turno">
+        <span class="label-turno">Matutino/Vespertino</span>
+        <label class="switch-container">
+          <input type="checkbox" id="switch-turno" />
+          <span class="slider-switch"></span>
+        </label>
+        <span class="label-turno">Noturno</span>
+      </div>
+    </div>
+    <div class="conteudo-turno conteudo-turno-diurno">
+      <section class="grade-metadados">
+        <article class="card-metadado">
+          <span class="material-icons">confirmation_number</span>
+          <p>Código</p>
+          <strong>BDA</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">workspace_premium</span>
+          <p>Créditos</p>
+          <strong>4</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">menu_book</span>
+          <p>Teoria</p>
+          <strong>40h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">code</span>
+          <p>Prática</p>
+          <strong>40h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">groups</span>
+          <p>Extensão</p>
+          <strong>0h</strong>
+        </article>
+        <article class="card-metadado col-ead oculto">
+          <span class="material-icons">cloud_queue</span>
+          <p>EAD</p>
+          <strong>0h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">terminal</span>
+          <p>PPS</p>
+          <strong>0h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">timer</span>
+          <p>Carga total</p>
+          <strong>80h</strong>
+        </article>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">account_tree</span>
+          <h2>Pré-requisitos</h2>
+        </div>
+        <div class="lista-prerequisitos">
+          <span class="prereq-nenhum">-</span>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">subject</span>
+          <h2>Ementa</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            Introdução a Banco de Dados, Estrutura de Arquivos e de
+            Armazenamento, Modelo Entidade-Relacionamento, Structured Query
+            Language - SQL e Projeto de Banco de Dados: Análise e
+            Levantamentos de Requisitos, Modelagem de Dados Conceitual,
+            Projeto Lógico e Projeto Físico.
+          </p>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">track_changes</span>
+          <h2>Objetivos</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            Compreender conceitos, técnicas e características dos bancos de
+            dados relacionais.
+          </p>
+          <p>Objetivos Específicos:</p>
+          <ul class="lista-conteudo">
+            <li>Construir os conhecimentos básicos sobre Banco de Dados (BD);</li>
+            <li>Sistemas de Gerenciamento de Banco de Dados (SGBD);</li>
+            <li>Identificar aspectos relevantes de projeto e acesso a base de
+              dados;</li>
+            <li>Apresentar o desenvolvimento completo de um sistema de banco de
+              dados;</li>
+            <li>Demonstrando uma evolução dos conceitos fundamentais de Banco de
+              Dados;</li>
+            <li>Proporcionando habilidades para a construção de sistemas de
+              Bancos de Dados complexos.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">format_list_bulleted</span>
+          <h2>Programa</h2>
+        </div>
+        <div class="grade-programa">
+          <article class="bloco-programa">
+            <h3>UNIDADE I - Introdução a Banco de Dados</h3>
+            <ul class="lista-conteudo">
+              <li>Objetivos de um Sistema de Banco de Dados;</li>
+              <li>Conceitos de Gerenciamento de banco de dados;</li>
+              <li>Arquitetura de um SGBD;</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE II - Estrutura de Arquivos e de Armazenamento</h3>
+            <ul class="lista-conteudo">
+              <li>Visão Geral dos Meios Físicos de Armazenamento;</li>
+              <li>Armazenamento Terciário;</li>
+              <li>Gerenciador de Buffer;</li>
+              <li>Arquivos de Registros, Formato de Páginas e Registros.</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE III – Modelo Entidade-Relacionamento</h3>
+            <ul class="lista-conteudo">
+              <li>Entidades;</li>
+              <li>Chaves;</li>
+              <li>Atributos;</li>
+              <li>Relacionamentos entre entidades;</li>
+              <li>Generalização e Agregação;</li>
+              <li>Diagrama Entidade-Relacionamento;</li>
+              <li>Redução de Diagramas E-R a Tabelas;</li>
+              <li>Projeto de um Esquema E-R de Banco de Dados/ Reengenharia de
+                banco de dados;</li>
+              <li>Recursos de Adicionais ao Modelo ER.</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE IV – Structured Query Language - SQL</h3>
+            <ul class="lista-conteudo">
+              <li>Introdução;</li>
+              <li>Estrutura Básica;</li>
+              <li>Operações Básicas;</li>
+              <li>Operações Avançadas.</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE V - Projeto de Banco de Dados</h3>
+            <ul class="lista-conteudo">
+              <li>Análise e Levantamentos de Requisitos;</li>
+              <li>Modelagem de Dados Conceitual;</li>
+              <li>Projeto Lógico;</li>
+              <li>Projeto Físico.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">psychology</span>
+          <h2>Metodologia de Ensino</h2>
+        </div>
+        <article class="bloco-texto">
+          <h3>Aulas teóricas</h3>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>Ministradas em sala, ou outro ambiente que facilite o processo
+                de ensino-aprendizagem, por meio expositivo-dialógico e com
+                discussões com resolução de exercícios, onde a ênfase está em
+                demonstrações conceituais e fundamentos essenciais;</li>
+              <li>Como recursos de apoio, tem-se a utilização do quadro branco,
+                projetor de slides e livro(s) de referência(s)</li>
+            </ul>
+          </div>
+        </article>
+        <article class="bloco-texto">
+          <h3>Aulas práticas</h3>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>Ministradas em laboratório de informática, ou outro ambiente
+                que facilite a consolidação dos conceitos fundamentais, por
+                meio do uso e melhoramento de suas habilidades de trabalho
+                ativo, onde a ênfase está na reflexão sobre o que se faz,
+                provocando o encontro de significados no que for visto na aula
+                teórica.</li>
+              <li>Como recursos de apoio, tem-se a utilização de ferramentas
+                para modelagem de dados, ferramentas CASE para BD, SGBDs, de
+                plataformas online de ensino aprendizagem de BD e trabalhos
+                dirigidos ao projeto e implementação de bancos de dados para
+                sistemas, ou parte deles, utilizando os conceitos da
+                disciplina.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="bloco-texto">
+          <h3>
+            Prática Profissional Supervisionada e projetos interdisciplinares
+          </h3>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>A PPS compreende diferentes situações de vivência
+                profissional, aprendizagem e trabalho, por meio de
+                experiências profissionais supervisionadas pelo professor,
+                onde a ênfase é o estímulo à consolidação de um perfil
+                pró-ativo, com a autoconfiança necessária para uma atuação
+                profissional protagonista.</li>
+              <li>Deverá ser dada prioridade à realização de projetos
+                interdisciplinares, tais como, por exemplo, a implementação
+                das recomendações dadas na disciplina de POO, PDM, PWEB I e
+                PWEB II, possibilitando o diálogo entre diferentes disciplinas
+                ou turmas, de maneira a integrar os conhecimentos distintos e
+                com o objetivo de dar sentido a eles.</li>
+              <li>Como sugestão de recursos de apoio, tem-se a realização de
+                projetos finais para a disciplina, investigação sobre
+                atividades profissionais, projetos de pesquisa ou outros
+                trabalhos acadêmicos, visitas técnicas, simulações e
+                observações as quais deverão ser desenvolvidas nos diversos
+                ambientes de aprendizagem, como oficinas, incubadoras,
+                empresas pedagógicas ou salas na própria instituição de ensino
+                ou em entidade parceira.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">construction</span>
+          <h2>Recursos</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            Data-show, pincel/quadro, aparelho de som, laboratório de
+            informática, ambiente virtual de aprendizagem.
+          </p>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">fact_check</span>
+          <h2>Avaliação</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            O processo avaliativo deve ser contínuo e constante durante todo o
+            processo de ensino-aprendizagem, com o propósito de analisar o
+            progresso do aluno, criando indicadores capazes de apontar meios
+            para ajudá-lo na construção do conhecimento.
+          </p>
+          <p>
+            Desta forma, para início do processo ensino-aprendizagem,
+            sugere-se avaliações diagnósticas, como forma de se construir um
+            panorama sobre as necessidades dos alunos e, a partir disso,
+            estabelecer estratégias pedagógicas adequadas e trabalhar para
+            desenvolvê-los, inclusive evidenciando os casos que necessitarão
+            de métodos diferenciados em razão de suas especificidades, tais
+            como a necessidade de inclusão. Essas avaliações deverão seguir,
+            preferencialmente, métodos qualitativos, todavia, também seguirão
+            métodos quantitativos quando cabíveis dentro dos contextos
+            individuais e coletivos da turma, inclusive com subsídios para
+            propostas de atividades de recuperação paralela na(s) reunião(ões)
+            de colegiado de curso, coordenadoria de curso e demais setores
+            ligados ao ensino.
+          </p>
+          <p>
+            Durante toda a continuidade do processo ensino-aprendizagem,
+            sugere-se a promoção, em alta frequência, de avaliações formativas
+            capazes de proporcionar ao docente um feedback imediato de como
+            estão as interferências pedagógicas em sala de aula, e permitindo
+            ao aluno uma reflexão sobre ele mesmo, exigindo autoconhecimento e
+            controle sobre a sua responsabilidade, frente aos conteúdos já
+            vistos em aula, privilegiando a preocupação com a satisfação
+            pessoal do aluno e juntando informações importantes para mudanças
+            na metodologia e intervenções decisivas na construção de
+            conhecimento dos discentes.
+          </p>
+          <p>
+            Ao final de cada etapa do período letivo, pode-se realizar
+            avaliações somativas, com o objetivo de identificar o rendimento
+            alcançado tendo como referência os objetivos previstos para a
+            disciplina. Há nesses momentos a oportunidade de utilizar recursos
+            quantitativos, tais como exames objetivos ou subjetivos, inclusive
+            com recursos de TIC, todavia, recomenda-se a busca por métodos
+            qualitativos, baseados no planejamento de projetos práticos,
+            práticas interdisciplinares ou atuação em experimentos de
+            laboratório, dentre outros.
+          </p>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">local_library</span>
+          <h2>Bibliografia Básica</h2>
+        </div>
+        <div class="texto-extraido">
+          <ul class="lista-conteudo">
+            <li>ELMASRI, Ramez; Navathe, Shamkant B. Sistema de Banco de Dados -
+              6ª edição. [S.l.]: Pearson. 810 p. ISBN 9788579360855.
+              Disponível em:
+              <a href="https://middleware-bv.am4.com.br/SSO/ifce/9788579360855"
+                target="_blank">https://middleware-bv.am4.com.br/SSO/ifce/9788579360855</a>. Acesso em: 20 set. 2022.
+            </li>
+            <li>ORGANIZADORA CLAUDIA VICCI. Banco de Dados. [S.l.]: Pearson. 208
+              p. ISBN 978854300683</li>
+            <li>Disponível em:
+              <a href="https://middleware-bv.am4.com.br/SSO/ifce/9788543006833"
+                target="_blank">https://middleware-bv.am4.com.br/SSO/ifce/9788543006833</a>. Acesso em: 20 set. 2022.
+            </li>
+            <li>SANDRA PUGA, Edson França e Milton Goya. Banco de dados:
+              Implementação em SQL, PL/SQL e Oracle 11g. [S.l.]: Pearson. 356
+              p. ISBN 9788581435329. Disponível em:
+              <a href="https://middleware-bv.am4.com.br/SSO/ifce/9788581435329"
+                target="_blank">https://middleware-bv.am4.com.br/SSO/ifce/9788581435329</a>. Acesso em: 20 set. 2022.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">local_library</span>
+          <h2>Bibliografia Complementar</h2>
+        </div>
+        <div class="texto-extraido">
+          <ul class="lista-conteudo">
+            <li>MEDEIROS, Luciano Frontino. Banco de Dados: princípios e
+              prática. ed. Intersaberes, 2016</li>
+            <li>ISBN 9788582122181.</li>
+            <li>LIMA FILHO, Eduardo C. Projeto de Banco de Dados com XML. São
+              Paulo: Pearson, 2003. ISBN 9788534614719.</li>
+            <li>PAQUET, Catherine; TEARE, Diane. Linguagem, programação e banco
+              de dados: guia prático de aprendizagem. 1. ed. Intersaberes,
+              2015. ISBN 9788544302583.</li>
+            <li>TORRES, Gabriel. Dominando o Oracle 9i: modelagem e
+              desenvolvimento. 1 ed. rev.atual. Rio de Janeiro: Pearson, 2003.
+              ISBN 9788534615136.</li>
+            <li>MACHADO, Felipe Nery Rodrigues; ABREU, Maurício Pereira de.
+              Projeto de banco de dados: uma visão prática. 16. ed. São Paulo:
+              Érica, 2009. ISBN 9788536502526.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="conteudo-turno conteudo-turno-noturno oculto">
+      <section class="grade-metadados">
+        <article class="card-metadado">
+          <span class="material-icons">confirmation_number</span>
+          <p>Código</p>
+          <strong>BDA</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">workspace_premium</span>
+          <p>Créditos</p>
+          <strong>4</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">menu_book</span>
+          <p>Teoria</p>
+          <strong>40h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">code</span>
+          <p>Prática</p>
+          <strong>40h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">groups</span>
+          <p>Extensão</p>
+          <strong>0h</strong>
+        </article>
+        <article class="card-metadado col-ead">
+          <span class="material-icons">cloud_queue</span>
+          <p>EAD</p>
+          <strong>16h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">terminal</span>
+          <p>PPS</p>
+          <strong>0h</strong>
+        </article>
+        <article class="card-metadado">
+          <span class="material-icons">timer</span>
+          <p>Carga total</p>
+          <strong>80h</strong>
+        </article>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">account_tree</span>
+          <h2>Pré-requisitos</h2>
+        </div>
+        <div class="lista-prerequisitos">
+          <span class="prereq-nenhum">-</span>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">subject</span>
+          <h2>Ementa</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            Introdução a Banco de Dados, Estrutura de Arquivos e de
+            Armazenamento, Modelo Entidade-Relacionamento, Structured Query
+            Language - SQL e Projeto de Banco de Dados: Análise e
+            Levantamentos de Requisitos, Modelagem de Dados Conceitual,
+            Projeto Lógico e Projeto Físico.
+          </p>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">track_changes</span>
+          <h2>Objetivos</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            Compreender conceitos, técnicas e características dos bancos de
+            dados relacionais.
+          </p>
+          <p>Objetivos Específicos:</p>
+          <ul class="lista-conteudo">
+            <li>Construir os conhecimentos básicos sobre Banco de Dados (BD);</li>
+            <li>Sistemas de Gerenciamento de Banco de Dados (SGBD);</li>
+            <li>Identificar aspectos relevantes de projeto e acesso a base de
+              dados;</li>
+            <li>Apresentar o desenvolvimento completo de um sistema de banco de
+              dados;</li>
+            <li>Demonstrando uma evolução dos conceitos fundamentais de Banco de
+              Dados;</li>
+            <li>Proporcionando habilidades para a construção de sistemas de
+              Bancos de Dados complexos.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">format_list_bulleted</span>
+          <h2>Programa</h2>
+        </div>
+        <div class="grade-programa">
+          <article class="bloco-programa">
+            <h3>UNIDADE I - Introdução a Banco de Dados</h3>
+            <ul class="lista-conteudo">
+              <li>Objetivos de um Sistema de Banco de Dados;</li>
+              <li>Conceitos de Gerenciamento de banco de dados;</li>
+              <li>Arquitetura de um SGBD;</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE II - Estrutura de Arquivos e de Armazenamento</h3>
+            <ul class="lista-conteudo">
+              <li>Visão Geral dos Meios Físicos de Armazenamento;</li>
+              <li>Armazenamento Terciário;</li>
+              <li>Gerenciador de Buffer;</li>
+              <li>Arquivos de Registros, Formato de Páginas e Registros.</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE III – Modelo Entidade-Relacionamento</h3>
+            <ul class="lista-conteudo">
+              <li>Entidades;</li>
+              <li>Chaves;</li>
+              <li>Atributos;</li>
+              <li>Relacionamentos entre entidades;</li>
+              <li>Generalização e Agregação;</li>
+              <li>Diagrama Entidade-Relacionamento;</li>
+              <li>Redução de Diagramas E-R a Tabelas;</li>
+              <li>Projeto de um Esquema E-R de Banco de Dados/ Reengenharia de
+                banco de dados;</li>
+              <li>Recursos de Adicionais ao Modelo ER.</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE IV – Structured Query Language - SQL</h3>
+            <ul class="lista-conteudo">
+              <li>Introdução;</li>
+              <li>Estrutura Básica;</li>
+              <li>Operações Básicas;</li>
+              <li>Operações Avançadas.</li>
+            </ul>
+          </article>
+          <article class="bloco-programa">
+            <h3>UNIDADE V - Projeto de Banco de Dados</h3>
+            <ul class="lista-conteudo">
+              <li>Análise e Levantamentos de Requisitos;</li>
+              <li>Modelagem de Dados Conceitual;</li>
+              <li>Projeto Lógico;</li>
+              <li>Projeto Físico.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">psychology</span>
+          <h2>Metodologia de Ensino</h2>
+        </div>
+        <article class="bloco-texto">
+          <h3>Aulas teóricas</h3>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>Ministradas em sala, ou outro ambiente que facilite o processo
+                de ensino-aprendizagem, por meio expositivo-dialógico e com
+                discussões com resolução de exercícios, onde a ênfase está em
+                demonstrações conceituais e fundamentos essenciais;</li>
+              <li>Como recursos de apoio, tem-se a utilização do quadro branco,
+                projetor de slides e livro(s) de referência(s)</li>
+            </ul>
+          </div>
+        </article>
+        <article class="bloco-texto">
+          <h3>Aulas práticas</h3>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>Ministradas em laboratório de redes de computadores, ou outro
+                ambiente que facilite a consolidação dos conceitos
+                fundamentais, por meio do uso e melhoramento de suas
+                habilidades de trabalho ativo, onde a ênfase está na reflexão
+                sobre o que se faz,provocando o encontro de significados no
+                que for visto na aula teórica.</li>
+              <li>Como recursos de apoio, tem-se a utilização de equipamentos de
+                redes e cabos, simuladores de plataformas online de ensino
+                aprendizagem de redes de computadores e trabalhos dirigidos à
+                implementação de redes funcionais.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="bloco-texto">
+          <h3>
+            Prática Profissional Supervisionada e projetos interdisciplinares
+          </h3>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>A PPS compreende diferentes situações de vivência
+                profissional, aprendizagem e trabalho, por meio de
+                experiências profissionais supervisionadas pelo professor,
+                onde a ênfase é o estímulo à consolidação de um perfil
+                pró-ativo, com a autoconfiança necessária para uma atuação
+                profissional protagonista</li>
+              <li>Deverá ser dada prioridade à realização de projetos
+                interdisciplinares, tais como, por exemplo, a implementação
+                das recomendações dadas na disciplina de POO, PDM, PWEB I e
+                PWEB II, possibilitando o diálogo entre diferentes disciplinas
+                ou turmas, de maneira a integrar os conhecimentos distintos e
+                com o objetivo de dar sentido a eles.</li>
+              <li>Como sugestão de recursos de apoio, tem-se a realização de
+                projetos finais para a disciplina, investigação sobre
+                atividades profissionais, projetos de pesquisa ou outros
+                trabalhos acadêmicos, visitas técnicas, simulações e
+                observações as quais deverão ser desenvolvidas nos diversos
+                ambientes de aprendizagem, como oficinas, incubadoras,
+                empresas pedagógicas ou salas na própria instituição de ensino
+                ou em entidade parceira Aulas na modalidade Educação a
+                Distância (EaD)</li>
+              <li>De forma a complementar parte do conteúdo desta disciplina,
+                serão utilizados recursos digitais por meio de atividades
+                complementares, como textos de apoio, exercícios e estudos de
+                caso, que permitirão ao aluno compreender a aplicabilidade dos
+                conceitos estudados em sala de aula. Este é o motivo pelo qual
+                a disciplina pode ser trabalhada parcialmente em EaD. Os
+                conceitos apresentados em sala de aula serão aplicados pelos
+                alunos nas atividades a distância.</li>
+              <li>Ambiente Virtual de Aprendizagem (AVA) - será utilizado o
+                Moodle como ambiente virtual de aprendizagem, este será
+                disponibilizado/administrado pelo núcleo de EaD do IFCE campus
+                Boa Viagem.</li>
+              <li>Modelo de Tutoria - O docente da disciplina exercerá o papel
+                de moderador/tutor. O tempo reservado para tutoria é
+                proporcional aos 20% da carga horária da disciplina ofertada
+                na modalidade de Educação à Distância.</li>
+              <li>Material didático - livros, vídeos, links, fórum de debates,
+                AVA.</li>
+              <li>Infraestrutura e suporte tecnológico - Os estudantes poderão
+                utilizar da infraestrutura disponível no campus, que consiste
+                em 2 laboratórios de informática que funcionam durante os 3
+                períodos do dia. Também poderão utilizar os recursos
+                disponíveis na biblioteca e os equipamentos pessoais, para
+                aqueles que os possuam, cujo acesso à internet pode ser feito
+                por meio do sistema de rede sem fio disponível no Setor. Além
+                disso, também poderão utilizar o acervo da biblioteca do
+                Setor, no qual constam os títulos indicados na bibliografia
+                sugerida para esta disciplina.</li>
+              <li>Frequência das aulas EaD - A frequência das atividades à
+                distância será computada pelo acesso e participação das
+                atividades propostas e inseridas ao Moodle.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">construction</span>
+          <h2>Recursos</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            Data-show, pincel/quadro, aparelho de som, laboratório de
+            informática, ambiente virtual de aprendizagem.
+          </p>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">fact_check</span>
+          <h2>Avaliação</h2>
+        </div>
+        <div class="texto-extraido">
+          <p>
+            O processo avaliativo deve ser contínuo e constante durante todo o
+            processo de ensino-aprendizagem, com o propósito de analisar o
+            progresso do aluno, criando indicadores capazes de apontar meios
+            para ajudá-lo na construção do conhecimento.
+          </p>
+          <p>
+            Desta forma, para início do processo ensino-aprendizagem,
+            sugere-se avaliações diagnósticas, como forma de se construir um
+            panorama sobre as necessidades dos alunos e, a partir disso,
+            estabelecer estratégias pedagógicas adequadas e trabalhar para
+            desenvolvê-los, inclusive evidenciando os casos que necessitarão
+            de métodos diferenciados em razão de suas especificidades, tais
+            como a necessidade de inclusão. Essas avaliações deverão seguir,
+            preferencialmente, métodos qualitativos, todavia, também seguirão
+            métodos quantitativos quando cabíveis dentro dos contextos
+            individuais e coletivos da turma, inclusive com subsídios para
+            propostas de atividades de recuperação paralela na(s) reunião(ões)
+            de colegiado de curso, coordenadoria de curso e demais setores
+            ligados ao ensino.
+          </p>
+          <p>
+            Durante toda a continuidade do processo ensino-aprendizagem,
+            sugere-se a promoção, em alta frequência, de avaliações formativas
+            capazes de proporcionar ao docente um feedback imediato de como
+            estão as interferências pedagógicas em sala de aula, e permitindo
+            ao aluno uma reflexão sobre ele mesmo, exigindo autoconhecimento e
+            controle sobre a sua responsabilidade, frente aos conteúdos já
+            vistos em aula, privilegiando a preocupação com a satisfação
+            pessoal do aluno e juntando informações importantes para mudanças
+            na metodologia e intervenções decisivas na construção de
+            conhecimento dos discentes.
+          </p>
+          <p>
+            Ao final de cada etapa do período letivo, pode-se realizar
+            avaliações somativas, com o objetivo de identificar o rendimento
+            alcançado tendo como referência os objetivos previstos para a
+            disciplina. Há nesses momentos a oportunidade de utilizar recursos
+            quantitativos, tais como exames objetivos ou subjetivos, inclusive
+            com recursos de TIC, todavia, recomenda-se a busca por métodos
+            qualitativos, baseados no planejamento de projetos práticos,
+            práticas interdisciplinares ou atuação em experimentos de
+            laboratório, dentre outros.
+          </p>
+          <p>
+            As avaliações na modalidade a distância devem ocorrer no Ambiente
+            Virtual de Aprendizagem (AVA), com a orientação do docente. A
+            avaliação no AVA deve permitir ao docente compreender como o aluno
+            elabora e constrói seu próprio conhecimento. Neste caso, o
+            professor(a) pode acompanhar o processo de ensino e aprendizagem
+            discente através das seguintes ferramentas:
+          </p>
+          <ul class="lista-conteudo">
+            <li>Fóruns;</li>
+            <li>Chat;</li>
+            <li>Wikis;</li>
+            <li>Tarefas;</li>
+            <li>Atividades Estruturadas;</li>
+            <li>Participação de aulas Síncronas;</li>
+          </ul>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">local_library</span>
+          <h2>Bibliografia Básica</h2>
+        </div>
+        <div class="texto-extraido">
+          <ul class="lista-conteudo">
+            <li>ELMASRI, Ramez; Navathe, Shamkant B. Sistema de Banco de Dados -
+              6ª edição. [S.l.]: Pearson. 810 p. ISBN 9788579360855.
+              Disponível em:
+              <a href="https://middleware-bv.am4.com.br/SSO/ifce/9788579360855"
+                target="_blank">https://middleware-bv.am4.com.br/SSO/ifce/9788579360855</a>. Acesso em: 20 set. 2022.
+            </li>
+            <li>ORGANIZADORA CLAUDIA VICCI. Banco de Dados. [S.l.]: Pearson. 208
+              p. ISBN 978854300683</li>
+            <li>Disponível em:
+              <a href="https://middleware-bv.am4.com.br/SSO/ifce/9788543006833"
+                target="_blank">https://middleware-bv.am4.com.br/SSO/ifce/9788543006833</a>. Acesso em: 20 set. 2022.
+            </li>
+            <li>SANDRA PUGA, Edson França e Milton Goya. Banco de dados:
+              Implementação em SQL, PL/SQL e Oracle 11g. [S.l.]: Pearson. 356
+              p. ISBN 9788581435329. Disponível em:
+              <a href="https://middleware-bv.am4.com.br/SSO/ifce/9788581435329"
+                target="_blank">https://middleware-bv.am4.com.br/SSO/ifce/9788581435329</a>. Acesso em: 20 set. 2022.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="painel-disciplina">
+        <div class="secao-titulo-inline">
+          <span class="material-icons">local_library</span>
+          <h2>Bibliografia Complementar</h2>
+        </div>
+        <div class="texto-extraido">
+          <ul class="lista-conteudo">
+            <li>MEDEIROS, Luciano Frontino. Banco de Dados: princípios e
+              prática. ed. Intersaberes, 2016</li>
+            <li>ISBN 9788582122181.</li>
+            <li>LIMA FILHO, Eduardo C. Projeto de Banco de Dados com XML. São
+              Paulo: Pearson, 2003. ISBN 9788534614719.</li>
+            <li>PAQUET, Catherine; TEARE, Diane. Linguagem, programação e banco
+              de dados: guia prático de aprendizagem. 1. ed. Intersaberes,
+              2015. ISBN 9788544302583.</li>
+            <li>TORRES, Gabriel. Dominando o Oracle 9i: modelagem e
+              desenvolvimento. 1 ed. rev.atual. Rio de Janeiro: Pearson, 2003.
+              ISBN 9788534615136.</li>
+            <li>MACHADO, Felipe Nery Rodrigues; ABREU, Maurício Pereira de.
+              Projeto de banco de dados: uma visão prática. 16. ed. São Paulo:
+              Érica, 2009. ISBN 9788536502526.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p>it's-ads@ifce-bv:~</p>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="marca">
+          <img src="../images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+          <h3>IT'S ADS</h3>
+        </div>
+        <p>
+          Portal do curso de Análise e Desenvolvimento de Sistemas
+          do IFCE Campus Boa Viagem.
+        </p>
+
+        <div class="terminal">
+          <p>$ whoami</p>
+          <span>
+            Formando profissionais para o mercado de tecnologia.
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Curso</h4>
+        <ul>
+          <li><a href="../curso.html">Sobre o ADS</a></li>
+          <li><a href="../projetos.html">Projetos</a></li>
+          <li><a href="../mercado.html">Mercado de Trabalho</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Instituição</h4>
+
+        <p>IFCE - Campus Boa Viagem</p>
+        <p>cca.boaviagem@ifce.edu.br</p>
+        <p>(85) 3401-2236</p>
+      </div>
+
+      <div>
+        <h4>Redes</h4>
+        <div class="social">
+          <a href="mailto:cca.boaviagem@ifce.edu.br"><span class="material-icons">mail</span></a>
+          <a href="../contato.html"><span class="material-icons">call</span></a>
+          <a href="https://www.instagram.com/ifceboaviagemoficial/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 ADS IFCE Boa Viagem</p>
+    </div>
+  </footer>
+  <!-- SCRIPTS -->
+  <script src="../javascript/header.js"></script>
+  <script src="../javascript/semestres.js"></script>
+</body>
+
+</html>

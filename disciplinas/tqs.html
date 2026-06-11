@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste e Qualidade de Software - ADS IFCE Boa Viagem</title>
+    <link rel="icon" type="image/png" href="../images/logoverdesmall.png" />
+    <link rel="stylesheet" href="../style/geral.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/disciplinas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <header id="header">
+        <nav class="cabecalho">
+
+            <div class="marca">
+                <img src="../images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <span>IT'S ADS</span>
+            </div>
+
+            <button class="menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <div class="menu">
+                <a href="../home.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="#">Sobre o Curso</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="../curso.html">Como Cursar</a></li>
+                        <li><a href="../disciplinas.html">Disciplinas</a></li>
+                        <li><a href="../1-semestre.html">1º Semestre</a></li>
+                        <li><a href="../2-semestre.html">2º Semestre</a></li>
+                        <li><a href="../3-semestre.html">3º Semestre</a></li>
+                        <li><a href="../4-semestre.html">4º Semestre</a></li>
+                        <li><a href="../5-semestre.html">5º Semestre</a></li>
+                        <li><a href="../colação-grau.html">Colação de Grau</a></li>
+                    </ul>
+                </div>
+
+                <a href="../mercado.html">Mercado de Trabalho</a>
+                <a href="../projetos.html">Projetos</a>
+                <a href="../contato.html">Contato</a>
+
+            </div>
+
+            <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" class="botao-portal">
+                Portal do Aluno
+            </a>
+
+        </nav>
+    </header>
+    <!-- CONTEUDO PRINCIPAL -->
+    <main class="container-disciplinas">
+      <!-- CABECALHO DA DISCIPLINA -->
+      <div class="cabecalho-semestre">
+        <div id="disciplina-cabecalho">
+          <span class="turno-atual-value info-turno-badge"
+            ><i class="material-icons">wb_sunny</i> Matutino / Vespertino</span
+          >
+          <h1 class="titulo-pagina">Teste e Qualidade de Software</h1>
+          <p class="subtitulo-pagina">
+            <strong>TQS</strong> &middot; Obrigatória &middot; 5º Semestre
+          </p>
+        </div>
+        <div class="controle-turno">
+          <span class="label-turno">Matutino/Vespertino</span>
+          <label class="switch-container">
+            <input type="checkbox" id="switch-turno" />
+            <span class="slider-switch"></span>
+          </label>
+          <span class="label-turno">Noturno</span>
+        </div>
+      </div>
+      <div class="conteudo-turno conteudo-turno-diurno">
+        <section class="grade-metadados">
+          <article class="card-metadado">
+            <span class="material-icons">confirmation_number</span>
+            <p>Código</p>
+            <strong>TQS</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">workspace_premium</span>
+            <p>Créditos</p>
+            <strong>4</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">menu_book</span>
+            <p>Teoria</p>
+            <strong>40h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">code</span>
+            <p>Prática</p>
+            <strong>20h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">groups</span>
+            <p>Extensão</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado col-ead oculto">
+            <span class="material-icons">cloud_queue</span>
+            <p>EAD</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">terminal</span>
+            <p>PPS</p>
+            <strong>20h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">timer</span>
+            <p>Carga total</p>
+            <strong>80h</strong>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">account_tree</span>
+            <h2>Pré-requisitos</h2>
+          </div>
+          <div class="lista-prerequisitos"><a class="prereq-link" href="/disciplinas/ens.html">ENS</a></div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">subject</span>
+            <h2>Ementa</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>Fundamentos da qualidade de software</p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">track_changes</span>
+            <h2>Objetivos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Capacitar o aluno para o desenvolvimento de testes de software,
+              com base nas métricas de qualidade, compreendendo a importância da
+              etapa de teste, bem como, seus conceitos e técnicas.
+            </p>
+            <p>Objetivos Específicos</p>
+            <ul class="lista-conteudo">
+                    <li>Identificar e caracterizar as atividades da engenharia de
+                software relacionadas à qualidade do software;</li>
+                    <li>Conhecer os tipos de teste, desenvolver um plano de testes
+                simples.</li>
+                </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">format_list_bulleted</span>
+            <h2>Programa</h2>
+          </div>
+          <div class="grade-programa">
+            <article class="bloco-programa">
+              <h3>Unidade I - Fundamentos da qualidade de software</h3>
+              <ul class="lista-conteudo">
+                    <li>Introdução ao conceito de qualidade de software;</li>
+                    <li>Modelos de referência para qualidade no processo: CMMI-DEV,
+                  MPS.BR-SW;</li>
+                    <li>Qualidade em métodos ágeis de software;</li>
+                    <li>Processos de gerência da qualidade de software;</li>
+                    <li>Métricas da qualidade de software.</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade II - Introdução ao Teste de Software</h3>
+              <ul class="lista-conteudo">
+                    <li>Conceitos de testes e qualidade Função do Analista de Teste</li>
+                    <li>Tipos de teste: unitário, integração, sistema, aceitação,
+                  regressão, integridade de dados, configuração e instalação,
+                  performance e testes não funcionais.</li>
+                    <li>Abordagens de testes: baseada em caixa-preta, caixa-branca,
+                  regressão.</li>
+                    <li>Desenvolvimento dirigido a testes</li>
+                    <li>Teste orientado a objetos</li>
+                    <li>Validação e Verificação (V&amp;V)</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade III - Casos de Teste</h3>
+              <ul class="lista-conteudo">
+                    <li>Casos de testes formais e informais.</li>
+                    <li>Cenário e Script do teste.</li>
+                    <li>Depuração</li>
+                    <li>Geração de casos de teste</li>
+                    <li>Testes alfas, beta e de aceitação</li>
+                    <li>Ferramentas de testes</li>
+                    <li>Utilização de Mocks para testes</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade IV - Testes Automatizados e Métricas</h3>
+              <ul class="lista-conteudo">
+                    <li>Testes Dirigidos a Dados(TDD)</li>
+                    <li>Graphical user interface</li>
+                    <li>Teste baseado em API</li>
+                    <li>Métricas para teste de software: conceitos, motivação e tipos.</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade V - Planejamento de Testes</h3>
+              <ul class="lista-conteudo">
+                    <li>Técnicas para estimativa de teste</li>
+                    <li>Registro e acompanhamento dos defeitos</li>
+                    <li>Estrutura do Plano de teste</li>
+                    <li>Gerenciamento do processo de testes.</li>
+                    <li>Registro e acompanhamento de problemas.</li>
+                </ul>
+            </article>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">psychology</span>
+            <h2>Metodologia de Ensino</h2>
+          </div>
+          <article class="bloco-texto">
+            <h3>Aulas teóricas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                    <li>Ministradas em sala, ou outro ambiente que facilite o processo
+                  de ensino-aprendizagem, por meio expositivo-dialógico e com
+                  discussões com resolução de exercícios, onde a ênfase está em
+                  demonstrações conceituais e fundamentos essenciais;</li>
+                    <li>Como recursos de apoio, tem-se a utilização do quadro branco,
+                  projetor de slides e livro(s) de referência(s)</li>
+                </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>Aulas práticas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                    <li>Ministradas em laboratório de informática, ou outro ambiente
+                  que facilite a consolidação dos conceitos fundamentais, por
+                  meio do uso e melhoramento de suas habilidades de trabalho
+                  ativo, onde a ênfase está na reflexão sobre o que se faz,
+                  provocando o encontro de significados no que for visto na aula
+                  teórica.</li>
+                    <li>Como recursos de apoio, tem-se a utilização de APIs para
+                  testes, de plataformas online de ensino aprendizagem de Testes
+                  de Software e trabalhos dirigidos à reprodução de aplicações
+                  rápidas para sistemas, ou parte deles, utilizando os conceitos
+                  de programação orientada a testes.</li>
+                </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>
+              Prática Profissional Supervisionada e projetos interdisciplinares
+            </h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                    <li>A PPS compreende diferentes situações de vivência
+                  profissional, aprendizagem e trabalho, por meio de
+                  experiências profissionais supervisionadas pelo professor,
+                  onde a ênfase é o estímulo à consolidação de um perfil
+                  pró-ativo, com a autoconfiança necessária para uma atuação
+                  profissional protagonista. A disciplina de Teste e Qualidade
+                  de Software terá uma carga horária de 20 horas.</li>
+                    <li>Deverá ser dada prioridade à realização de projetos
+                  interdisciplinares, tais como, por exemplo, o desenvolvimento
+                  de sistemas com Programação Web e Projeto Integrador,
+                  conduzidos com métodos de Padrões de Projetos, possibilitando
+                  o diálogo entre diferentes disciplinas ou turmas, de maneira a
+                  integrar os conhecimentos distintos e com o objetivo de dar
+                  sentido a eles</li>
+                    <li>Como sugestão de recursos de apoio, tem-se a realização de
+                  projetos finais para a disciplina, investigação sobre
+                  atividades profissionais, projetos de pesquisa ou outros
+                  trabalhos acadêmicos, visitas técnicas, simulações e
+                  observações as quais deverão ser desenvolvidas nos diversos
+                  ambientes de aprendizagem, como oficinas, incubadoras,
+                  empresas pedagógicas ou salas na própria instituição de ensino
+                  ou em entidade parceira</li>
+                </ul>
+            </div>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">construction</span>
+            <h2>Recursos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Data-show, pincel/quadro, aparelho de som, laboratório de
+              informática, recursos digitais como sala de aula on-line.
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">fact_check</span>
+            <h2>Avaliação</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              O processo avaliativo deve ser contínuo e constante durante todo o
+              processo de ensino-aprendizagem, com o propósito de analisar o
+              progresso do aluno, criando indicadores capazes de apontar meios
+              para ajudá-lo na construção do conhecimento.
+            </p>
+            <p>
+              Desta forma, para início do processo ensino-aprendizagem,
+              sugere-se avaliações diagnósticas, como forma de se construir um
+              panorama sobre as necessidades dos alunos e, a partir disso,
+              estabelecer estratégias pedagógicas adequadas e trabalhar para
+              desenvolvê-los, inclusive evidenciando os casos que necessitarão
+              de métodos diferenciados em razão de suas especificidades, tais
+              como a necessidade de inclusão. Essas avaliações deverão seguir,
+              preferencialmente, métodos qualitativos, todavia, também seguirão
+              métodos quantitativos quando cabíveis dentro dos contextos
+              individuais e coletivos da turma, inclusive com subsídios para
+              propostas de atividades de recuperação paralela na(s) reunião(ões)
+              de colegiado de curso, coordenadoria de curso e demais setores
+              ligados ao ensino.
+            </p>
+            <p>
+              Durante toda a continuidade do processo ensino-aprendizagem,
+              sugere-se a promoção, em alta frequência, de avaliações formativas
+              capazes de proporcionar ao docente um feedback imediato de como
+              estão as interferências pedagógicas em sala de aula, e permitindo
+              ao aluno uma reflexão sobre ele mesmo, exigindo autoconhecimento e
+              controle sobre a sua responsabilidade, frente aos conteúdos já
+              vistos em aula, privilegiando a preocupação com a satisfação
+              pessoal do aluno e juntando informações importantes para mudanças
+              na metodologia e intervenções decisivas na construção de
+              conhecimento dos discentes.
+            </p>
+            <p>
+              Ao final de cada etapa do período letivo, pode-se realizar
+              avaliações somativas, com o objetivo de identificar o rendimento
+              alcançado tendo como referência os objetivos previstos para a
+              disciplina. Há nesses momentos a oportunidade de utilizar recursos
+              quantitativos, tais como exames objetivos ou subjetivos, inclusive
+              com recursos de TIC, todavia, recomenda-se a busca por métodos
+              qualitativos, baseados no planejamento de projetos práticos,
+              práticas interdisciplinares ou atuação em experimentos de
+              laboratório, dentre outros.
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Básica</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+                    <li>KOSCIANSKI, André. e SOARES, Michel dos Santos. Qualidade de
+                Software. Novatec, 2006.</li>
+                    <li>ORGANIZADOR PEDRO HENRIQUE CACIQUE BRAGA. Teste de software.
+                Pearson. Livro. (139 p.). ISBN 9788543020211. Disponível em:
+                <a href="https://middleware-bv.am4.com.br/SSO/ifce/9788543020211" target="_blank">https://middleware-bv.am4.com.br/SSO/ifce/9788543020211</a>. Acesso em: 14 Sep. 2022.</li>
+                    <li>SOMMERVILLE, Ian. Engenharia de Software - 9a edição. Pearson.
+                E-book. (548 p.). ISBN 9788579361081.Disponível em:
+                <a href="http://ifce.bv3.digitalpages.com.br/users/publications/9788579361081" target="_blank">http://ifce.bv3.digitalpages.com.br/users/publications/9788579361081</a>. Acesso em: 10 abr. 2021.</li>
+                </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Complementar</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+                    <li>BARTIE, Alexandre. Garantia da qualidade de software. Rio de
+                Janeiro: Campus, 2002.</li>
+                    <li>DELAMARO, Márcio Eduardo; MALDONADO, José Carlos Maldonado;
+                JINO, Mário. Introdução ao teste de software. Rio de Janeiro:
+                Elsevier/Campus, 2007.</li>
+                    <li>MALDONADO, José Carlos; ROCHA, Ana Regina; WEBER, Kirval C.
+                Qualidade de software: teoria e prática. São Paulo: Prentice
+                Hall, 2001.</li>
+                    <li>PFLEEGER, Shari Lawrence. Engenharia de Software: teoria e
+                prática. Rio de Janeiro: Prentice-Hall, 2004.</li>
+                    <li>SOUZA, Anderson B. de; RIOS, Emerson; CRISTALLI, Ricardo S.;
+                MOREIRA FILHO, Trayahu M. Base de conhecimento em teste de
+                software. São Paulo: Martins Fontes, 2007.</li>
+                </ul>
+          </div>
+        </section>
+      </div>
+      <div class="conteudo-turno conteudo-turno-noturno oculto">
+        <section class="grade-metadados">
+          <article class="card-metadado">
+            <span class="material-icons">confirmation_number</span>
+            <p>Código</p>
+            <strong>TQS</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">workspace_premium</span>
+            <p>Créditos</p>
+            <strong>4</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">menu_book</span>
+            <p>Teoria</p>
+            <strong>50h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">code</span>
+            <p>Prática</p>
+            <strong>30h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">groups</span>
+            <p>Extensão</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado col-ead">
+            <span class="material-icons">cloud_queue</span>
+            <p>EAD</p>
+            <strong>16h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">terminal</span>
+            <p>PPS</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">timer</span>
+            <p>Carga total</p>
+            <strong>80h</strong>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">account_tree</span>
+            <h2>Pré-requisitos</h2>
+          </div>
+          <div class="lista-prerequisitos"><a class="prereq-link" href="/disciplinas/ens.html">ENS</a></div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">subject</span>
+            <h2>Ementa</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>Fundamentos da qualidade de software</p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">track_changes</span>
+            <h2>Objetivos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Capacitar o aluno para o desenvolvimento de testes de software,
+              com base nas métricas de qualidade, compreendendo a importância da
+              etapa de teste, bem como, seus conceitos e técnicas.
+            </p>
+            <p>Objetivos Específicos</p>
+            <ul class="lista-conteudo">
+                    <li>Identificar e caracterizar as atividades da engenharia de
+                software relacionadas à qualidade do software;</li>
+                    <li>Conhecer os tipos de teste, desenvolver um plano de testes
+                simples.</li>
+                </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">format_list_bulleted</span>
+            <h2>Programa</h2>
+          </div>
+          <div class="grade-programa">
+            <article class="bloco-programa">
+              <h3>Unidade I - Fundamentos da qualidade de software</h3>
+              <ul class="lista-conteudo">
+                    <li>Introdução ao conceito de qualidade de software;</li>
+                    <li>Modelos de referência para qualidade no processo: CMMI-DEV,
+                  MPS.BR-SW;</li>
+                    <li>Qualidade em métodos ágeis de software;</li>
+                    <li>Processos de gerência da qualidade de software;</li>
+                    <li>Métricas da qualidade de software.</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade II - Introdução ao Teste de Software</h3>
+              <ul class="lista-conteudo">
+                    <li>Conceitos de testes e qualidade Função do Analista de Teste</li>
+                    <li>Tipos de teste: unitário, integração, sistema, aceitação,
+                  regressão, integridade de dados, configuração e instalação,
+                  performance e testes não funcionais.</li>
+                    <li>Abordagens de testes: baseada em caixa-preta, caixa-branca,
+                  regressão.</li>
+                    <li>Desenvolvimento dirigido a testes</li>
+                    <li>Teste orientado a objetos</li>
+                    <li>Validação e Verificação (V&amp;V)</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade III - Casos de Teste</h3>
+              <ul class="lista-conteudo">
+                    <li>Casos de testes formais e informais.</li>
+                    <li>Cenário e Script do teste.</li>
+                    <li>Depuração</li>
+                    <li>Geração de casos de teste</li>
+                    <li>Testes alfas, beta e de aceitação</li>
+                    <li>Ferramentas de testes</li>
+                    <li>Utilização de Mocks para testes</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade IV - Testes Automatizados e Métricas</h3>
+              <ul class="lista-conteudo">
+                    <li>Testes Dirigidos a Dados(TDD)</li>
+                    <li>Graphical user interface</li>
+                    <li>Teste baseado em API</li>
+                    <li>Métricas para teste de software: conceitos, motivação e tipos.</li>
+                </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade V - Planejamento de Testes</h3>
+              <ul class="lista-conteudo">
+                    <li>Técnicas para estimativa de teste</li>
+                    <li>Registro e acompanhamento dos defeitos</li>
+                    <li>Estrutura do Plano de teste</li>
+                    <li>Gerenciamento do processo de testes.</li>
+                    <li>Registro e acompanhamento de problemas.</li>
+                </ul>
+            </article>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">psychology</span>
+            <h2>Metodologia de Ensino</h2>
+          </div>
+          <article class="bloco-texto">
+            <h3>Aulas teóricas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                    <li>Ministradas em sala, ou outro ambiente que facilite o processo
+                  de ensino-aprendizagem, por meio expositivo-dialógico e com
+                  discussões com resolução de exercícios, onde a ênfase está em
+                  demonstrações conceituais e fundamentos essenciais;</li>
+                    <li>Como recursos de apoio, tem-se a utilização do quadro branco,
+                  projetor de slides e livro(s) de referência(s)</li>
+                </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>Aulas práticas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                    <li>Ministradas em laboratório de informática, ou outro ambiente
+                  que facilite a consolidação dos conceitos fundamentais, por
+                  meio do uso e melhoramento de suas habilidades de trabalho
+                  ativo, onde a ênfase está na reflexão sobre o que se faz,
+                  provocando o encontro de significados no que for visto na aula
+                  teórica.</li>
+                    <li>Como recursos de apoio, tem-se a utilização de APIs para
+                  testes, de plataformas online de ensino aprendizagem de Testes
+                  de Software e trabalhos dirigidos à reprodução de aplicações
+                  rápidas para sistemas, ou parte deles, utilizando os conceitos
+                  de programação orientada a testes.</li>
+                </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>
+              Prática Profissional Supervisionada e projetos interdisciplinares
+            </h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                    <li>A PPS compreende diferentes situações de vivência
+                  profissional, aprendizagem e trabalho, por meio de
+                  experiências profissionais supervisionadas pelo professor,
+                  onde a ênfase é o estímulo à consolidação de um perfil
+                  pró-ativo, com a autoconfiança necessária para uma atuação
+                  profissional protagonista. A disciplina de Teste e Qualidade
+                  de Software terá uma carga horária de 20 horas.</li>
+                    <li>Deverá ser dada prioridade à realização de projetos
+                  interdisciplinares, tais como, por exemplo, o desenvolvimento
+                  de sistemas com Programação Web e Projeto Integrador,
+                  conduzidos com métodos de Padrões de Projetos, possibilitando
+                  o diálogo entre diferentes disciplinas ou turmas, de maneira a
+                  integrar os conhecimentos distintos e com o objetivo de dar
+                  sentido a eles</li>
+                    <li>Como sugestão de recursos de apoio, tem-se a realização de
+                  projetos finais para a disciplina, investigação sobre
+                  atividades profissionais, projetos de pesquisa ou outros
+                  trabalhos acadêmicos, visitas técnicas, simulações e
+                  observações as quais deverão ser desenvolvidas nos diversos
+                  ambientes de aprendizagem, como oficinas, incubadoras,
+                  empresas pedagógicas ou salas na própria instituição de ensino
+                  ou em entidade parceira Aulas na modalidade Educação a
+                  Distância (EaD)</li>
+                    <li>De forma a complementar parte do conteúdo desta disciplina,
+                  serão utilizados recursos digitais por meio de atividades
+                  complementares, como textos de apoio, exercícios e estudos de
+                  caso, que permitirão ao aluno compreender a aplicabilidade dos
+                  conceitos estudados em sala de aula. Este é o motivo pelo qual
+                  a disciplina pode ser trabalhada parcialmente em EaD. Os
+                  conceitos apresentados em sala de aula serão aplicados pelos
+                  alunos nas atividades a distância.</li>
+                    <li>Ambiente Virtual de Aprendizagem (AVA) - será utilizado o
+                  Moodle como ambiente virtual de aprendizagem, este será
+                  disponibilizado/administrado pelo núcleo de EaD do IFCE campus
+                  Boa Viagem.</li>
+                    <li>Modelo de Tutoria - O docente da disciplina exercerá o papel
+                  de moderador/tutor. O tempo reservado para tutoria é
+                  proporcional aos 20% da carga horária da disciplina ofertada
+                  na modalidade de Educação à Distância.</li>
+                    <li>Material didático - livros, vídeos, links, fórum de debates,
+                  AVA.</li>
+                    <li>Infraestrutura e suporte tecnológico -Os estudantes poderão
+                  utilizar da infraestrutura disponível no campus, que consiste
+                  em 2 laboratórios de informática que funcionam durante os 3
+                  períodos do dia. Também poderão utilizar os recursos
+                  disponíveis na biblioteca e os equipamentos pessoais, para
+                  aqueles que os possuam, cujo acesso à internet pode ser feito
+                  por meio do sistema de rede sem fio disponível no Setor. Além
+                  disso, também poderão utilizar o acervo da biblioteca do
+                  Setor, no qual constam os títulos indicados na bibliografia
+                  sugerida para esta disciplina.</li>
+                    <li>Frequência das aulas EaD - A frequência das atividades à
+                  distância será computada pelo acesso e participação das
+                  atividades propostas e inseridas ao Moodle.</li>
+                </ul>
+            </div>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">construction</span>
+            <h2>Recursos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Data-show, pincel/quadro, aparelho de som, laboratório de
+              informática, recursos digitais como sala de aula on-line.
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">fact_check</span>
+            <h2>Avaliação</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              O processo avaliativo deve ser contínuo e constante durante todo o
+              processo de ensino-aprendizagem, com o propósito de analisar o
+              progresso do aluno, criando indicadores capazes de apontar meios
+              para ajudá-lo na construção do conhecimento.
+            </p>
+            <p>
+              Desta forma, para início do processo ensino-aprendizagem,
+              sugere-se avaliações diagnósticas, como forma de se construir um
+              panorama sobre as necessidades dos alunos e, a partir disso,
+              estabelecer estratégias pedagógicas adequadas e trabalhar para
+              desenvolvê-los, inclusive evidenciando os casos que necessitarão
+              de métodos diferenciados em razão de suas especificidades, tais
+              como a necessidade de inclusão. Essas avaliações deverão seguir,
+              preferencialmente, métodos qualitativos, todavia, também seguirão
+              métodos quantitativos quando cabíveis dentro dos contextos
+              individuais e coletivos da turma, inclusive com subsídios para
+              propostas de atividades de recuperação paralela na(s) reunião(ões)
+              de colegiado de curso, coordenadoria de curso e demais setores
+              ligados ao ensino.
+            </p>
+            <p>
+              Durante toda a continuidade do processo ensino-aprendizagem,
+              sugere-se a promoção, em alta frequência, de avaliações formativas
+              capazes de proporcionar ao docente um feedback imediato de como
+              estão as interferências pedagógicas em sala de aula, e permitindo
+              ao aluno uma reflexão sobre ele mesmo, exigindo autoconhecimento e
+              controle sobre a sua responsabilidade, frente aos conteúdos já
+              vistos em aula, privilegiando a preocupação com a satisfação
+              pessoal do aluno e juntando informações importantes para mudanças
+              na metodologia e intervenções decisivas na construção de
+              conhecimento dos discentes.
+            </p>
+            <p>
+              Ao final de cada etapa do período letivo, pode-se realizar
+              avaliações somativas, com o objetivo de identificar o rendimento
+              alcançado tendo como referência os objetivos previstos para a
+              disciplina. Há nesses momentos a oportunidade de utilizar recursos
+              quantitativos, tais como exames objetivos ou subjetivos, inclusive
+              com recursos de TIC, todavia, recomenda-se a busca por métodos
+              qualitativos, baseados no planejamento de projetos práticos,
+              práticas interdisciplinares ou atuação em experimentos de
+              laboratório, dentre outros.
+            </p>
+            <p>
+              As avaliações na modalidade a distância devem ocorrer no Ambiente
+              Virtual de Aprendizagem (AVA), com a orientação do docente. A
+              avaliação no AVA deve permitir ao docente compreender como o aluno
+              elabora e constrói seu próprio conhecimento. Neste caso, o
+              professor(a) pode acompanhar o processo de ensino e aprendizagem
+              discente através das seguintes ferramentas:
+            </p>
+            <ul class="lista-conteudo">
+                    <li>Fóruns;</li>
+                    <li>Chat;</li>
+                    <li>Wikis;</li>
+                    <li>Tarefas;</li>
+                    <li>Atividades Estruturadas;</li>
+                    <li>Participação de aulas Síncronas;</li>
+                </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Básica</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+                    <li>KOSCIANSKI, André. e SOARES, Michel dos Santos. Qualidade de
+                Software. Novatec, 2006.</li>
+                    <li>ORGANIZADOR PEDRO HENRIQUE CACIQUE BRAGA. Teste de software.
+                Pearson. Livro. (139 p.). ISBN 9788543020211. Disponível em:
+                <a href="http://ifce.bv3.digitalpages.com.br/users/publications/9788579361081" target="_blank">http://ifce.bv3.digitalpages.com.br/users/publications/9788579361081</a>. Acesso em: 14 Sep. 2022.</li>
+                    <li>SOMMERVILLE, Ian. Engenharia de Software - 9a edição. Pearson.
+                E-book. (548 p.).ISBN 9788579361081.Disponível em:
+                <a href="http://ifce.bv3.digitalpages.com.br/users/publications/9788579361081" target="_blank">http://ifce.bv3.digitalpages.com.br/users/publications/9788579361081</a>. Acesso em: 10 abr. 2021.</li>
+                </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Complementar</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+                    <li>BARTIE, Alexandre. Garantia da qualidade de software. Rio de
+                Janeiro: Campus, 2002.</li>
+                    <li>DELAMARO, Márcio Eduardo; MALDONADO, José Carlos Maldonado;
+                JINO, Mário. Introdução ao teste de software. Rio de Janeiro:
+                Elsevier/Campus, 2007.</li>
+                    <li>MALDONADO, José Carlos; ROCHA, Ana Regina; WEBER, Kirval C.
+                Qualidade de software: teoria e prática. São Paulo: Prentice
+                Hall, 2001.</li>
+                    <li>PFLEEGER, Shari Lawrence. Engenharia de Software: teoria e
+                prática. Rio de Janeiro: Prentice-Hall, 2004.</li>
+                    <li>SOUZA, Anderson B. de; RIOS, Emerson; CRISTALLI, Ricardo S.;
+                MOREIRA FILHO, Trayahu M. Base de conhecimento em teste de
+                software. São Paulo: Martins Fontes, 2007.</li>
+                </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>it's-ads@ifce-bv:~</p>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="marca">
+                    <img src="../images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                    <h3>IT'S ADS</h3>
+                </div>
+                <p>
+                    Portal do curso de Análise e Desenvolvimento de Sistemas
+                    do IFCE Campus Boa Viagem.
+                </p>
+
+                <div class="terminal">
+                    <p>$ whoami</p>
+                    <span>
+                        Formando profissionais para o mercado de tecnologia.
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Curso</h4>
+                <ul>
+                    <li><a href="../curso.html">Sobre o ADS</a></li>
+                    <li><a href="../projetos.html">Projetos</a></li>
+                    <li><a href="../mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Instituição</h4>
+
+                <p>IFCE - Campus Boa Viagem</p>
+                <p>cca.boaviagem@ifce.edu.br</p>
+                <p>(85) 3401-2236</p>
+            </div>
+
+            <div>
+                <h4>Redes</h4>
+                <div class="social">
+                    <a href="mailto:cca.boaviagem@ifce.edu.br"><span class="material-icons">mail</span></a>
+                    <a href="../contato.html"><span class="material-icons">call</span></a>
+                    <a href="https://www.instagram.com/ifceboaviagemoficial/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ADS IFCE Boa Viagem</p>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="../javascript/header.js"></script>
+    <script src="../javascript/semestres.js"></script>
+  </body>
+</html>

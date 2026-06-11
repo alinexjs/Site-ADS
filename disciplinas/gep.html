@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Projetos - ADS IFCE Boa Viagem</title>
+    <link rel="icon" type="image/png" href="../images/logoverdesmall.png" />
+    <link rel="stylesheet" href="../style/geral.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/disciplinas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <header id="header">
+      <nav class="cabecalho">
+        <div class="marca">
+          <img
+            src="../images/logosmall-branca.png"
+            class="logo"
+            alt="Mascote ADS"
+          />
+          <span>IT'S ADS</span>
+        </div>
+
+        <button class="menu-mobile">
+          <span class="material-icons">menu</span>
+        </button>
+
+        <div class="menu">
+          <a href="../home.html">Home</a>
+
+          <div class="dropdown">
+            <a href="#">Sobre o Curso</a>
+
+            <ul class="dropdown-content">
+              <li><a href="../curso.html">Como Cursar</a></li>
+              <li><a href="../disciplinas.html">Disciplinas</a></li>
+              <li><a href="../1-semestre.html">1º Semestre</a></li>
+              <li><a href="../2-semestre.html">2º Semestre</a></li>
+              <li><a href="../3-semestre.html">3º Semestre</a></li>
+              <li><a href="../4-semestre.html">4º Semestre</a></li>
+              <li><a href="../5-semestre.html">5º Semestre</a></li>
+              <li><a href="../colação-grau.html">Colação de Grau</a></li>
+            </ul>
+          </div>
+
+          <a href="../mercado.html">Mercado de Trabalho</a>
+          <a href="../projetos.html">Projetos</a>
+          <a href="../contato.html">Contato</a>
+        </div>
+
+        <a
+          href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao"
+          class="botao-portal"
+        >
+          Portal do Aluno
+        </a>
+      </nav>
+    </header>
+    <!-- CONTEUDO PRINCIPAL -->
+    <main class="container-disciplinas">
+      <!-- CABECALHO DA DISCIPLINA -->
+      <div class="cabecalho-semestre">
+        <div id="disciplina-cabecalho">
+          <span class="turno-atual-value info-turno-badge"
+            ><i class="material-icons">wb_sunny</i> Matutino / Vespertino</span
+          >
+          <h1 class="titulo-pagina">Gestão de Projetos</h1>
+          <p class="subtitulo-pagina">
+            <strong>GEP</strong> &middot; Obrigatória &middot; 4º Semestre
+          </p>
+        </div>
+        <div class="controle-turno">
+          <span class="label-turno">Matutino/Vespertino</span>
+          <label class="switch-container">
+            <input type="checkbox" id="switch-turno" />
+            <span class="slider-switch"></span>
+          </label>
+          <span class="label-turno">Noturno</span>
+        </div>
+      </div>
+      <div class="conteudo-turno conteudo-turno-diurno">
+        <section class="grade-metadados">
+          <article class="card-metadado">
+            <span class="material-icons">confirmation_number</span>
+            <p>Código</p>
+            <strong>GEP</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">workspace_premium</span>
+            <p>Créditos</p>
+            <strong>2</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">menu_book</span>
+            <p>Teoria</p>
+            <strong>30h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">code</span>
+            <p>Prática</p>
+            <strong>10h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">groups</span>
+            <p>Extensão</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado col-ead oculto">
+            <span class="material-icons">cloud_queue</span>
+            <p>EAD</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">terminal</span>
+            <p>PPS</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">timer</span>
+            <p>Carga total</p>
+            <strong>40h</strong>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">account_tree</span>
+            <h2>Pré-requisitos</h2>
+          </div>
+          <div class="lista-prerequisitos">
+            <span class="prereq-nenhum">-</span>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">subject</span>
+            <h2>Ementa</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              A disciplina contempla a compreensão das áreas de conhecimento de
+              gerenciamento de projetos, incluindo as entradas e saídas de cada
+              processo. Noções básicas de Gerenciamento de Projetos. Conceito de
+              Projeto. Conceito de Projeto de software. Conceito de
+              Gerenciamento de Projetos de Desenvolvimento de Software. Melhores
+              práticas para planejamento, execução e controle de projetos
+              envolvendo gestão de escopo, tempo, custos, qualidade, pessoas,
+              comunicação, riscos e responsabilidade profissional. Visão geral
+              do modelo CMMI para maturidade de projetos computacionais.
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">track_changes</span>
+            <h2>Objetivos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Contextualizar o desenvolvimento de projetos de sistemas.
+              Reconhecer técnicas de gerenciamento de projetos e identificar
+              meios de aplicá-las. Conhecer as boas práticas utilizadas para o
+              gerenciamento de projetos. Entender os diversos segmentos de
+              negócios e modelos organizacionais, provendo habilidades na
+              condução e execução do plano estratégico de negócio da empresa
+              através da utilização das práticas de gerenciamento de projetos do
+              PMI (Project Management Institute) contidas no PMBOK (Project
+              Management Body of Knowledge). Apreender metodologias de
+              gerenciamento de projetos de software aliadas às melhores práticas
+              para planejamento, execução e controle de projetos
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">format_list_bulleted</span>
+            <h2>Programa</h2>
+          </div>
+          <div class="grade-programa">
+            <article class="bloco-programa">
+              <h3>Unidade I - Conceitos de gerenciamento de projetos.</h3>
+              <ul class="lista-conteudo">
+                <li>Visão Geral sobre a Gestão de Projetos.</li>
+                <li>A estratégia da organização e os projetos.</li>
+                <li>Colaborações no desenvolvimento de um projeto.</li>
+                <li>Processos Rotineiros versus Projetos.</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade II - Atividades na Concepção de um Projeto.</h3>
+              <ul class="lista-conteudo">
+                <li>Passos preliminares no desenvolvimento do projeto.</li>
+                <li>Alocação de recursos.</li>
+                <li>O Planejamento do projeto.</li>
+                <li>O escopo do projeto e seu desdobramento.</li>
+                <li>
+                  Definição de atividades suas durações e relacionamentos.
+                </li>
+                <li>Visão técnica sobre riscos.</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade III - Gerenciamento de projetos</h3>
+              <ul class="lista-conteudo">
+                <li>Gerenciamento de integração.</li>
+                <li>Gerenciamento de escopo.</li>
+                <li>Gerenciamento de tempo.</li>
+                <li>Gerenciamento de custos.</li>
+                <li>Gerenciamento de qualidade.</li>
+                <li>Gerenciamento de recursos humanos.</li>
+                <li>Gerenciamento de comunicações.</li>
+                <li>Gerenciamento de riscos.</li>
+                <li>Gerenciamento de aquisições.</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade IV - Metodologias Ágeis</h3>
+              <ul class="lista-conteudo">
+                <li>Contexto de origem</li>
+                <li>Manifesto Ágil</li>
+                <li>SCRUM</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade V - Ferramentas de Gerenciamento de Projetos</h3>
+              <ul class="lista-conteudo">
+                <li>Ferramentas de gerenciamento nas versões web e desktop</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">psychology</span>
+            <h2>Metodologia de Ensino</h2>
+          </div>
+          <article class="bloco-texto">
+            <h3>Aulas teóricas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                <li>
+                  Ministradas em sala, ou outro ambiente que facilite o processo
+                  de ensino-aprendizagem, por meio expositivo-dialógico e com
+                  discussões com resolução de exercícios, onde a ênfase está em
+                  demonstrações conceituais e fundamentos essenciais;
+                </li>
+                <li>
+                  Como recursos de apoio, tem-se a utilização do quadro branco,
+                  projetor de slides e livro(s) de referência(s)
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>Aulas práticas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                <li>
+                  Ministradas em laboratório de informática, ou outro ambiente
+                  que facilite a consolidação dos conceitos fundamentais, por
+                  meio do uso e melhoramento de suas habilidades de trabalho
+                  ativo, onde a ênfase está na reflexão sobre o que se faz,
+                  provocando o encontro de significados no que for visto na aula
+                  teórica.
+                </li>
+                <li>
+                  Como recursos de apoio, tem-se a utilização de ferramentas
+                  para gestão de projetos, de ferramentas CASE, de plataformas
+                  online de ensino aprendizagem de projetos de software e
+                  trabalhos dirigidos à gestão de desenvolvimento de sistemas,
+                  ou parte deles, utilizando os conceitos da disciplina.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>
+              Prática Profissional Supervisionada e projetos interdisciplinares
+            </h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                <li>
+                  A PPS compreende diferentes situações de vivência
+                  profissional, aprendizagem e trabalho, por meio de
+                  experiências profissionais supervisionadas pelo professor,
+                  onde a ênfase é o estímulo à consolidação de um perfil
+                  pró-ativo, com a autoconfiança necessária para uma atuação
+                  profissional protagonista
+                </li>
+                <li>
+                  Deverá ser dada prioridade à realização de projetos
+                  interdisciplinares, tais como, por exemplo, o desenvolvimento
+                  de documentação de especificação de projetos de software,
+                  determinando recursos de tempo, computacionais e recursos
+                  humanos, conduzidos com métodos de Engenharia de Software,
+                  possibilitando o diálogo entre diferentes disciplinas,
+                  principalmente fazendo que ocorra interdisciplinaridade com
+                  projeto integrador ou turmas, de maneira a integrar os
+                  conhecimentos distintos e com o objetivo de dar sentido a
+                  eles.
+                </li>
+                <li>
+                  Como sugestão de recursos de apoio, tem-se a realização de
+                  projetos finais para a disciplina, investigação sobre
+                  atividades profissionais, projetos de pesquisa ou outros
+                  trabalhos acadêmicos, visitas técnicas, simulações e
+                  observações as quais deverão ser desenvolvidas nos diversos
+                  ambientes de aprendizagem, como oficinas, incubadoras,
+                  empresas pedagógicas ou salas na própria instituição de ensino
+                  ou em entidade parceira.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">construction</span>
+            <h2>Recursos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Para a realização das atividades inerentes ao processo de
+              aprendizagem, este componente curricular utiliza-se dos seguintes
+              recursos:
+            </p>
+            <ul class="lista-conteudo">
+              <li>Quadro branco e pinceis atômicos;</li>
+              <li>Projetor com suporte à conexão VGA/HDMI;</li>
+              <li>Laboratório de informática básica com conexão a Internet.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">fact_check</span>
+            <h2>Avaliação</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              O processo avaliativo deve ser contínuo e constante durante todo o
+              processo de ensino-aprendizagem, com o propósito de analisar o
+              progresso do aluno, criando indicadores capazes de apontar meios
+              para ajudá-lo na construção do conhecimento.
+            </p>
+            <p>
+              Desta forma, para início do processo ensino-aprendizagem,
+              sugere-se avaliações diagnósticas, como forma de se construir um
+              panorama sobre as necessidades dos alunos e, a partir disso,
+              estabelecer estratégias pedagógicas adequadas e trabalhar para
+              desenvolvê-los, inclusive evidenciando os casos que necessitarão
+              de métodos diferenciados em razão de suas especificidades, tais
+              como a necessidade de inclusão. Essas avaliações deverão seguir,
+              preferencialmente, métodos qualitativos, todavia, também seguirão
+              métodos quantitativos quando cabíveis dentro dos contextos
+              individuais e coletivos da turma, inclusive com subsídios para
+              propostas de atividades de recuperação paralela na(s) reunião(ões)
+              de colegiado de curso, coordenadoria de curso e demais setores
+              ligados ao ensino.
+            </p>
+            <p>
+              Durante toda a continuidade do processo ensino-aprendizagem,
+              sugere-se a promoção, em alta frequência, de avaliações formativas
+              capazes de proporcionar ao docente um feedback imediato de como
+              estão as interferências pedagógicas em sala de aula, e permitindo
+              ao aluno uma reflexão sobre ele mesmo, exigindo autoconhecimento e
+              controle sobre a sua responsabilidade, frente aos conteúdos já
+              vistos em aula, privilegiando a preocupação com a satisfação
+              pessoal do aluno e juntando informações importantes para mudanças
+              na metodologia e intervenções decisivas na construção de
+              conhecimento dos discentes.
+            </p>
+            <p>
+              Ao final de cada etapa do período letivo, pode-se realizar
+              avaliações somativas, com o objetivo de identificar o rendimento
+              alcançado tendo como referência os objetivos previstos para a
+              disciplina. Há nesses momentos a oportunidade de utilizar recursos
+              quantitativos, tais como exames objetivos ou subjetivos, inclusive
+              com recursos de TIC, todavia, recomenda-se a busca por métodos
+              qualitativos, baseados no planejamento de projetos práticos,
+              práticas interdisciplinares ou atuação em experimentos de
+              laboratório, dentre outros.
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Básica</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>
+                PROJECT MANAGEMENT INSTITUTE (EUA). Um Guia do Conhecimento em
+                Gerenciamento de Projetos (Guia PMBOK®). 6. ed. São Paulo: [s.
+                n.], 2018
+              </li>
+              <li>
+                HELDMAN, Kim. Gerência de projetos: guia para o exame oficial do
+                PMI. ed. Rio de Janeiro, RJ: Elsevier, 2015.
+              </li>
+              <li>
+                FINOCCHIO JÚNIOR, José. Project model Canvas: gerenciamento de
+                projetos sem burocracia. 1. ed. Rio de Janeiro, RJ: Elsevier,
+                2013
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Complementar</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>
+                OLIVEIRA, Guilherme Bueno de. Ms Project 2010 e Gestão de
+                Projetos. ed. São Paulo, SP: Pearson Prentice Hall, 2012.
+              </li>
+              <li>
+                KERZNER, Harold. Gestão de projetos: as melhores práticas. ed.
+                Porto Alegre, RS: Editora Bookman, 2017.
+              </li>
+              <li>
+                SUTHERLAND, Jeff. Scrum: a arte de fazer o dobro do trabalho na
+                metade do tempo. Sextante, 2019.
+              </li>
+              <li>
+                CRUZ, Fábio. Scrum e Agile em Projetos (2a. edição): guia
+                completo. Brasport, 2018.
+              </li>
+              <li>
+                CARVALHO, Fábio C. A. Gestão de projetos. ed. São Paulo, SP:
+                Pearson Education do Brasil, 2015.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="conteudo-turno conteudo-turno-noturno oculto">
+        <section class="grade-metadados">
+          <article class="card-metadado">
+            <span class="material-icons">confirmation_number</span>
+            <p>Código</p>
+            <strong>GEP</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">workspace_premium</span>
+            <p>Créditos</p>
+            <strong>2</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">menu_book</span>
+            <p>Teoria</p>
+            <strong>30h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">code</span>
+            <p>Prática</p>
+            <strong>10h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">groups</span>
+            <p>Extensão</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado col-ead">
+            <span class="material-icons">cloud_queue</span>
+            <p>EAD</p>
+            <strong>8h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">terminal</span>
+            <p>PPS</p>
+            <strong>0h</strong>
+          </article>
+          <article class="card-metadado">
+            <span class="material-icons">timer</span>
+            <p>Carga total</p>
+            <strong>40h</strong>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">account_tree</span>
+            <h2>Pré-requisitos</h2>
+          </div>
+          <div class="lista-prerequisitos">
+            <span class="prereq-nenhum">-</span>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">subject</span>
+            <h2>Ementa</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              A disciplina contempla a compreensão das áreas de conhecimento de
+              gerenciamento de projetos, incluindo as entradas e saídas de cada
+              processo. Noções básicas de Gerenciamento de Projetos. Conceito de
+              Projeto. Conceito de Projeto de software. Conceito de
+              Gerenciamento de Projetos de Desenvolvimento de Software. Melhores
+              práticas para planejamento, execução e controle de projetos
+              envolvendo gestão de escopo, tempo, custos, qualidade, pessoas,
+              comunicação, riscos e responsabilidade profissional. Visão geral
+              do modelo CMMI para maturidade de projetos computacionais.
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">track_changes</span>
+            <h2>Objetivos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Contextualizar o desenvolvimento de projetos de sistemas.
+              Reconhecer técnicas de gerenciamento de projetos e identificar
+              meios de aplicá-las. Conhecer as boas práticas utilizadas para o
+              gerenciamento de projetos. Entender os diversos segmentos de
+              negócios e modelos organizacionais, provendo habilidades na
+              condução e execução do plano estratégico de negócio da empresa
+              através da utilização das práticas de gerenciamento de projetos do
+              PMI (Project Management Institute) contidas no PMBOK (Project
+              Management Body of Knowledge). Apreender metodologias de
+              gerenciamento de projetos de software aliadas às melhores práticas
+              para planejamento, execução e controle de projetos
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">format_list_bulleted</span>
+            <h2>Programa</h2>
+          </div>
+          <div class="grade-programa">
+            <article class="bloco-programa">
+              <h3>Unidade I - Conceitos de gerenciamento de projetos.</h3>
+              <ul class="lista-conteudo">
+                <li>Visão Geral sobre a Gestão de Projetos.</li>
+                <li>A estratégia da organização e os projetos.</li>
+                <li>Colaborações no desenvolvimento de um projeto.</li>
+                <li>Processos Rotineiros versus Projetos.</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade II - Atividades na Concepção de um Projeto.</h3>
+              <ul class="lista-conteudo">
+                <li>Passos preliminares no desenvolvimento do projeto.</li>
+                <li>Alocação de recursos.</li>
+                <li>O Planejamento do projeto.</li>
+                <li>O escopo do projeto e seu desdobramento.</li>
+                <li>
+                  Definição de atividades suas durações e relacionamentos.
+                </li>
+                <li>Visão técnica sobre riscos.</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade III - Gerenciamento de projetos</h3>
+              <ul class="lista-conteudo">
+                <li>Gerenciamento de integração.</li>
+                <li>Gerenciamento de escopo.</li>
+                <li>Gerenciamento de tempo.</li>
+                <li>Gerenciamento de custos.</li>
+                <li>Gerenciamento de qualidade.</li>
+                <li>Gerenciamento de recursos humanos.</li>
+                <li>Gerenciamento de comunicações.</li>
+                <li>Gerenciamento de riscos.</li>
+                <li>Gerenciamento de aquisições.</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade IV - Metodologias Ágeis</h3>
+              <ul class="lista-conteudo">
+                <li>Contexto de origem</li>
+                <li>Manifesto Ágil</li>
+                <li>SCRUM</li>
+              </ul>
+            </article>
+            <article class="bloco-programa">
+              <h3>Unidade V - Ferramentas de Gerenciamento de Projetos</h3>
+              <ul class="lista-conteudo">
+                <li>Ferramentas de gerenciamento nas versões web e desktop</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">psychology</span>
+            <h2>Metodologia de Ensino</h2>
+          </div>
+          <article class="bloco-texto">
+            <h3>Aulas teóricas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                <li>
+                  Ministradas em sala, ou outro ambiente que facilite o processo
+                  de ensino-aprendizagem, por meio expositivo-dialógico e com
+                  discussões com resolução de exercícios, onde a ênfase está em
+                  demonstrações conceituais e fundamentos essenciais;
+                </li>
+                <li>
+                  Como recursos de apoio, tem-se a utilização do quadro branco,
+                  projetor de slides e livro(s) de referência(s)
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>Aulas práticas</h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                <li>
+                  Ministradas em laboratório de informática, ou outro ambiente
+                  que facilite a consolidação dos conceitos fundamentais, por
+                  meio do uso e melhoramento de suas habilidades de trabalho
+                  ativo, onde a ênfase está na reflexão sobre o que se faz,
+                  provocando o encontro de significados no que for visto na aula
+                  teórica.
+                </li>
+                <li>
+                  Como recursos de apoio, tem-se a utilização de ferramentas
+                  para gestão de projetos, de ferramentas CASE, de plataformas
+                  online de ensino aprendizagem de projetos de software e
+                  trabalhos dirigidos à gestão de desenvolvimento de sistemas,
+                  ou parte deles, utilizando os conceitos da disciplina.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="bloco-texto">
+            <h3>
+              Prática Profissional Supervisionada e projetos interdisciplinares
+            </h3>
+            <div class="texto-extraido">
+              <ul class="lista-conteudo">
+                <li>
+                  A PPS compreende diferentes situações de vivência
+                  profissional, aprendizagem e trabalho, por meio de
+                  experiências profissionais supervisionadas pelo professor,
+                  onde a ênfase é o estímulo à consolidação de um perfil
+                  pró-ativo, com a autoconfiança necessária para uma atuação
+                  profissional protagonista
+                </li>
+                <li>
+                  Deverá ser dada prioridade à realização de projetos
+                  interdisciplinares, tais como, por exemplo, o desenvolvimento
+                  de documentação de especificação de projetos de software,
+                  determinando recursos de tempo, computacionais e recursos
+                  humanos, conduzidos com métodos de Engenharia de Software,
+                  possibilitando o diálogo entre diferentes disciplinas,
+                  principalmente fazendo que ocorra interdisciplinaridade com
+                  projeto integrador ou turmas, de maneira a integrar os
+                  conhecimentos distintos e com o objetivo de dar sentido a
+                  eles.
+                </li>
+                <li>
+                  Como sugestão de recursos de apoio, tem-se a realização de
+                  projetos finais para a disciplina, investigação sobre
+                  atividades profissionais, projetos de pesquisa ou outros
+                  trabalhos acadêmicos, visitas técnicas, simulações e
+                  observações as quais deverão ser desenvolvidas nos diversos
+                  ambientes de aprendizagem, como oficinas, incubadoras,
+                  empresas pedagógicas ou salas na própria instituição de ensino
+                  ou em entidade parceira. Aulas na modalidade Educação a
+                  Distância (EaD)
+                </li>
+                <li>
+                  De forma a complementar parte do conteúdo desta disciplina,
+                  serão utilizados recursos digitais por meio de atividades
+                  complementares, como textos de apoio, exercícios e estudos de
+                  caso, que permitirão ao aluno compreender a aplicabilidade dos
+                  conceitos estudados em sala de aula. Este é o motivo pelo qual
+                  a disciplina pode ser trabalhada parcialmente em EaD. Os
+                  conceitos apresentados em sala de aula serão aplicados pelos
+                  alunos nas atividades a distância.
+                </li>
+                <li>
+                  Ambiente Virtual de Aprendizagem (AVA) -será utilizado o
+                  Moodle como ambiente virtual de aprendizagem, este será
+                  disponibilizado/administrado pelo núcleo de EaD do IFCE campus
+                  Boa Viagem.
+                </li>
+                <li>
+                  Modelo de Tutoria - O docente da disciplina exercerá o papel
+                  de moderador/tutor. O tempo reservado para tutoria é
+                  proporcional aos 20% da carga horária da disciplina ofertada
+                  na modalidade de Educação à Distância.
+                </li>
+                <li>
+                  Material didático - livros, vídeos, links, fórum de debates,
+                  AVA.
+                </li>
+                <li>
+                  Infraestrutura e suporte tecnológico -Os estudantes poderão
+                  utilizar da infraestrutura disponível no campus, que consiste
+                  em 2 laboratórios de informática que funcionam durante os 3
+                  períodos do dia. Também poderão utilizar os recursos
+                  disponíveis na biblioteca e os equipamentos pessoais, para
+                  aqueles que os possuam, cujo acesso à internet pode ser feito
+                  por meio do sistema de rede sem fio disponível no Setor. Além
+                  disso, também poderão utilizar o acervo da biblioteca do
+                  Setor, no qual constam os títulos indicados na bibliografia
+                  sugerida para esta disciplina.
+                </li>
+                <li>
+                  Frequência das aulas EaD - A frequência das atividades à
+                  distância será computada pelo acesso e participação das
+                  atividades propostas e inseridas ao Moodle.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">construction</span>
+            <h2>Recursos</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              Para a realização das atividades inerentes ao processo de
+              aprendizagem, este componente curricular utiliza-se dos seguintes
+              recursos:
+            </p>
+            <ul class="lista-conteudo">
+              <li>Quadro branco e pinceis atômicos;</li>
+              <li>Projetor com suporte à conexão VGA/HDMI;</li>
+              <li>Laboratório de informática básica com conexão a Internet.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">fact_check</span>
+            <h2>Avaliação</h2>
+          </div>
+          <div class="texto-extraido">
+            <p>
+              O processo avaliativo deve ser contínuo e constante durante todo o
+              processo de ensino-aprendizagem, com o propósito de analisar o
+              progresso do aluno, criando indicadores capazes de apontar meios
+              para ajudá-lo na construção do conhecimento.
+            </p>
+            <p>
+              Desta forma, para início do processo ensino-aprendizagem,
+              sugere-se avaliações diagnósticas, como forma de se construir um
+              panorama sobre as necessidades dos alunos e, a partir disso,
+              estabelecer estratégias pedagógicas adequadas e trabalhar para
+              desenvolvê-los, inclusive evidenciando os casos que necessitarão
+              de métodos diferenciados em razão de suas especificidades, tais
+              como a necessidade de inclusão. Essas avaliações deverão seguir,
+              preferencialmente, métodos qualitativos, todavia, também seguirão
+              métodos quantitativos quando cabíveis dentro dos contextos
+              individuais e coletivos da turma, inclusive com subsídios para
+              propostas de atividades de recuperação paralela na(s) reunião(ões)
+              de colegiado de curso, coordenadoria de curso e demais setores
+              ligados ao ensino. Durante toda a continuidade do processo
+              ensino-aprendizagem, sugere-se a promoção, em alta frequência, de
+              avaliações formativas capazes de proporcionar ao docente um
+              feedback imediato de como estão as interferências pedagógicas em
+              sala de aula, e permitindo ao aluno uma reflexão sobre ele mesmo,
+              exigindo autoconhecimento e controle sobre a sua responsabilidade,
+              frente aos conteúdos já vistos em aula, privilegiando a
+              preocupação com a satisfação pessoal do aluno e juntando
+              informações importantes para mudanças na metodologia e
+              intervenções decisivas na construção de conhecimento dos
+              discentes.
+            </p>
+            <p>
+              Ao final de cada etapa do período letivo, pode-se realizar
+              avaliações somativas, com o objetivo de identificar o rendimento
+              alcançado tendo como referência os objetivos previstos para a
+              disciplina. Há nesses momentos a oportunidade de utilizar recursos
+              quantitativos, tais como exames objetivos ou subjetivos, inclusive
+              com recursos de TIC, todavia, recomenda-se a busca por métodos
+              qualitativos, baseados no planejamento de projetos práticos,
+              práticas interdisciplinares ou atuação em experimentos de
+              laboratório, dentre outros.
+            </p>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Básica</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>
+                PROJECT MANAGEMENT INSTITUTE (EUA). Um Guia do Conhecimento em
+                Gerenciamento de Projetos (Guia PMBOK®). 6. ed. São Paulo: [s.
+                n.], 2018
+              </li>
+              <li>
+                HELDMAN, Kim. Gerência de projetos: guia para o exame oficial do
+                PMI. ed. Rio de Janeiro, RJ: Elsevier, 2015.
+              </li>
+              <li>
+                FINOCCHIO JÚNIOR, José. Project model Canvas: gerenciamento de
+                projetos sem burocracia. 1. ed. Rio de Janeiro, RJ: Elsevier,
+                2013
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="painel-disciplina">
+          <div class="secao-titulo-inline">
+            <span class="material-icons">local_library</span>
+            <h2>Bibliografia Complementar</h2>
+          </div>
+          <div class="texto-extraido">
+            <ul class="lista-conteudo">
+              <li>
+                OLIVEIRA, Guilherme Bueno de. Ms Project 2010 e Gestão de
+                Projetos. ed. São Paulo, SP: Pearson Prentice Hall, 2012.
+              </li>
+              <li>
+                KERZNER, Harold. Gestão de projetos: as melhores práticas. ed.
+                Porto Alegre, RS: Editora Bookman, 2017.
+              </li>
+              <li>
+                SUTHERLAND, Jeff. Scrum: a arte de fazer o dobro do trabalho na
+                metade do tempo. Sextante, 2019.
+              </li>
+              <li>
+                CRUZ, Fábio. Scrum e Agile em Projetos (2a. edição): guia
+                completo. Brasport, 2018.
+              </li>
+              <li>
+                CARVALHO, Fábio C. A. Gestão de projetos. ed. São Paulo, SP:
+                Pearson Education do Brasil, 2015.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p>it's-ads@ifce-bv:~</p>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="marca">
+            <img
+              src="../images/logosmall-branca.png"
+              class="logo"
+              alt="Mascote ADS"
+            />
+            <h3>IT'S ADS</h3>
+          </div>
+          <p>
+            Portal do curso de Análise e Desenvolvimento de Sistemas do IFCE
+            Campus Boa Viagem.
+          </p>
+
+          <div class="terminal">
+            <p>$ whoami</p>
+            <span> Formando profissionais para o mercado de tecnologia. </span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Curso</h4>
+          <ul>
+            <li><a href="../curso.html">Sobre o ADS</a></li>
+            <li><a href="../projetos.html">Projetos</a></li>
+            <li><a href="../mercado.html">Mercado de Trabalho</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Instituição</h4>
+
+          <p>IFCE - Campus Boa Viagem</p>
+          <p>cca.boaviagem@ifce.edu.br</p>
+          <p>(85) 3401-2236</p>
+        </div>
+
+        <div>
+          <h4>Redes</h4>
+          <div class="social">
+            <a href="mailto:cca.boaviagem@ifce.edu.br"
+              ><span class="material-icons">mail</span></a
+            >
+            <a href="../contato.html"
+              ><span class="material-icons">call</span></a
+            >
+            <a href="https://www.instagram.com/ifceboaviagemoficial/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ADS IFCE Boa Viagem</p>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="../javascript/header.js"></script>
+    <script src="../javascript/semestres.js"></script>
+  </body>
+</html>
