@@ -28,7 +28,7 @@
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--sp-10);
+    gap: 4.5rem;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -66,7 +66,7 @@
 }
 
 .hero-imagem img {
-    width: 100%;
+    width: 110%;
     height: auto;
     display: block;
     border-radius: var(--raio-lg);
@@ -74,7 +74,7 @@
 
 .titulo-pagina {
     font-family: var(--fonte);
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 4rem);
     color: var(--cor-primaria-clara);
     margin-bottom: var(--sp-4);
 }
@@ -83,6 +83,47 @@
     color: var(--cor-primaria-clara);
     font-size: clamp(1rem, 2vw, var(--fs-md));
     max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.botao-requisitos {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    background: var(--cor-primaria-hover);
+    color: var(--cor-primaria-clara);
+    padding: var(--sp-4) var(--sp-8);
+    border-radius: var(--raio-pill);
+    font-weight: 700;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+    transition: var(--trasicao);
+}
+
+.botao-requisitos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .25);
+}
+
+.link-saiba{
+    color: var(--cor-superficie);
+    text-decoration: none;
+    font-weight: 600;
+    padding: .8rem var(--sp-4);
+    transition: var(--trasicao);
+}
+
+.link-saiba::after {
+    font-family: "Material Symbols Outlined";
+    content: "arrow_forward";
+    margin-left: .4rem;
+    transition: var(--trasicao);
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.link-saiba:hover::after {
+    margin-left: .8rem;
 }
 
 /* Grid Principal */

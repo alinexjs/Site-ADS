@@ -53,7 +53,7 @@ function animateCode() {
     // Define a velocidade da animação
     setTimeout(
         animateCode,
-        deleting ? 15 : 35
+        deleting ? 15 : 35 //15 - apagando 35 - digitanto 
     );
 }
 
