@@ -428,6 +428,7 @@ input:checked + .slider-switch::before {
     padding-left: var(--sp-5);
     color: var(--cor-texto-secundario);
     line-height: 1.6;
+    word-break: break-word;
 }
 
 .grade-programa {
