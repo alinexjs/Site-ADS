@@ -408,3 +408,13 @@
     line-height: 1.6;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .hero-container{
+        padding: 60px var(--sp-6);
+        gap: 2rem;
+    }
+    .hero-imagem img{
+        width: 100%;
+    }
+}

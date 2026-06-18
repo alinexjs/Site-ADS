@@ -196,3 +196,9 @@
     font-size: 0.95rem;
     line-height: 1.4;
 }
+
+@media screen and (max-width: 600px) {
+    .ct-conteudo__container {
+        grid-template-columns: 1fr;
+    }
+}
