@@ -92,10 +92,10 @@
                     <img src="images/projeto-beeweb.png" alt="BEEWeb">
                 </div>
                 <div class="card-conteudo">
-                    <h3 class="h3">BEEWeb</h3>
+                    <h3 class="h3">BeeWeb</h3>
                     <p class="p">Uso de tecnologia IoT e plataforma web para auxiliar apicultores no manejo e
                         monitoramento de colmeias.</p>
-                    <button class="btn-ler-mais" data-titulo="BEEWeb" data-img="images/projeto-beeweb.png"
+                    <button class="btn-ler-mais" data-titulo="BeeWeb" data-img="images/projeto-beeweb.png"
                         data-link="https://beeweb.ifce.edu.br/"
                         data-descricao="BEEWeb é um projeto inovador que tem como objetivo ajudar os apicultores a monitorar suas colmeias de abelhas de forma mais eficiente. Desenvolvido por Bolsistas/alunos com auxílio de professores do IFCE, em uma parceria com o Centro de Inovação e Difusão de Tecnologias para o Semiárido (CIDTS). O projeto BEEWeb utiliza uma combinação de dispositivos eletrônicos e tecnologia web para fornecer informações valiosas sobre as colmeias. O sistema BEEWeb é composto por dois principais componentes: sensores e um sistema web. Os sensores são instalados dentro e fora das colmeias para capturar dados em tempo real, como temperatura, umidade e peso das colmeias. Esses dados são então transmitidos para o sistema web, que permite que os apicultores monitorem e analisem as informações em tempo real.">
                         Ler mais
@@ -105,10 +105,10 @@
 
             <div class="card-projeto">
                 <div class="card-img">
-                    <img src="images/projeto-dipe.png" alt="Dipe">
+                    <img src="images/projeto-dipe.png" alt="DIPE">
                 </div>
                 <div class="card-conteudo">
-                    <h3 class="h3">Dipe</h3>
+                    <h3 class="h3">DIPE</h3>
                     <p class="p">Sistema completo de Diagnóstico de Intervenção Pedagógica e Educacional para gestão
                         inteligente.</p>
                     <button class="btn-ler-mais" data-titulo="Dipe" data-img="images/projeto-dipe.png"
@@ -171,9 +171,9 @@
             <p class="p" style="max-width: 600px; margin: 0 auto var(--sp-6) auto;">Seu projeto pode inspirar outros
                 desenvolvedores. Publique sua criação, contribua com a comunidade do IFCE e dê visibilidade real ao seu
                 trabalho!</p>
-            <a href="#" class="btn-enviar-projeto">
+            <button type="button" class="btn-enviar-projeto" id="btn-abrir-formulario">
                 <i class="material-icons">send</i> Envie aqui o seu projeto
-            </a>
+            </button>
         </div>
 
     </main>
@@ -188,6 +188,55 @@
                 <a href="#" id="modal-link" class="btn-conhecer-projeto">
                     Conheça o projeto <i class="material-icons" style="font-size: 18px; top: 0;">open_in_new</i>
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-formulario" class="modal-overlay">
+        <div class="modal-conteudo modal-form-layout">
+            <button type="button" class="btn-fechar" id="btn-fechar-formulario">
+                <i class="material-icons">close</i>
+            </button>
+            <div class="modal-body">
+                <h3 class="h3" style="color: var(--cor-primaria); margin-bottom: var(--sp-2);">Preencha seus dados</h3>
+                <p class="p" style="margin-bottom: var(--sp-5);">Preencha os campos abaixo para dar visibilidade ao seu
+                    projeto e inspirar a comunidade de desenvolvedores do nosso campus.</p>
+
+                <form id="form-enviar-projeto" class="form-modal">
+                    <div class="form-grupo">
+                        <label for="nome-projeto" class="form-label">Nome do Projeto *</label>
+                        <input type="text" id="nome-projeto" class="form-input" required placeholder="">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="autores-projeto" class="form-label">Nome dos Autores *</label>
+                        <input type="text" id="autores-projeto" class="form-input" required placeholder="">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email-contato" class="form-label">E-mail de Contato *</label>
+                        <input type="email" id="email-contato" class="form-input" required
+                            placeholder="">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="url-projeto" class="form-label">URL do Site / Repositório</label>
+                        <input type="url" id="url-projeto" class="form-input"
+                            placeholder="">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="descricao-projeto" class="form-label">Descrição do Projeto *</label>
+                        <textarea id="descricao-projeto" class="form-input" rows="4" required
+                            placeholder=""></textarea>
+                    </div>
+
+                    <div class="form-acoes" style="display: flex; justify-content: flex-end;">
+                        <button type="submit" class="btn-conhecer-projeto" style="margin-top: var(--sp-2);">
+                            Enviar <i class="material-icons" style="font-size: 18px;">check</i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

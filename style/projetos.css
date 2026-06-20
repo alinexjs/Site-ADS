@@ -10,7 +10,7 @@
     padding: var(--sp-8);
     border-radius: var(--raio-lg);
     border: none;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
 }
 
 /* Responsividade Container Principal */
@@ -56,7 +56,7 @@
 
 .titulo-pagina {
     font-family: var(--fonte);
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     color: var(--cor-primaria);
     letter-spacing: -0.03em;
@@ -205,6 +205,7 @@
     text-decoration: none;
     padding: var(--sp-3) var(--sp-8);
     border-radius: var(--raio-pill);
+    border: none;
     transition: all var(--trasicao);
     box-shadow: 0 4px 6px rgba(15, 123, 108, 0.2);
 }
@@ -358,4 +359,57 @@
         top: var(--sp-2);
         right: var(--sp-2);
     }
+}
+
+/* ================= FORMULÁRIO DO MODAL ================= */
+.modal-form-layout {
+    max-width: 550px;
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-1);
+    text-align: left;
+}
+
+.form-label {
+    font-family: var(--fonte);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.form-input {
+    width: 100%;
+    padding: var(--sp-3);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-md);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte);
+    font-size: var(--fs-base);
+    transition: border-color var(--trasicao), box-shadow var(--trasicao);
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(15, 123, 108, 0.15);
+}
+
+textarea.form-input {
+    resize: none;
+    min-height: 80px;
+}
+
+.form-acoes .btn-conhecer-projeto {
+    border: none;
+    cursor: pointer;
 }
