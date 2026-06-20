@@ -6,7 +6,7 @@
     padding: var(--sp-8);
     border-radius: var(--raio-lg);
     border: none;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
 }
 
 /* Responsividade Container */
@@ -18,7 +18,7 @@
     }
 }
 
-/* ================= HEADERS & TYPOGRAPHY ================= */
+/* ================= HEADERS & TIPOGRAFIA ================= */
 .cabecalho-curso {
     margin-bottom: var(--sp-8);
     border-bottom: 1px solid var(--cor-borda);
@@ -99,19 +99,19 @@
 
 /* Caixa de Destaque */
 .texto-destaque {
-    background-color: var(--cor-primaria-clara);
-    border-left: 4px solid var(--cor-primaria);
-    padding: var(--sp-4);
-    border-radius: 0 var(--raio-md) var(--raio-md) 0;
-    color: var(--cor-texto);
+    background-color: #fef3c7;
+    border-left: 5px solid #d97706;
+    border-radius: var(--raio-md);
+    color: #92400e;
     display: flex;
     align-items: flex-start;
     gap: var(--sp-3);
+    padding: var(--sp-4) var(--sp-6);
     margin-top: var(--sp-4);
 }
 
 .texto-destaque i {
-    color: var(--cor-primaria);
+    color: #92400e;
     font-size: var(--fs-lg);
 }
 
