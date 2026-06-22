@@ -1,22 +1,10 @@
 /* NAVBAR */
-
-.cabecalho {
-    background-color: var(--cor-primaria);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-inline: clamp(var(--sp-4), 4vw, var(--sp-12));
-    height: clamp(60px, 8vw, 80px);
-
-    position: sticky;
-    top: 0;
-
-    z-index: 1000;
-    box-shadow: 0px 2px 8px rgb(0 0 0 / 15%);
+#header{
+    position: fixed;
 }
-
+.cabecalho {
+    background-color: transparent;
+}
 .mt-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,6 +46,7 @@
     font-weight: 700;
     letter-spacing: .12em;
     margin-bottom: var(--sp-4);
+    margin-top: 5rem;
 }
 
 .mt-hero__titulo {
@@ -79,20 +68,6 @@
     max-width: 480px;
 }
 
-.mt-hero__imagem {
-    position: relative;
-    z-index: 1;
-}
-
-.mt-hero__imagem img {
-    width: 100%;
-    height: auto;
-    max-height: 460px;
-    object-fit: cover;
-    border-radius: var(--raio-lg);
-    box-shadow: 0 12px 32px rgb(0 0 0 / 35%);
-}
-
 /* ===================== CABEÇALHO DE SEÇÃO ===================== */
 .mt-secao__cabecalho {
     text-align: center;
@@ -101,7 +76,7 @@
 
 .mt-secao__sobretitulo {
     display: inline-flex;
-    color: var(--cor-texto);
+    color: var(--cor-primaria);
     font-size: clamp(.75rem, 1vw, var(--fs-sm));
     font-weight: 700;
     letter-spacing: .12em;

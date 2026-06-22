@@ -43,6 +43,7 @@
 .botao-conheca:hover {
     transform: translateY(-3px);
     box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .25);
+    background-color: var(--cor-primaria);
 }
 
 .link-inscreva {
@@ -66,6 +67,7 @@
 .link-inscreva:hover::after {
     margin-left: .8rem;
 }
+
 
 #hero {
     display: flex;
@@ -166,13 +168,16 @@
     font-size: var(--fs-2xl);
     line-height: 1.8;
     color: rgba(221, 245, 241, .12);
-    white-space: pre-wrap;/*quebra de linha automatica*/
+    white-space: pre-wrap;
+    /*quebra de linha automatica*/
     text-align: left;
 }
 
 .codigo-bg code::after {
-    content: "|";/*simula digitar*/
-    animation: blink .8s infinite;/*faz o cursor piscar*/
+    content: "|";
+    /*simula digitar*/
+    animation: blink .8s infinite;
+    /*faz o cursor piscar*/
 }
 
 /*animaçao do hero*/
@@ -350,6 +355,12 @@
     color: rgba(255, 255, 255, .6);
 }
 
+.imagem-footer {
+    width: 110px;
+    max-height: 30px;
+    height: auto;
+}
+
 /*CURIOSIDADE*/
 .curiosidade {
     width: 100%;
@@ -416,7 +427,8 @@
     display: block;
 }
 
-.paragrafo-curiosidade:last-of-type {/*remove margem do ultimo*/
+.paragrafo-curiosidade:last-of-type {
+    /*remove margem do ultimo*/
     margin-bottom: 0;
 }
 
@@ -437,7 +449,8 @@
     border-radius: var(--raio-pill);
     font-size: clamp(.65rem, .8vw, .75rem);
     font-weight: 600;
-    text-transform: uppercase; /*texto para maiusculo*/
+    text-transform: uppercase;
+    /*texto para maiusculo*/
 }
 
 .chip i {
@@ -471,7 +484,8 @@
     border-radius: 50%;
 }
 
-.bolinhas span:nth-child(1) { /*seleção do span*/
+.bolinhas span:nth-child(1) {
+    /*seleção do span*/
     background: #ef4444;
 }
 
@@ -524,7 +538,8 @@
     background: var(--cor-superficie);
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-lg);
-    overflow: visible; /*desaparece se ultrapassar*/
+    overflow: visible;
+    /*desaparece se ultrapassar*/
     transition: var(--trasicao);
 }
 
@@ -587,7 +602,8 @@
 
 /* CAMALEÃO */
 .camaleao-hover {
-    position: absolute;/*posiciona foi definido*/
+    position: absolute;
+    /*posiciona foi definido*/
     width: 320px;
     right: -170px;
     bottom: 90px;
@@ -595,7 +611,8 @@
     transform: translateX(20px) scale(.8);
     transition: opacity .4s ease, transform .4s ease;
     pointer-events: none;
-    z-index: 20;/*controla camadas*/
+    z-index: 20;
+    /*controla camadas*/
 }
 
 .card-conheca:hover .camaleao-hover {
@@ -619,7 +636,8 @@
 
 .grid-projetos {
     display: grid;
-    grid-template-columns: 2fr 1fr;/*espaço da grid*/
+    grid-template-columns: 2fr 1fr;
+    /*espaço da grid*/
     gap: var(--sp-6);
 }
 
@@ -695,7 +713,8 @@
 }
 
 .btn-card-projetos-securio {
-    display: inline-block;/*quebra linha e ocupa a largura*/
+    display: inline-block;
+    /*quebra linha e ocupa a largura*/
     color: var(--cor-primaria);
     text-decoration: none;
     font-weight: 600;
@@ -728,7 +747,8 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 4rem;
-    position: relative; /*usado como referencia*/
+    position: relative;
+    /*usado como referencia*/
 }
 
 .mercado-texto {
@@ -1047,7 +1067,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--sp-6);
-    align-items: stretch;/*para ocupar toda a altura*/
+    align-items: stretch;
+    /*para ocupar toda a altura*/
 }
 
 .card-noticia-principal {
@@ -1097,7 +1118,8 @@
     background: transparent;
     border: 2px solid var(--cor-primaria);
     border-radius: var(--raio-lg);
-    overflow: hidden;/*esconde oq ultrapassa*/
+    overflow: hidden;
+    /*esconde oq ultrapassa*/
     display: flex;
     flex-direction: column;
     min-height: 390px;
@@ -1121,14 +1143,16 @@
 
 .topo-card-secundario span {
     font-weight: 600;
-    letter-spacing: 1px;/*espaço entre as letras*/
+    letter-spacing: 1px;
+    /*espaço entre as letras*/
 }
 
 .conteudo-card {
     padding: var(--sp-6);
     display: flex;
     flex-direction: column;
-    flex: 1;/*ocupa o espaço disponivel*/
+    flex: 1;
+    /*ocupa o espaço disponivel*/
 }
 
 .categoria-noticia {
@@ -1176,7 +1200,8 @@
 
 .card-noticia a {
     margin-top: auto;
-    align-self: flex-start;/*alinhado a margem*/
+    align-self: flex-start;
+    /*alinhado a margem*/
     color: var(--cor-primaria-hover);
     text-decoration: none;
     font-weight: 600;
@@ -1200,7 +1225,8 @@
 
 .container-equipe-cards {
     display: flex;
-    flex-wrap: wrap;/*quebra de linha*/
+    flex-wrap: wrap;
+    /*quebra de linha*/
     justify-content: center;
     gap: 24px;
 }

@@ -50,15 +50,7 @@
     gap: var(--sp-12);
 }
 
-.footer-brand .marca {
-    display: flex;
-    align-items: center;
-    gap: var(--sp-2);
-    white-space: nowrap;
-}
-
 .footer-brand h3 {
-    margin: 0;
     margin-bottom: .8rem;
 }
 
@@ -88,7 +80,6 @@
     font-size: .9rem;
 }
 
-/* Listas e Links do Rodapé */
 .footer h4 {
     margin-bottom: var(--sp-4);
     color: #DDF5F1;
@@ -158,6 +149,12 @@
 .footer-bottom a {
     font-size: .75rem;
     color: rgba(255, 255, 255, .6);
+}
+
+.imagem-footer {
+    width: 110px;
+    max-height: 30px;
+    height: auto;
 }
 
 @media (max-width: 900px) {
