@@ -1,0 +1,345 @@
+/* ================= MAIN CONTAINER ================= */
+.container-caads {
+    max-width: 1000px;
+    margin: var(--sp-8) auto;
+    background: var(--cor-superficie);
+    padding: var(--sp-8);
+    border-radius: var(--raio-lg);
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+}
+
+/* Responsividade Container */
+@media (max-width: 768px) {
+    .container-caads {
+        margin: var(--sp-4);
+        padding: var(--sp-4);
+        border-radius: var(--raio-md);
+    }
+}
+
+/* ================= HEADERS & TIPOGRAFIA ================= */
+.cabecalho-curso {
+    margin-bottom: var(--sp-8);
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: var(--sp-6);
+}
+
+.titulo-pagina {
+    font-family: var(--fonte);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--cor-primaria);
+    letter-spacing: -0.03em;
+    margin-bottom: var(--sp-4);
+}
+
+.subtitulo-pagina {
+    font-size: var(--fs-md);
+    color: var(--cor-texto-secundario);
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+.h2 {
+    font-family: var(--fonte);
+    font-size: var(--fs-xl);
+    color: var(--cor-texto);
+    margin-top: var(--sp-8);
+    margin-bottom: var(--sp-4);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.h3 {
+    font-family: var(--fonte);
+    font-size: var(--fs-lg);
+    color: var(--cor-texto);
+    margin-top: var(--sp-6);
+    margin-bottom: var(--sp-3);
+    font-weight: 600;
+}
+
+.p {
+    font-size: var(--fs-base);
+    margin-bottom: var(--sp-6);
+    color: var(--cor-texto-secundario);
+}
+
+/*  CARDS OBJETIVOS  */
+#objetivo {
+    padding: 80px 40px;
+}
+
+.container-objetivo {
+    display: flex;
+    flex-wrap: wrap;
+    /*quebra de linha*/
+    justify-content: center;
+    gap: 24px;
+    margin-top: var(--sp-4);
+    margin-bottom: var(--sp-4);
+}
+
+.card-objetivo {
+    width: 240px;
+    min-height: 220px;
+    background: #ffff;
+    border: 1px solid rgba(0, 128, 100, 0.35);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px 20px;
+    transition: var(--trasicao);
+}
+
+.icone-card {
+    color: var(--cor-primaria);
+}
+
+.h3-card {
+    font-family: var(--fonte);
+    font-size: var(--fs-lg);
+    color: var(--cor-texto);
+    margin-bottom: var(--sp-3);
+    font-weight: 600;
+}
+
+.card-objetivo:hover {
+    transform: translateY(-8px);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 10px 25px rgba(0, 128, 100, .2);
+}
+
+.card-objetivo h3 {
+    font-size: 1.10rem;
+    font-weight: 600;
+    color: var(--cor-primaria-hover);
+    margin-bottom: 6px;
+}
+
+.card-objetivo p {
+    font-size: var(--fs-base);
+    color: var(--cor-texto-secundario);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #objetivo {
+        padding: 60px 20px;
+    }
+
+    .card-objetivo {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ================= SEÇÃO DIRETORIA (ACCORDION OPTIMIZED) ================= */
+.container-diretoria {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    /* Espaço mínimo entre uma linha de cargo e outra */
+    margin-top: var(--sp-4);
+    margin-bottom: var(--sp-6);
+}
+
+.card-cargo {
+    background: transparent;
+    /* Invisível por padrão */
+    border: 1px solid transparent;
+    /* Sem borda fixa */
+    border-radius: var(--raio-md);
+    overflow: hidden;
+    transition: var(--trasicao);
+}
+
+/* Remove marcadores padrões de navegadores */
+.card-cargo summary::-webkit-details-marker {
+    display: none;
+}
+
+.card-cargo summary {
+    list-style: none;
+}
+
+/* Comportamento de foco visual ao passar o mouse ou quando ativo */
+.card-cargo:hover,
+.card-cargo[open] {
+    background-color: rgba(15, 123, 108, 0.05);
+    /* Aplica sutilmente a cor primária de fundo */
+    border-color: rgba(15, 123, 108, 0.2);
+    /* Borda suave apenas no estado ativo */
+}
+
+.summary-cargo {
+    display: flex;
+    align-items: center;
+    padding: var(--sp-2) var(--sp-3);
+    /* Espaçamento interno reduzido entre texto e borda */
+    cursor: pointer;
+    gap: var(--sp-2);
+    /* Ícone colado bem mais perto do título do cargo */
+    user-select: none;
+}
+
+.summary-cargo .icone-cargo {
+    width: 46px;
+    height: 46px;
+    border-radius: var(--raio-md);
+    background: var(--cor-primaria-clara);
+    color: var(--cor-primaria);
+    font-size: var(--fs-md) !important;
+    /* Tamanho proporcional */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-cargo {
+    font-family: var(--fonte);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    color: var(--cor-primaria-hover);
+    flex-grow: 1;
+    /* Empurra a seta do Font Awesome para o fim direito */
+}
+
+.seta-status {
+    color: var(--cor-texto-secundario);
+    font-size: 0.9rem;
+    transition: transform var(--trasicao);
+}
+
+/* Quando expandido, gira a seta para cima indicando fechamento */
+.card-cargo[open] .seta-status {
+    transform: rotate(180deg);
+    color: var(--cor-primaria);
+}
+
+/* Área do texto descritivo */
+.conteudo-cargo {
+    padding: 0 var(--sp-3) var(--sp-3) calc(var(--fs-md) + var(--sp-2) + var(--sp-3));
+}
+
+.conteudo-cargo p {
+    font-size: var(--fs-base);
+    color: var(--cor-texto-secundario);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ================= RESPONSIVIDADE DIRETORIA ================= */
+@media (max-width: 768px) {
+    .summary-cargo {
+        padding: var(--sp-2);
+        gap: var(--sp-2);
+    }
+
+    .conteudo-cargo {
+        padding: 0 var(--sp-2) var(--sp-2) var(--sp-2);
+        /* Aproveita melhor a largura de telas pequenas */
+    }
+}
+
+/* ================= ESTRUTURA DO LAYOUT EM COLUNAS ================= */
+.layout-caads-colunas {
+    display: flex;
+    gap: var(--sp-6);
+    align-items: flex-start;
+    margin-top: var(--sp-4);
+    margin-bottom: var(--sp-6);
+}
+
+/* Distribuição de tamanho das colunas (60% esquerda, 40% direita) */
+.coluna-cargos {
+    flex: 3;
+    width: 100%;
+}
+
+.coluna-info-lateral {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    /* Espaço entre os cards da direita */
+    width: 100%;
+}
+
+/* Ajuste fino dos containers internos para não quebrarem margem */
+.coluna-cargos .container-diretoria {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ================= REGRAS ATUALIZADAS DO CARD DIRETRIZ ================= */
+.card-diretriz {
+    background: var(--cor-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-lg);
+    padding: var(--sp-5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: transform var(--trasicao), box-shadow var(--trasicao), border-color var(--trasicao);
+}
+
+.card-diretriz:hover {
+    transform: translateY(-2px);
+    border-color: rgba(15, 123, 108, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-diretriz-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-3);
+}
+
+.card-diretriz-icone {
+    background-color: var(--cor-primaria-clara);
+    color: var(--cor-primaria);
+    width: 42px;
+    height: 42px;
+    border-radius: var(--raio-pill);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-diretriz-icone span {
+    font-size: var(--fs-lg);
+}
+
+.card-diretriz h3 {
+    margin: 0;
+    font-family: var(--fonte);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    color: var(--cor-texto);
+}
+
+.card-diretriz p {
+    margin: 0;
+    font-size: var(--fs-base);
+    color: var(--cor-texto-secundario);
+    line-height: 1.5;
+}
+
+/* ================= RESPONSIVIDADE DO WRAPPER DE COLUNAS ================= */
+@media (max-width: 900px) {
+    .layout-caads-colunas {
+        flex-direction: column;
+        /* Transforma em uma única coluna em telas menores */
+        gap: var(--sp-6);
+    }
+
+    .coluna-cargos,
+    .coluna-info-lateral {
+        flex: none;
+        width: 100%;
+    }
+}
