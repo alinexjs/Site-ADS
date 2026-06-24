@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 1000;
     transition: all var(--trasicao);
+    background: rgba(24, 129, 115, .95);
 }
 
 #header.scrolled {
@@ -15,17 +16,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(24, 129, 115, .95);
-    padding-inline: clamp(var(--sp-4), 4vw, var(--sp-12));
-    height: clamp(60px, 8vw, 80px);
+    height: clamp(60px, 7vw, 80px);
     z-index: 1000;
 }
 
-#header.scrolled .cabecalho {
+#header .container {
+    z-index: 1000;
+    padding: var(--sp-2) 0;
+}
+
+
+#header.scrolled {
     background: rgba(24, 129, 115, .95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, .15);
 }
+
 
 .marca {
     display: flex;
@@ -35,13 +41,13 @@
 }
 
 .logo {
-    width: clamp(28px, 4vw, 50px);
+    width: clamp(40px, 4vw, 50px);
     height: auto;
 }
 
 .marca span {
     color: var(--cor-superficie);
-    font-size: clamp(0.8rem, 1vw, var(--fs-base));
+    font-size: clamp(16px, 1vw, var(--fs-base));
     font-weight: 600;
     white-space: nowrap;
 }
@@ -137,14 +143,6 @@
 }
 
 @media (max-width: 768px) {
-    .cabecalho {
-        padding-inline: var(--sp-4);
-    }
-
-    .marca span {
-        /* display: none; */
-    }
-
     .menu-mobile {
         display: block;
     }

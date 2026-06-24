@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
-
+html,body{
+    overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;
@@ -60,4 +62,69 @@ body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     position: relative;
+}
+
+/* Container para padronizar as margens de todo o site e o espaçamento entre cada bloco/seção */
+.container{
+    max-width: 1440px;
+    padding: 40px 0;
+    width: 91%;
+    margin: 0 auto;
+}
+
+/* Botões */
+
+.botao-conheca {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    background: var(--cor-primaria-hover);
+    color: var(--cor-primaria-clara);
+    padding: var(--sp-4) var(--sp-8);
+    border-radius: var(--raio-pill);
+    font-weight: 700;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+    transition: var(--trasicao);
+}
+
+.botao-conheca:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .25);
+    background-color: var(--cor-primaria);
+}
+
+.link-inscreva {
+    color: var(--cor-superficie);
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--sp-3) var(--sp-4);
+    transition: var(--trasicao);
+}
+
+.link-inscreva::after {
+    font-family: "Material Symbols Outlined";
+    content: "arrow_forward";
+    margin-left: .4rem;
+    transition: var(--trasicao);
+    font-size: 1.2em;
+    vertical-align: middle;
+    /*alinha o icon*/
+}
+
+.link-inscreva:hover::after {
+    margin-left: .8rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .botao-conheca {
+        padding: var(--sp-3) var(--sp-4);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .botao-conheca, .link-inscreva {
+        padding: var(--sp-3) var(--sp-2);
+    }
 }

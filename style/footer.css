@@ -2,14 +2,11 @@
     background: #0F7B6C;
     overflow: hidden;
     color: white;
+    margin-top: 40px;
 }
 
 .footer-top {
     background: #0B6458;
-    padding: 12px 24px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
 
@@ -44,7 +41,7 @@
 }
 
 .footer-content {
-    padding: var(--sp-12) var(--sp-4);
+    padding: var(--sp-5) 0;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: var(--sp-12);
@@ -166,7 +163,6 @@
 @media (max-width: 600px) {
     .footer-content {
         grid-template-columns: 1fr;
-        padding: 2rem 1.5rem;
     }
 
     .footer-bottom {
