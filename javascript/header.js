@@ -53,6 +53,7 @@ const codeHeader = `
                         <li><a href="1-semestre.html">Semestres</a></li>
                         <li><a href="colação-grau.html">Colação de Grau</a></li>
                         <li><a href="caads.html">Centro Acadêmico</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
 

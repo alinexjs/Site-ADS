@@ -1,0 +1,201 @@
+/* CONTAINER */
+.faq-page {
+    max-width: 1000px;
+    margin: var(--sp-12) auto;
+    padding: 0 var(--sp-4);
+}
+
+/*HERO*/
+.hero {
+    text-align: center;
+    margin-bottom: var(--sp-10);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--cor-primaria-clara);
+    color: var(--cor-primaria);
+    padding: var(--sp-2) var(--sp-4);
+    border-radius: var(--raio-pill);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: var(--sp-5);
+}
+
+.titulo {
+    font-family: var(--fonte);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--cor-primaria);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--sp-4);
+}
+
+.subtitulo {
+    max-width: 640px;
+    margin: 0 auto;
+    color: var(--cor-texto-secundario);
+    font-size: var(--fs-md);
+    line-height: 1.6;
+    text-align: justify;
+    text-align-last: center;
+}
+
+/*Lista das FAQ */
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-8);
+}
+
+.item {
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-lg);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    transition: var(--trasicao);
+}
+
+.item:hover {
+    border-color: var(--cor-primaria);
+}
+
+.item[open] {
+    box-shadow: 0 6px 18px -8px rgba(15, 123, 108, 0.25);
+}
+
+.item summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    padding: var(--sp-5) var(--sp-6);
+    font-weight: 600;
+}
+
+.item summary::-webkit-details-marker {
+    display: none;
+}
+
+.marcador {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-superficie);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--fs-md);
+    transition: var(--trasicao);
+}
+
+.item[open] .marcador {
+    background-color: var(--cor-primaria-hover);
+}
+
+.pergunta {
+    flex: 1;
+    color: var(--cor-texto);
+    font-size: var(--fs-base);
+}
+
+.chevron {
+    color: var(--cor-texto-secundario);
+    transition: transform var(--trasicao);
+}
+
+.item[open] .chevron {
+    transform: rotate(180deg);
+    color: var(--cor-primaria);
+}
+
+.resposta {
+    padding: 0 var(--sp-6) var(--sp-5) calc(var(--sp-6) + 32px + var(--sp-4));
+    color: var(--cor-texto-secundario);
+    line-height: 1.65;
+}
+
+.resposta p {
+    background-color: var(--cor-fundo);
+    padding: var(--sp-4) var(--sp-5);
+    border-radius: var(--raio-md);
+    text-align: justify;
+    margin: 0;
+}
+
+/*CTA*/
+.cta {
+    background-color: #E6F4F0;
+    border-radius: var(--raio-lg);
+    padding: var(--sp-6) var(--sp-8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-6);
+    flex-wrap: wrap;
+}
+
+.cta-info {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+}
+
+.cta-icone {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-superficie);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-icone .material-icons {
+    font-size: 26px;
+}
+
+.cta-info h3 {
+    font-family: var(--fonte);
+    font-size: var(--fs-lg);
+    color: var(--cor-primaria);
+    margin-bottom: 2px;
+}
+
+.cta-info p {
+    color: var(--cor-texto-secundario);
+    font-size: var(--fs-sm);
+    margin: 0;
+}
+
+.cta-botao {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-3) var(--sp-5);
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: var(--raio-md);
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 600;
+    background-color: var(--cor-superficie);
+    transition: var(--trasicao);
+}
+
+.cta-botao:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-superficie);
+}
+
+.cta-botao .material-icons {
+    font-size: var(--fs-md);
+}
