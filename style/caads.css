@@ -1,9 +1,8 @@
 /* ================= MAIN CONTAINER ================= */
 .container-caads {
-    max-width: 1000px;
-    margin: var(--sp-8) auto;
     background: var(--cor-superficie);
     padding: var(--sp-8);
+    margin: 40px auto;
     border-radius: var(--raio-lg);
     border: none;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
@@ -12,7 +11,7 @@
 /* Responsividade Container */
 @media (max-width: 768px) {
     .container-caads {
-        margin: var(--sp-4);
+        /* margin: var(--sp-4); */
         padding: var(--sp-4);
         border-radius: var(--raio-md);
     }
@@ -91,17 +90,18 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 18px 20px;
+    padding: 18px 18px;
     transition: var(--trasicao);
 }
 
 .icone-card {
     color: var(--cor-primaria);
+    margin-bottom: var(--sp-3);
 }
 
 .h3-card {
     font-family: var(--fonte);
-    font-size: var(--fs-lg);
+    font-size: var(--fs-lg) !important;
     color: var(--cor-texto);
     margin-bottom: var(--sp-3);
     font-weight: 600;

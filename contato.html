@@ -60,20 +60,35 @@
     </header>
 
     <main>
-        <section class="ct-hero">
-            <div class="ct-hero__conteudo">
-                <span class="ct-hero__tag">ENTRE EM CONTATO</span>
-                <h1 class="ct-hero__titulo">Fale com a gente</h1>
-                <p class="ct-hero__descricao">
-                    Estamos aqui para tirar suas dúvidas, fornecer informações ou
-                    falar sobre o curso
-                </p>
-            </div>
+        <!-- BANNER -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-conteudo">
+                    <div class="mt-hero__conteudo">
+                        <span class="subtitulo-pagina">ENTRE EM CONTATO</span>
+                        <h1 class="titulo-pagina">Fale com a gente</h1>
+                        <p class="mt-hero__descricao">
+                            Estamos aqui para tirar suas dúvidas, fornecer informações ou
+                            falar sobre o curso
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-imagem">
+                    <div class="codigo-bg">
+                        <pre><code id="typing-code"></code></pre>
+                    </div>
+                    <div class="contato-visual">
+                        <a href="mailto:cca.boaviagem@ifce.edu.br"><i class="material-icons">mail</i></a>
+                        <a href="#formulario"><i class="material-icons">chat</i></a>
+                        <a href="tel:+558534012302"><i class="material-icons">call</i></a>
+                        <a target="_blank" href="https://maps.app.goo.gl/98KPAxhiMzMZknTh9"><i class="material-icons">place</i></a>
+                    </div>
+                </div>
         </section>
 
         <!--CONTEÚDO PRINCIPAL-->
-        <section class="ct-conteudo">
-            <div class="ct-conteudo__container">
+        <section class="ct-conteudo" id="formulario">
+            <div class="container ct-conteudo__container">
 
                 <!-- Coluna esquerda: formulário -->
                 <div class="ct-formulario">
@@ -112,7 +127,7 @@
                 <aside class="ct-canais">
                     <h2 class="ct-canais__titulo">Informações de Contato</h2>
 
-                    <a href="https://maps.app.goo.gl/98KPAxhiMzMZknTh9">
+                    <a target="_blank" href="https://maps.app.goo.gl/98KPAxhiMzMZknTh9">
                         <div class="ct-canal">
                         <div class="ct-canal__icone">
                             <span class="material-icons">place</span>
@@ -132,7 +147,7 @@
                         </div>
                         <div class="ct-canal__info">
                             <strong>Telefone</strong>
-                            <p>(85) 3401-2302</p>
+                            <p><a href="tel:+558534012302">(85) 3401-2302</a></p>
                         </div>
                     </div>
 
@@ -142,7 +157,7 @@
                         </div>
                         <div class="ct-canal__info">
                             <strong>E-mail</strong>
-                            <p>cca.boaviagem@ifce.edu.br</p>
+                            <p><a href="mailto:cca.boaviagem@ifce.edu.br">cca.boaviagem@ifce.edu.br</a></p>
                         </div>
                     </div>
 
@@ -230,6 +245,7 @@
 
     <!-- SCRIPTS -->
     <script src="javascript/header.js"></script>
+    <script src="javascript/contato.js" defer></script>
 </body>
 
 </html>

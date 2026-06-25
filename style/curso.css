@@ -1,5 +1,13 @@
 /* ================= MAIN CONTAINER ================= */
-.container-curso {
+.curso-container {
+    background: var(--cor-superficie);
+    border-radius: var(--raio-lg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    padding: var(--sp-8);
+    margin: 40px auto;
+}
+
+/* .container-curso {
     max-width: 1000px;
     margin: var(--sp-8) auto;
     background: var(--cor-superficie);
@@ -9,14 +17,13 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
 }
 
-/* Responsividade Container */
 @media (max-width: 768px) {
     .container-curso {
         margin: var(--sp-4);
         padding: var(--sp-4);
         border-radius: var(--raio-md);
     }
-}
+} */
 
 /* ================= HEADERS & TIPOGRAFIA ================= */
 .cabecalho-curso {

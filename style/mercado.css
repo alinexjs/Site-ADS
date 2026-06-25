@@ -1,22 +1,40 @@
-/* NAVBAR */
-#header{
+#header {
     position: fixed;
-}
-.cabecalho {
     background-color: transparent;
 }
-.mt-hero {
-     position: relative;
-    overflow: hidden;
-    padding: clamp(var(--sp-8, 48px), 6vw, var(--sp-12, 80px)) clamp(var(--sp-5, 24px), 6vw, var(--sp-12, 80px));
 
+#hero {
     background: linear-gradient(135deg,
-            var(--cor-primaria-hover, #0a5a4f),
-            var(--cor-primaria, #0f7b6c));
-    color: var(--cor-superficie, #fff);
+            var(--cor-primaria),
+            #013123);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    min-height: 100vh;
+    display: flex;
 }
 
-.mt-hero::before {
+
+#hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    #hero .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-conteudo{
+        margin-top: 4.5rem;
+    }
+}
+
+#hero::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -27,31 +45,41 @@
     pointer-events: none;
 }
 
-.mt-hero__conteudo {
-     position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
+.hero-conteudo {
+    z-index: 9;
+
 }
 
-.mt-hero__tag {
-    display: inline-block;
-    color: var(--cor-primaria-clara);
-    font-size: clamp(.75rem, 1vw, var(--fs-sm));
-    font-weight: 700;
-    letter-spacing: .12em;
-    margin-bottom: var(--sp-4);
-    margin-top: 5rem;
+.hero-imagem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mt-hero__titulo {
+.hero-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--raio-lg);
+    transition: transform .5s ease;  
+}
+.hero-imagem img:hover{
+    transform: scale(1.03);
+}
+
+.titulo-pagina {
     font-family: var(--fonte);
-    white-space: nowrap;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    line-height: 1.1;
-    font-weight: 700;
-    color: var(--cor-superficie);
-    margin-bottom: var(--sp-5);
+    font-size: clamp(2.2rem, 4.5vw, 4.5rem);
+    color: var(--cor-primaria-clara);
+    margin-bottom: var(--sp-4);
+}
+
+.subtitulo-pagina {
+    color: var(--cor-primaria-clara);
+    font-size: clamp(1rem, 2vw, var(--fs-md));
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
 .mt-hero__descricao {
@@ -92,7 +120,10 @@
 /* ===================== SEÇÃO DEMANDA + CARDS ===================== */
 .mt-demanda {
     background: var(--cor-superficie);
-    padding: clamp(var(--sp-10), 6vw, var(--sp-12)) clamp(var(--sp-5), 4vw, var(--sp-12));
+    border-radius: var(--raio-lg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    padding: var(--sp-8);
+    margin-bottom: 40px;
 }
 
 .mt-cards {
@@ -154,7 +185,10 @@
 /* ===================== SEÇÃO ÁREAS DE ATUAÇÃO ===================== */
 .mt-areas {
     background: var(--cor-primaria-clara);
-    padding: clamp(var(--sp-10), 6vw, var(--sp-12)) clamp(var(--sp-5), 4vw, var(--sp-12));
+    border-radius: var(--raio-lg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    /* padding: var(--sp-8); */
+    margin-bottom: 40px;
 }
 
 .mt-areas__lista {

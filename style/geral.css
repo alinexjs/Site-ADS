@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
-html,body{
+html{
     overflow-x: hidden;
+    scroll-behavior: smooth;    
 }
 * {
     margin: 0;
@@ -70,6 +71,44 @@ body {
     padding: 40px 0;
     width: 91%;
     margin: 0 auto;
+}
+
+/* Padrão de scrollbar */
+.scrollbar{
+    overflow-x: auto;
+}
+.scrollbar::-webkit-scrollbar {
+    height: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: var(--cor-borda);
+    border-radius: 999px;
+}
+
+/* scrollbar do navegador */
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor-primaria);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-borda);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor-primaria);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-primaria-hover);
 }
 
 /* Botões */

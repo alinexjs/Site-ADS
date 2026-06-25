@@ -78,6 +78,8 @@
 
 .dropdown {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown-content {

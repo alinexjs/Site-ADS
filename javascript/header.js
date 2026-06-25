@@ -1,39 +1,14 @@
 const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 
-// Escuta o evento de rolagem da página
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 50) {
-        // Adiciona a classe "scrolled"
-        header.classList.add("scrolled");
-
-    } else {
-        // Remove a classe "scrolled"
-        header.classList.remove("scrolled");
-    }
-});
-//botão hamburguer em telas menores
-const botaoMenu = document.querySelector('.menu-mobile');
-const menu = document.querySelector('.menu');
-const body = document.querySelector('body');
-
-console.log(botaoMenu);
-console.log(menu);
-
-botaoMenu.addEventListener('click', () => {
-    menu.classList.toggle('ativo');
-    body.classList.toggle('menu-aberto');
-});
-
 // Importação do header e do footer em todas as paginas
-
+    
 const codeHeader = `
     <div class="container">
         <nav class="cabecalho">
 
             <div class="marca">
-                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                <img src="/images/logosmall-branca.png" class="logo" alt="Mascote ADS">
                 <span>IT'S ADS</span>
             </div>
 
@@ -48,18 +23,19 @@ const codeHeader = `
                     <a href="#">Sobre o Curso</a>
 
                     <ul class="dropdown-content">
-                        <li><a href="curso.html">Como Cursar</a></li>
-                        <li><a href="disciplinas.html">Disciplinas</a></li>
-                        <li><a href="1-semestre.html">Semestres</a></li>
-                        <li><a href="colação-grau.html">Colação de Grau</a></li>
-                        <li><a href="caads.html">Centro Acadêmico</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="/curso.html">Como Cursar</a></li>
+                        <li><a href="/extensao.html">Extensão</a></li>
+                        <li><a href="/disciplinas.html">Disciplinas</a></li>
+                        <li><a href="/1-semestre.html">Semestres</a></li>
+                        <li><a href="/colação-grau.html">Colação de Grau</a></li>
+                        <li><a href="/caads.html">Centro Acadêmico</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
                     </ul>
                 </div>
 
-                <a href="mercado.html">Mercado de Trabalho</a>
-                <a href="projetos.html">Projetos</a>
-                <a href="contato.html">Contato</a>
+                <a href="/mercado.html">Mercado de Trabalho</a>
+                <a href="/projetos.html">Projetos</a>
+                <a href="/contato.html">Contato</a>
 
             </div>
 
@@ -89,7 +65,7 @@ const codeFooter = `
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="marca">
-                    <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                    <img src="/images/logosmall-branca.png" class="logo" alt="Mascote ADS">
                     <h3>IT'S ADS</h3>
                 </div>
                 <p>
@@ -108,10 +84,10 @@ const codeFooter = `
             <div>
                 <h4>Links Rápidos</h4>
                 <ul>
-                    <li><a href="curso.html">Sobre o ADS</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="mercado.html">Mercado de Trabalho</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="/curso.html">Sobre o ADS</a></li>
+                    <li><a href="/projetos.html">Projetos</a></li>
+                    <li><a href="/mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
                 </ul>
             </div>
 
@@ -146,3 +122,29 @@ const codeFooter = `
 `;
 
 footer.innerHTML = codeFooter;
+
+
+// Escuta o evento de rolagem da página
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+        // Adiciona a classe "scrolled"
+        header.classList.add("scrolled");
+
+    } else {
+        // Remove a classe "scrolled"
+        header.classList.remove("scrolled");
+    }
+});
+//botão hamburguer em telas menores
+const botaoMenu = document.querySelector('.menu-mobile');
+const menu = document.querySelector('.menu');
+const body = document.querySelector('body');
+
+// console.log(botaoMenu);
+// console.log(menu);
+
+botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    body.classList.toggle('menu-aberto');
+});

@@ -1,10 +1,4 @@
 /* Wrapper principal */
-.container-disciplinas {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: clamp(var(--sp-6), 4vw, var(--sp-12)) var(--sp-6);
-}
-
 .cabecalho-semestre {
     margin-bottom: var(--sp-8);
     display: flex;
@@ -182,7 +176,6 @@ input:checked + .slider-switch::before {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    min-width: 1080px;
 }
 
 .tabela-disciplinas th,
@@ -505,7 +498,7 @@ input:checked + .slider-switch::before {
 }
 
 @media (max-width: 720px) {
-    .container-disciplinas {
+    .container {
         padding-inline: var(--sp-4);
     }
 
@@ -525,9 +518,32 @@ input:checked + .slider-switch::before {
     }
 
     .resumo-disciplinas,
-    .grade-metadados,
     .grade-programa {
         grid-template-columns: 1fr;
+    }
+
+    .grade-metadados{
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .card-metadado{
+        min-width: 50%;
+        align-items: center;
+    }
+
+    .grade-metadados::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .grade-metadados::-webkit-scrollbar-track {
+        background: var(--cor-borda);
+        border-radius: 999px;
+    }
+
+    .grade-metadados::-webkit-scrollbar-thumb {
+        background: var(--cor-primaria);
+        border-radius: 999px;
     }
 
     .card-resumo-disciplina,

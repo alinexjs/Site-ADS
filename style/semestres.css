@@ -1,10 +1,3 @@
-/* Wrapper Principal */
-.container-semestre {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: clamp(var(--sp-6), 4vw, var(--sp-12)) var(--sp-6);
-}
-
 /* Título e Subtítulo da Página */
 .cabecalho-semestre {
     margin-bottom: var(--sp-8);
@@ -35,12 +28,6 @@
     margin-bottom: var(--sp-8);
     border-bottom: 2px solid var(--cor-borda);
     padding-bottom: var(--sp-2);
-    overflow-x: auto;
-    scrollbar-width: none;
-}
-
-.abas-semestres::-webkit-scrollbar {
-    display: none;
 }
 
 .aba-link {
@@ -145,7 +132,6 @@ input:checked+.slider-switch:before {
 /* Container de Tabelas */
 .tabela-wrapper {
     width: 100%;
-    overflow-x: auto;
     background: var(--cor-superficie);
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-lg);
@@ -353,6 +339,7 @@ input:checked+.slider-switch:before {
     color: var(--cor-texto-secundario);
     font-weight: 500;
     flex-wrap: wrap;
+    width: max-content;
 }
 
 .estatistica-item strong {
