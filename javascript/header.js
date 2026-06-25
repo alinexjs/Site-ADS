@@ -17,7 +17,7 @@ const codeHeader = `
             </button>
 
             <div class="menu">
-                <a href="home.html">Inicio</a>
+                <a href="/home.html">Inicio</a>
 
                 <div class="dropdown">
                     <a href="#">Sobre o Curso</a>
@@ -25,10 +25,11 @@ const codeHeader = `
                     <ul class="dropdown-content">
                         <li><a href="/curso.html">Como Cursar</a></li>
                         <li><a href="/extensao.html">Extensão</a></li>
-                        <li><a href="/disciplinas.html">Disciplinas</a></li>
                         <li><a href="/1-semestre.html">Semestres</a></li>
-                        <li><a href="/colação-grau.html">Colação de Grau</a></li>
+                        <li><a href="/disciplinas.html">Disciplinas</a></li>
                         <li><a href="/caads.html">Centro Acadêmico</a></li>
+                        <li><a href="/lisa.html">Laboratório LiSA</a></li>
+                        <li><a href="/colacao-grau.html">Colação de Grau</a></li>
                         <li><a href="/faq.html">FAQ</a></li>
                     </ul>
                 </div>
@@ -85,9 +86,12 @@ const codeFooter = `
                 <h4>Links Rápidos</h4>
                 <ul>
                     <li><a href="/curso.html">Sobre o ADS</a></li>
-                    <li><a href="/projetos.html">Projetos</a></li>
+                    <li><a href="/colacao-grau.html">Colação de Grau</a></li>
+                    <li><a href="/caads.html">Centro Acadêmico</a></li>
                     <li><a href="/mercado.html">Mercado de Trabalho</a></li>
+                    <li><a href="/projetos.html">Projetos</a></li>
                     <li><a href="/contato.html">Contato</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
                 </ul>
             </div>
 

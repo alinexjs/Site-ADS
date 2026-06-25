@@ -1,0 +1,69 @@
+/* ================= BREADCRUMB ================= */
+#breadcrumb {
+    background: var(--cor-fundo);
+    /* border-bottom: 1px solid var(--cor-borda); */
+    margin-bottom: 15px;
+}
+
+.breadcrumb-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--sp-3) 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-1);
+}
+
+.breadcrumb-link {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    transition: var(--trasicao);
+    padding: var(--sp-1) var(--sp-1);
+    border-radius: var(--raio-sm);
+}
+
+.breadcrumb-link:hover {
+    color: var(--cor-primaria-hover);
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    color: var(--cor-texto-secundario);
+    font-size: var(--fs-md);
+    font-weight: 300;
+    margin: 0 var(--sp-1);
+    user-select: none;
+    line-height: 1;
+}
+
+.breadcrumb-current {
+    color: var(--cor-texto-secundario);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    padding: var(--sp-1) var(--sp-1);
+}
+
+/* Para páginas com header fixo (mercado, contato, colação), 
+   o breadcrumb precisa ficar abaixo do header fixo */
+#header.scrolled + #breadcrumb {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-container {
+        padding: var(--sp-2) var(--sp-4);
+    }
+
+    .breadcrumb-link,
+    .breadcrumb-current {
+        font-size: 0.78rem;
+    }
+
+    .breadcrumb-separator {
+        font-size: var(--fs-base);
+        margin: 0 2px;
+    }
+}

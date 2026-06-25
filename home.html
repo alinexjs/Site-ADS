@@ -7,6 +7,7 @@
     <title>IT'S ADS - IFCE Boa Viagem</title>
     <link rel="icon" type="image/png" href="images/logoverdesmall.png">
     <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/breadcrumb.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/home.css">
@@ -21,29 +22,9 @@
     <header id="header">
         <div class="container">
             <nav class="cabecalho">
-            <div class="marca">
-                <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
-                <span>IT'S ADS</span>
-            </div>
-
-            <button class="menu-mobile">
-                <span class="material-icons">menu</span>
-            </button>
-
-            <div class="menu">
-                <a href="home.html">Home</a>
-
-                <div class="dropdown">
-                    <a href="#">Sobre o Curso</a>
-
-                    <ul class="dropdown-content">
-                        <li><a href="curso.html">Como Cursar</a></li>
-                        <li><a href="disciplinas.html">Disciplinas</a></li>
-                        <li><a href="1-semestre.html">Semestres</a></li>
-                        <li><a href="colação-grau.html">Colação de Grau</a></li>
-                        <li><a href="caads.html">Centro Acadêmico</a></li>
-                        <li><a href="extensao.html">Extensão</a></li>
-                    </ul>
+                <div class="marca">
+                    <img src="images/logosmall-branca.png" class="logo" alt="Mascote ADS">
+                    <span>IT'S ADS</span>
                 </div>
 
                 <button class="menu-mobile">
@@ -59,25 +40,45 @@
                         <ul class="dropdown-content">
                             <li><a href="curso.html">Como Cursar</a></li>
                             <li><a href="disciplinas.html">Disciplinas</a></li>
-                            <li><a href="1-semestre.html">1º Semestre</a></li>
-                            <li><a href="2-semestre.html">2º Semestre</a></li>
-                            <li><a href="3-semestre.html">3º Semestre</a></li>
-                            <li><a href="4-semestre.html">4º Semestre</a></li>
-                            <li><a href="5-semestre.html">5º Semestre</a></li>
+                            <li><a href="1-semestre.html">Semestres</a></li>
                             <li><a href="colação-grau.html">Colação de Grau</a></li>
+                            <li><a href="caads.html">Centro Acadêmico</a></li>
+                            <li><a href="extensao.html">Extensão</a></li>
                         </ul>
                     </div>
 
-                    <a href="mercado.html">Mercado de Trabalho</a>
-                    <a href="projetos.html">Projetos</a>
-                    <a href="contato.html">Contato</a>
+                    <button class="menu-mobile">
+                        <span class="material-icons">menu</span>
+                    </button>
 
-                </div>
+                    <div class="menu">
+                        <a href="home.html">Home</a>
 
-                <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" target="_blank"
-                    class="botao-portal">
-                    Portal do Aluno
-                </a>
+                        <div class="dropdown">
+                            <a href="#">Sobre o Curso</a>
+
+                            <ul class="dropdown-content">
+                                <li><a href="curso.html">Como Cursar</a></li>
+                                <li><a href="disciplinas.html">Disciplinas</a></li>
+                                <li><a href="1-semestre.html">1º Semestre</a></li>
+                                <li><a href="2-semestre.html">2º Semestre</a></li>
+                                <li><a href="3-semestre.html">3º Semestre</a></li>
+                                <li><a href="4-semestre.html">4º Semestre</a></li>
+                                <li><a href="5-semestre.html">5º Semestre</a></li>
+                                <li><a href="colação-grau.html">Colação de Grau</a></li>
+                            </ul>
+                        </div>
+
+                        <a href="mercado.html">Mercado de Trabalho</a>
+                        <a href="projetos.html">Projetos</a>
+                        <a href="contato.html">Contato</a>
+
+                    </div>
+
+                    <a href="https://novo.qacademico.ifce.edu.br/webapp/public/autenticacao" target="_blank"
+                        class="botao-portal">
+                        Portal do Aluno
+                    </a>
 
             </nav>
         </div>
@@ -718,6 +719,7 @@
 
     <!-- SCRIPTS -->
     <script src="javascript/header.js"></script>
+    <script src="javascript/breadcrumb.js"></script>
     <script src="javascript/home.js" defer></script>
 </body>
 

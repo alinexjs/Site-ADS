@@ -7,6 +7,7 @@
     <title>Projetos - ADS IFCE Boa Viagem</title>
     <link rel="icon" type="image/png" href="images/logoverdesmall.png">
     <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" href="style/breadcrumb.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/projetos.css">
@@ -61,8 +62,11 @@
         </nav>
     </header>
 
-    <main class="container-projetos">
+    <div class="container" style="padding: 40px 0 0 0;">
+            <div id="breadcrumb"></div>
+        </div>
 
+    <main class="container container-projetos">
         <div class="cabecalho-projetos">
             <h1 class="titulo-pagina">Nossos Projetos em Destaque</h1>
             <p class="subtitulo-pagina">
@@ -310,6 +314,7 @@
     </footer>
     <!-- SCRIPTS -->
     <script src="javascript/header.js"></script>
+    <script src="javascript/breadcrumb.js"></script>
     <script src="javascript/projetos.js" defer></script>
 </body>
 
